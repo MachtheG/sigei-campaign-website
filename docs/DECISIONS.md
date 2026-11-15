@@ -8,6 +8,6 @@
 - **Constituency map** is a stylised abstract map. No boundary data is bundled; if geoBoundaries / IEBC open data is adopted later, record its licence here.
 - **"Promise vs Delivered"** shows only delivered items and `[[TO CONFIRM]]` placeholders for 2022 pledges, because no 2022 pledge has been sourced.
 - **Election date**: 10 Aug 2027, 06:00 EAT, from IEBC's notice (reported 14 Sep 2026). A High Court (Malindi) ruling about the election year is reported; IEBC says the date stands. Re-check before launch.
-- **Palette**: tea green `#0B3D2E`, accent `#FFC20E` (placeholder for the official UDA yellow), warm paper `#FAF7F0`, ink `#111A16`. Dark mode follows the OS setting.
 - **Fonts**: Bricolage Grotesque (display) + Inter (body) via `next/font`.
-- **Press/news photos are never used.** Placeholders are duotone tea-green blocks with a silhouette and the slot label.
+- **Photos**: the client asked for real images only. Used: the Senator's official Parliament portrait and openly licensed Wikimedia Commons photographs (honestly captioned, credited). Press/news and social-media photos are not used because others hold the copyright. Placeholders remain only as a fallback for an empty slot.
+- **Palette (client brief)**: white main, gold/yellow accent `#F5B800`, green `#0B6B3A` tertiary; no dark mode.

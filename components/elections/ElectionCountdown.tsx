@@ -8,15 +8,15 @@ export function ElectionCountdown() {
   const t = useTranslations("elections.countdown");
   const c = useTranslations("common.countdown");
   return (
-    <section aria-labelledby="el-countdown" className="bg-deep text-on-brand">
+    <section aria-labelledby="el-countdown" className="bg-accent text-on-accent">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-24 lg:px-8">
         <h2 id="el-countdown" className="t-h2">
           {t("title")}
         </h2>
         <Countdown variant="large" className="mt-8" />
-        <p className="text-on-brand/80 mt-4">{c("date")}</p>
+        <p className="text-on-accent/80 mt-4">{c("date")}</p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <a href="/api/election.ics" className={buttonVariants({ size: "lg" })}>
+          <a href="/api/election.ics" className={buttonVariants({ size: "lg", variant: "brand" })}>
             {t("calendar")}
           </a>
           <a
@@ -26,7 +26,7 @@ export function ElectionCountdown() {
             className={buttonVariants({
               size: "lg",
               variant: "outline",
-              className: "text-on-brand",
+              className: "text-on-accent",
             })}
           >
             {t("registered")} ↗
@@ -35,13 +35,17 @@ export function ElectionCountdown() {
             href={IEBC_LINKS.home}
             target="_blank"
             rel="noopener noreferrer"
-            className={buttonVariants({ size: "lg", variant: "ghost", className: "text-on-brand" })}
+            className={buttonVariants({
+              size: "lg",
+              variant: "ghost",
+              className: "text-on-accent",
+            })}
           >
             {t("iebc")} ↗
           </a>
         </div>
-        <p className="text-on-brand/75 mt-6 max-w-[60ch] text-sm">{t("note")}</p>
-        <SourceBadge ids={ELECTION.sourceIds} tone="light" className="mt-1 -ml-3" />
+        <p className="text-on-accent/80 mt-6 max-w-[60ch] text-sm">{t("note")}</p>
+        <SourceBadge ids={ELECTION.sourceIds} className="mt-1 -ml-3" />
       </div>
     </section>
   );

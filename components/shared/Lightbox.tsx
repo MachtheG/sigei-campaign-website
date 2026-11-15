@@ -101,6 +101,11 @@ export function Lightbox({ photos, startIndex, onClose }: Props) {
               </div>
               <figcaption className="max-w-prose text-center text-base text-white/90">
                 {pick(p.caption, locale)}
+                {p.credit && (
+                  <span className="mt-1 block text-sm text-white/60">
+                    {tp("credit", { credit: p.credit })}
+                  </span>
+                )}
               </figcaption>
             </figure>
           ))}

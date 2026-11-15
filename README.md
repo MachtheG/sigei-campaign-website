@@ -48,7 +48,7 @@ docs/                 SHOT-LIST, CONTENT-NEEDED, DECISIONS, HANDOFF
 2. Run `npm run images`. It writes AVIF/WebP at 480/960/1600/2400 px plus blur placeholders to `public/images/senator/_opt/` and `data/photos.generated.json`.
 3. In `data/photos.ts` fill that slot's `date`, `location`, `credit`, and `approvedForPress` (enables the download button in the lightbox).
 
-Until a file exists, the slot renders an intentional placeholder (tea-green block, silhouette, shot brief). To add a _new_ slot, add an entry in `data/photos.ts` and re-run `npm run docs:shotlist`.
+Currently the slots hold openly licensed stand-ins plus the Senator's official portrait; credits live in `data/photo-credits.json` (add an entry for each new file). If a slot has no file it renders an intentional placeholder. To add a _new_ slot, add an entry in `data/photos.ts` and re-run `npm run docs:shotlist`.
 
 ## Edit content and translations
 

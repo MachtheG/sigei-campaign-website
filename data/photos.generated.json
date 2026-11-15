@@ -1,1 +1,110 @@
-{}
+{
+  "hero-main": {
+    "src": "/images/senator/_opt/hero-main-627.webp",
+    "width": 627,
+    "height": 418,
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAQCdASoQAAsAA4BaJaACdAYwxL0hNtQA/glYPA6U15ob3XZor6Mi7F3EVZRhBdBTwyS0OJoHHRwSHNv2ZU2qfxdb9VMd3gYD0xj9p3Cu1sHM2R9ab/OUYc4QUZrEb+EGMjme4AA="
+  },
+  "senate-bill": {
+    "src": "/images/senator/_opt/senate-bill-2400.webp",
+    "width": 2400,
+    "height": 3200,
+    "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoQABUAPu1iqU2ppaOiMAgBMB2JYwC06A9eXoh9vx6f9BAAAP1QrJOMw2bNBq1aUdfjOzJNb+m+e32RkJXO8OhxU3KiQLNFOPKDUlb9wMFpf7X9me+hBrSQhbR9dodE7jquOB3kRR/sr6wwlly1XendkZAAAA=="
+  },
+  "senate-committee": {
+    "src": "/images/senator/_opt/senate-committee-2400.webp",
+    "width": 2400,
+    "height": 1594,
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsAA4BaJYgCdADbY95rAADxy0huD10zaLVNN/RgvudIxBVUelJVNnGqqiAQwktSdEk3SoOoOdIUUU0zdbMPoeOW0oAA"
+  },
+  "senate-floor": {
+    "src": "/images/senator/_opt/senate-floor-2400.webp",
+    "width": 2400,
+    "height": 1519,
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoAA4BaJQBdgCHYRP3vHAAA4geohAAarPZjvDh6ZIQJqlz0tosZyKHdShizW5+Pa7WE1ChVD345T8Lef5RN9iEW4AAA"
+  },
+  "field-inspection": {
+    "src": "/images/senator/_opt/field-inspection-2400.webp",
+    "width": 2400,
+    "height": 1080,
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAcAA4BaJbAAAxamu0F4AP6qHHws/xV3MgQdpk2Am0TfrNXeQElAbfo8wbITdjjjpXn/9lsxUi2bpHkbzR7vzcT7lgAA"
+  },
+  "field-school": {
+    "src": "/images/senator/_opt/field-school-1023.webp",
+    "width": 1023,
+    "height": 685,
+    "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAQCdASoQAAsAA4BaJbACdAELzBhDAAD+8BMQyLX8OtTy3EhflbnQWvK8GCReMP+OQAKsGxGNPbTj6CMc+dgaeOqcFqVUWS0t9HSnQ6lea+kjRadxWwxJs7TepeNkHxfu63p+b1D3s8wK6y4AAA=="
+  },
+  "field-water": {
+    "src": "/images/senator/_opt/field-water-720.webp",
+    "width": 720,
+    "height": 1083,
+    "blurDataURL": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JagCdL1ygQAm2XZiydUw3mAAA/uhQPDxMr2JWoyzIfgQAVaUaOopIbb8EDJlurJYOYyX264EzLvYG1r7T1LLs1SUJ+7nThRYaKB9Qt8UV5dkjzsayQ6f21lRUF/z/Ib7gV5dvy/9THGAaqrgVZbbrv2R9i3RJZ155y4CKcwT7gAAA"
+  },
+  "portrait-casual": {
+    "src": "/images/senator/_opt/portrait-casual-720.webp",
+    "width": 720,
+    "height": 479,
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoAA4BaJZACsAD1cWfjcU8SgAD+9/PPLrZJNTbcOrFsh8HnvC5jyjRjqRZzTlJPF86TYAjZtTqlYm/meCAA"
+  },
+  "community-elders": {
+    "src": "/images/senator/_opt/community-elders-2400.webp",
+    "width": 2400,
+    "height": 1948,
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAA0AA4BaJQBYdu4A8D4xTU3U8AAA/vMi6GnzJzmuSGRzcfLJXssZgpzx/iQNf3eyFLnMI/h9eb3dE8M7jWUmrgLx0YdbGujkqjDbw3qdWT8RrzF0WYAAAAA="
+  },
+  "community-women": {
+    "src": "/images/senator/_opt/community-women-2400.webp",
+    "width": 2400,
+    "height": 1800,
+    "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwAgCdASoQAAwAA4BaJbACdAYt9WWVx6qlgAD8soJBM/s8ciF4Z6kSgk771TWLvTp0PosXHKmZqiVu+zfVoXQFcC28D3GqO1A7hLJW3EEUWanpK7do0wM+2q8CkfxpONfmJrhmE66BqqNU1AAAAA=="
+  },
+  "community-youth": {
+    "src": "/images/senator/_opt/community-youth-2400.webp",
+    "width": 2400,
+    "height": 1600,
+    "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAsAA4BaJYgCdDiMwJ032BAA/h2tC3jfHnRKlQYtarqJQGKf9FlTjwS5SMuIVsIwSWWcYWnL9IveNvzVezRVa+1kKf4yUeSBpgrPJ6p+C1O1wEibwMbCzxVOAAAA"
+  },
+  "farmers-meeting": {
+    "src": "/images/senator/_opt/farmers-meeting-2400.webp",
+    "width": 2400,
+    "height": 1594,
+    "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAsAA4BaJQBOgMW+xtGMMQK0wAD9K1HC/pg/34U+6+v8n7c9Xz+DcLNyIvcjvstwrLuOSbdBWT0ZzIERYm5fLwoEoTUH3DiA/s9xghqfBWqNCMuWlBU02dyQg41lOtANqdAA"
+  },
+  "farmers-pluckers": {
+    "src": "/images/senator/_opt/farmers-pluckers-2336.webp",
+    "width": 2336,
+    "height": 4160,
+    "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYwCdISBu7QcKGkvedCH27EJgAAD+837wY2P0BcPLNpLWTvbU1fpkMojxLqOxi0U9m8eVEux0ucMxxAxztwY0lEhi0p1s4vCuD+NnIurAAA=="
+  },
+  "farmers-tea": {
+    "src": "/images/senator/_opt/farmers-tea-2400.webp",
+    "width": 2400,
+    "height": 1594,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAsAA4BaJbACdAEOyc2n2AD+6dgy8RM/RJqggt/HWhf29PldqoTVa7dNgQ2fC7VooMISIAA="
+  },
+  "portrait-formal": {
+    "src": "/images/senator/_opt/portrait-formal-627.webp",
+    "width": 627,
+    "height": 418,
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAQCdASoQAAsAA4BaJaACdAYwxL0hNtQA/glYPA6U15ob3XZor6Mi7F3EVZRhBdBTwyS0OJoHHRwSHNv2ZU2qfxdb9VMd3gYD0xj9p3Cu1sHM2R9ab/OUYc4QUZrEb+EGMjme4AA="
+  },
+  "events-church": {
+    "src": "/images/senator/_opt/events-church-2400.webp",
+    "width": 2400,
+    "height": 1800,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAwAA4BaJZgC7AEO6pFe1VwAAP7VFTSCuyL3q2dOzAhy4zvED4smVBUqPUWuH/FEhqX3NNVk4SHRtstDmwt09uW/sgLdeixAAA=="
+  },
+  "events-launch": {
+    "src": "/images/senator/_opt/events-launch-2400.webp",
+    "width": 2400,
+    "height": 1800,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAwAA4BaJbACdAED97exbIAA/tOe/vwc1x3IdOAC8Vtq+y2eae57UuAp8IeP2OBbls3fQL55FUAA"
+  },
+  "events-rally": {
+    "src": "/images/senator/_opt/events-rally-1648.webp",
+    "width": 1648,
+    "height": 448,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAQAA4BaJQBOgBukYAPiAAD+ihDtBY5tb7B/Z6povni99e4wgNx1HO29SMdmFgS3Yd3vaPGZkgAA"
+  }
+}

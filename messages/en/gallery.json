@@ -5,7 +5,7 @@
   },
   "hero": {
     "title": "Gallery",
-    "lead": "The Senator in the Senate, in the field, and among the people of Bomet."
+    "lead": "The Senator, and the Bomet he serves: farms, classrooms, hills and the work in between."
   },
   "filters": {
     "label": "Filter photos",
@@ -17,12 +17,22 @@
     "portraits": "Portraits",
     "events": "Events"
   },
-  "week": { "title": "Photo of the week", "open": "View full screen" },
+  "week": {
+    "title": "Photo of the week",
+    "open": "View full screen"
+  },
   "grid": {
     "title": "All photos",
     "open": "Open photo",
     "count": "{count} photos",
     "none": "No photos in this category yet."
   },
-  "press": { "note": "Photos marked press-approved can be downloaded from the full-screen view." }
+  "press": {
+    "note": "Photos marked press-approved can be downloaded from the full-screen view. Each photo shows its credit."
+  },
+  "credits": {
+    "title": "Photo credits",
+    "lead": "The official portrait is from the Parliament of Kenya. Every other image is an openly licensed photograph from Wikimedia Commons showing Bomet, Kenya or Parliament. These are stand-ins and will be replaced by the campaign's own photos of the Senator.",
+    "source": "Original"
+  }
 }

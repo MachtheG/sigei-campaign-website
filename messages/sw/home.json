@@ -5,10 +5,12 @@
   },
   "hero": {
     "name": "Seneta Wakili Hillary Sigei:",
-    "title": "Mtoto wa Bomet. Kazi Iendelee.",
     "lead": "Seneta wa Bomet tangu 2022, na anaomba muhula wa pili tarehe 10 Agosti 2027.",
     "ctaRecord": "Tazama rekodi yangu",
-    "ctaPledge": "Ahidi kuniunga mkono"
+    "ctaPledge": "Ahidi kuniunga mkono",
+    "title1": "Mtoto wa Bomet.",
+    "title2": "Kazi Iendelee.",
+    "badge": "Seneta Wakili Hillary Sigei"
   },
   "countdown": {
     "title": "Siku ya uchaguzi inakaribia",
@@ -29,7 +31,7 @@
   },
   "marquee": {
     "title": "Pamoja na Bomet, popote kazi ilipo",
-    "aria": "Picha za Seneta Sigei Senetini na kote Bomet"
+    "aria": "Picha za Bomet na maeneo ambayo kazi ya Seneta inagusa"
   },
   "record": {
     "title": "Kazi za hivi karibuni",

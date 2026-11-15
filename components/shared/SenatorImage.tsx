@@ -54,7 +54,7 @@ export function SenatorImage({ id, sizes, priority, className, ratio, position, 
           placeholder={photo.blurDataURL ? "blur" : "empty"}
           blurDataURL={photo.blurDataURL}
           className="object-cover"
-          style={position ? { objectPosition: position } : undefined}
+          style={{ objectPosition: position ?? (photo.kind === "senator" ? "50% 18%" : undefined) }}
         />
       </div>
     );

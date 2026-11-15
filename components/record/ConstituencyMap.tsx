@@ -59,7 +59,7 @@ export function ConstituencyMap() {
                       "transition-colors",
                       active
                         ? "fill-[var(--accent)]"
-                        : "fill-[var(--deep)] hover:fill-[var(--clay)]",
+                        : "fill-[var(--brand)] hover:fill-[var(--brand-2)]",
                     )}
                   />
                   <text

@@ -21,7 +21,7 @@ export function KeyDates() {
           >
             <time
               dateTime={d.iso}
-              className="font-display text-deep dark:text-accent text-2xl font-extrabold sm:w-72"
+              className="font-display text-brand text-2xl font-extrabold sm:w-72"
             >
               {formatDate(d.iso, locale)}
             </time>

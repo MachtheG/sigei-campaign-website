@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import { NAV, SOCIALS } from "@/lib/nav";
@@ -13,6 +14,13 @@ export function Footer() {
           <p className="font-display text-accent text-4xl leading-none font-extrabold sm:text-5xl">
             {t("footer.slogan")}
           </p>
+          <Image
+            src="/images/bomet/coat-of-arms.png"
+            alt={t("site.coatOfArms")}
+            width={72}
+            height={72}
+            className="mt-6 size-16 rounded-full bg-white object-contain p-0.5"
+          />
           <p className="text-on-brand/80 mt-4 max-w-[40ch]">
             {t("site.name")} · {t("site.role")}
           </p>
@@ -62,7 +70,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/15">
-        <div className="text-on-brand/75 mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 text-sm sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+        <div className="text-on-brand/90 mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 text-sm sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
           <p>{t("footer.authorised")}</p>
           <p>{t("footer.notOfficial")}</p>
           <Link

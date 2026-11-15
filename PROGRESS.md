@@ -54,3 +54,13 @@
 - Conflicting figures between outlets (BOMWASCO) are deliberately not used as headline stats.
 - Social handles are from the campaign brief and unconfirmed.
 - Placeholder duotone images are the only imagery until photos arrive.
+
+## Photos (updated)
+
+- Real images are in. The only photo of the Senator is his **official Parliament of Kenya member portrait** (627 px wide, so it is used at ≤ 580 px; supplied for client preview, permission to be confirmed with Parliament / the campaign).
+- Every other slot is an **openly licensed Wikimedia Commons photograph** (CC BY / CC BY-SA / public domain) of Bomet, Kenya or Parliament, captioned for what it actually shows (not the Senator). Photographer + licence per image: `data/photo-credits.json`, shown in the lightbox and under **Gallery → Photo credits**.
+- Not used: press/news photos and his Facebook/X images (copyright held by others). The campaign's own photos should replace the stand-ins slot by slot (`docs/SHOT-LIST.md`).
+- Bomet County seal (public domain, Wikimedia Commons) is in the navbar and footer. The file is titled "Coat of Arms of Bomet County" on Commons; the artwork reads "County Government of Bomet". Confirm it is the preferred emblem.
+- Colour scheme changed per client: white base, gold/yellow accents, green as the tertiary colour. Dark mode removed.
+- `parliament-profile` source re-read and marked verified (URL corrected to the `-cbs-mp` page).
+- Lighthouse after the image/colour pass (mobile, lab): Home accessibility 100, performance 88–91 (target ≥ 95 not met; hero portrait, web fonts and the React baseline dominate; first cold request also pays for on-demand AVIF encoding). Worth re-measuring on the real deployment with a CDN.

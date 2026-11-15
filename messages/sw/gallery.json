@@ -5,7 +5,7 @@
   },
   "hero": {
     "title": "Picha",
-    "lead": "Seneta Senetini, uwandani, na miongoni mwa wananchi wa Bomet."
+    "lead": "Seneta, na Bomet anayoihudumia: mashamba, madarasa, vilima na kazi ya katikati."
   },
   "filters": {
     "label": "Chuja picha",
@@ -17,7 +17,10 @@
     "portraits": "Picha rasmi",
     "events": "Matukio"
   },
-  "week": { "title": "Picha ya wiki", "open": "Tazama skrini nzima" },
+  "week": {
+    "title": "Picha ya wiki",
+    "open": "Tazama skrini nzima"
+  },
   "grid": {
     "title": "Picha zote",
     "open": "Fungua picha",
@@ -25,6 +28,11 @@
     "none": "Hakuna picha katika kategoria hii bado."
   },
   "press": {
-    "note": "Picha zilizoidhinishwa kwa vyombo vya habari zinaweza kupakuliwa kutoka kwenye mwonekano wa skrini nzima."
+    "note": "Picha zilizoidhinishwa kwa vyombo vya habari zinaweza kupakuliwa kutoka kwenye mwonekano wa skrini nzima. Kila picha inaonyesha mpiga picha wake."
+  },
+  "credits": {
+    "title": "Wapiga picha",
+    "lead": "Picha rasmi ni kutoka Bunge la Kenya. Kila picha nyingine ni picha yenye leseni huria kutoka Wikimedia Commons inayoonyesha Bomet, Kenya au Bunge. Hizi ni za muda na zitabadilishwa na picha za kampeni za Seneta.",
+    "source": "Asili"
   }
 }

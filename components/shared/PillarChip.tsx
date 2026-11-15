@@ -9,9 +9,16 @@ export function PillarChip({ pillar, className }: { pillar: PillarId; className?
   return (
     <span
       style={{ background: `color-mix(in srgb, ${PILLAR_COLORS[pillar]} 18%, transparent)` }}
-      className={cn("inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-semibold", className)}
+      className={cn(
+        "inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-semibold",
+        className,
+      )}
     >
-      <span aria-hidden className="size-2.5 rounded-full" style={{ background: PILLAR_COLORS[pillar] }} />
+      <span
+        aria-hidden
+        className="size-2.5 rounded-full"
+        style={{ background: PILLAR_COLORS[pillar] }}
+      />
       {t(pillar)}
     </span>
   );

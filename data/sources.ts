@@ -22,9 +22,9 @@ const list: Source[] = [
     title: "Sen. (Wakili) Hillary Kiprotich Sigei: member profile",
     outlet: "Parliament of Kenya",
     date: "",
-    url: "http://www.parliament.go.ke/the-senate/sen-wakili-hillary-kiprotich-sigei",
-    verified: false,
-    note: "Page could not be retrieved during research; education, career and 16 Aug 2022 start date come from the campaign brief. Third-party profiles disagree on some school years.",
+    url: "https://www.parliament.go.ke/the-senate/sen-wakili-hillary-kiprotich-sigei-cbs-mp",
+    verified: true,
+    note: "Profile page read on 15 Nov 2026: lists Ndamichonik Primary (KCPE 1995), Tenwek High (KCSE 1999), University of Nairobi Bachelor in Law (2001–2005), a post-graduate law diploma, Katwa & Kemboy Advocates, and SMS Advocates LLP Managing Partner from 2013. The 16 Aug 2022 start date and LLM dates are from the campaign brief and not re-read there.",
   },
   {
     id: "mzalendo-profile",

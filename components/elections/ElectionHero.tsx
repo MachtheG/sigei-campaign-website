@@ -4,7 +4,7 @@ import { SenatorImage } from "@/components/shared/SenatorImage";
 export function ElectionHero() {
   const t = useTranslations("elections.hero");
   return (
-    <section className="bg-surface">
+    <section className="border-accent bg-bg border-b-[6px]">
       <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 md:py-20 lg:px-8">
         <div>
           <h1 className="t-h1">{t("title")}</h1>

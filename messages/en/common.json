@@ -8,7 +8,8 @@
     "name": "Sen. Wakili Hillary Sigei",
     "short": "Sigei",
     "role": "Senator for Bomet County",
-    "slogan": "Bomet's son. The work continues."
+    "slogan": "Bomet's son. The work continues.",
+    "coatOfArms": "Coat of arms of Bomet County"
   },
   "nav": {
     "home": "Home",
@@ -71,7 +72,8 @@
   "photo": {
     "placeholder": "Photo coming soon",
     "download": "Download",
-    "pressApproved": "Press-approved"
+    "pressApproved": "Press-approved",
+    "credit": "Photo: {credit}"
   },
   "draft": {
     "badge": "DRAFT",

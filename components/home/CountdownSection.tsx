@@ -7,16 +7,16 @@ export function CountdownSection() {
   const t = useTranslations("home.countdown");
   const c = useTranslations("common.countdown");
   return (
-    <section aria-labelledby="home-countdown" className="bg-deep text-on-brand">
+    <section aria-labelledby="home-countdown" className="bg-accent text-on-accent">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         <h2 id="home-countdown" className="t-h2 max-w-[18ch]">
           {t("title")}
         </h2>
-        <p className="text-on-brand/80 mt-4 max-w-[56ch] text-lg">{t("lead")}</p>
+        <p className="text-on-accent/80 mt-4 max-w-[56ch] text-lg">{t("lead")}</p>
         <Countdown variant="large" className="mt-10" />
-        <p className="text-on-brand/70 mt-4 text-sm">{c("date")}</p>
+        <p className="text-on-accent/80 mt-4 text-sm">{c("date")}</p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <a href="/api/election.ics" className={buttonVariants({ size: "lg" })}>
+          <a href="/api/election.ics" className={buttonVariants({ size: "lg", variant: "brand" })}>
             {t("calendar")}
           </a>
           <Link
@@ -24,7 +24,7 @@ export function CountdownSection() {
             className={buttonVariants({
               size: "lg",
               variant: "outline",
-              className: "text-on-brand",
+              className: "text-on-accent",
             })}
           >
             {t("details")}

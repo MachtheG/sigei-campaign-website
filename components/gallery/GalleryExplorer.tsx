@@ -2,7 +2,9 @@
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { Lightbox } from "@/components/shared/Lightbox";
-import { photos, type PhotoCategory } from "@/data/photos";
+import { photos as allPhotos, type PhotoCategory } from "@/data/photos";
+
+const photos = allPhotos.filter((p) => p.gallery);
 import { GalleryFilter } from "./GalleryFilter";
 import { GalleryGrid } from "./GalleryGrid";
 import { PhotoOfTheWeek } from "./PhotoOfTheWeek";

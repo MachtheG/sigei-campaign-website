@@ -8,7 +8,8 @@
     "name": "Seneta Wakili Hillary Sigei",
     "short": "Sigei",
     "role": "Seneta wa Kaunti ya Bomet",
-    "slogan": "Mtoto wa Bomet. Kazi Iendelee."
+    "slogan": "Mtoto wa Bomet. Kazi Iendelee.",
+    "coatOfArms": "Nembo ya Kaunti ya Bomet"
   },
   "nav": {
     "home": "Nyumbani",
@@ -71,7 +72,8 @@
   "photo": {
     "placeholder": "Picha inakuja hivi karibuni",
     "download": "Pakua",
-    "pressApproved": "Imeidhinishwa kwa vyombo vya habari"
+    "pressApproved": "Imeidhinishwa kwa vyombo vya habari",
+    "credit": "Photo: {credit}"
   },
   "draft": {
     "badge": "RASIMU",

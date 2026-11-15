@@ -5,10 +5,12 @@
   },
   "hero": {
     "name": "Sen. Wakili Hillary Sigei:",
-    "title": "Bomet's son. The work continues.",
     "lead": "Senator for Bomet since 2022, and seeking a second term on 10 August 2027.",
     "ctaRecord": "See my record",
-    "ctaPledge": "Pledge your support"
+    "ctaPledge": "Pledge your support",
+    "title1": "Bomet's son.",
+    "title2": "The work continues.",
+    "badge": "Sen. Wakili Hillary Sigei"
   },
   "countdown": {
     "title": "Election day is coming",
@@ -29,7 +31,7 @@
   },
   "marquee": {
     "title": "With Bomet, wherever the work is",
-    "aria": "Photos of Sen. Sigei in the Senate and across Bomet"
+    "aria": "Photos of Bomet and the places the Senator's work touches"
   },
   "record": {
     "title": "Recent work",

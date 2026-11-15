@@ -68,7 +68,7 @@ export function Countdown({ variant, className }: Props) {
       aria-label={`${days} ${t("days")}, ${hours} ${t("hours")}, ${minutes} ${t("minutes")} ${t("until")}`}
     >
       {cells.map((c) => (
-        <div key={c.l} className="rounded-2xl bg-white/10 px-1 py-4 text-center sm:py-8">
+        <div key={c.l} className="rounded-2xl bg-white/60 px-1 py-4 text-center sm:py-8">
           <div className="font-display text-[clamp(2rem,9vw,5.5rem)] leading-none font-extrabold">
             <Roll value={c.v} />
           </div>

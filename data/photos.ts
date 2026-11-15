@@ -1,3 +1,4 @@
+import credits from "./photo-credits.json";
 import generated from "./photos.generated.json";
 import type { L } from "./types";
 
@@ -15,16 +16,20 @@ export const PHOTO_CATEGORIES: PhotoCategory[] = [
 export type Photo = {
   id: string;
   category: PhotoCategory;
-  /** True if the file lives in public/images/senator/hero/ */
-  hero?: boolean;
-  /** Placeholder label + shot brief (campaign-facing, shown only on placeholders) */
+  /** "senator" = shows the Senator. "context" = an openly licensed photo of Bomet / Kenya / Parliament, honestly captioned. */
+  kind: "senator" | "context";
+  /** Shown in the gallery grid (false for duplicates) */
+  gallery: boolean;
+  /** What the campaign should supply to replace a context photo (see docs/SHOT-LIST.md) */
   slot: string;
   ratio: string; // CSS aspect-ratio, e.g. "3 / 2"
   alt: L;
   caption: L;
   date: string;
   location: string;
+  /** Photographer + licence line, from data/photo-credits.json */
   credit: string;
+  creditUrl: string;
   approvedForPress: boolean;
   featured?: boolean;
   /** Filled by `npm run images` */
@@ -34,290 +39,336 @@ export type Photo = {
   blurDataURL?: string;
 };
 
-const TBC = ""; // date/location/credit to be supplied with the real photo
+type Cred = { title: string; author: string; license: string; licenseUrl: string; pageUrl: string };
+const cred = credits as Record<string, Cred>;
+const creditLine = (id: string) => {
+  const c = cred[id];
+  return c ? `${c.author}, ${c.license}` : "";
+};
 
-const slots: Omit<Photo, "src" | "width" | "height" | "blurDataURL">[] = [
+const slots: Omit<Photo, "src" | "width" | "height" | "blurDataURL" | "credit" | "creditUrl">[] = [
   {
     id: "hero-main",
     category: "portraits",
-    hero: true,
+    kind: "senator",
+    gallery: false,
     slot: "HERO: senator addressing farmers, landscape 16:9, ≥2400px wide",
     ratio: "3 / 2",
     alt: {
-      en: "Sen. Wakili Hillary Sigei addressing farmers in Bomet",
-      sw: "Seneta Wakili Hillary Sigei akihutubia wakulima Bomet",
+      en: "Official portrait of Sen. Wakili Hillary Sigei",
+      sw: "Picha rasmi ya Seneta Wakili Hillary Sigei",
     },
-    caption: {
-      en: "Listening first, then acting for Bomet.",
-      sw: "Kusikiliza kwanza, kisha kutenda kwa ajili ya Bomet.",
-    },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    caption: { en: "Senator for Bomet County.", sw: "Seneta wa Kaunti ya Bomet." },
+    date: "",
+    location: "",
     approvedForPress: false,
     featured: true,
   },
   {
     id: "portrait-formal",
     category: "portraits",
+    kind: "senator",
+    gallery: true,
     slot: "PORTRAIT: formal studio or office portrait, 4:5 portrait, ≥1600px tall",
     ratio: "4 / 5",
     alt: {
-      en: "Formal portrait of Sen. Wakili Hillary Sigei",
+      en: "Official portrait of Sen. Wakili Hillary Sigei",
       sw: "Picha rasmi ya Seneta Wakili Hillary Sigei",
     },
     caption: { en: "Senator for Bomet County.", sw: "Seneta wa Kaunti ya Bomet." },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "portrait-casual",
-    category: "portraits",
+    category: "field",
+    kind: "context",
+    gallery: true,
     slot: "PORTRAIT: relaxed outdoor portrait in Bomet, 4:5 portrait",
     ratio: "4 / 5",
-    alt: { en: "Sen. Sigei smiling outdoors in Bomet", sw: "Seneta Sigei akitabasamu nje Bomet" },
-    caption: { en: "At home in Bomet.", sw: "Nyumbani Bomet." },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    alt: {
+      en: "A road winding through the green hills of Kaplong, Bomet County",
+      sw: "Barabara inayopinda kwenye vilima vya kijani vya Kaplong, Kaunti ya Bomet",
+    },
+    caption: {
+      en: "Bomet County: where the story begins.",
+      sw: "Kaunti ya Bomet: hadithi inapoanzia.",
+    },
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "senate-floor",
     category: "senate",
+    kind: "context",
+    gallery: true,
     slot: "SENATE: senator speaking on the Senate floor, landscape 3:2",
     ratio: "3 / 2",
     alt: {
-      en: "Sen. Sigei speaking on the floor of the Senate",
-      sw: "Seneta Sigei akizungumza bungeni la Seneti",
+      en: "Aerial view of the Parliament Buildings and Uhuru Park in Nairobi",
+      sw: "Mwonekano wa angani wa Majengo ya Bunge na Uhuru Park, Nairobi",
     },
     caption: {
-      en: "Raising Bomet's issues on the Senate floor.",
-      sw: "Kuwasilisha masuala ya Bomet bungeni la Seneti.",
+      en: "Parliament Buildings, Nairobi: where the Senate sits.",
+      sw: "Majengo ya Bunge, Nairobi: Seneti inapokutana.",
     },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    date: "",
+    location: "",
     approvedForPress: false,
     featured: true,
   },
   {
     id: "senate-committee",
     category: "senate",
+    kind: "context",
+    gallery: true,
     slot: "SENATE: chairing the Justice, Legal Affairs & Human Rights Committee, 3:2",
     ratio: "3 / 2",
     alt: {
-      en: "Sen. Sigei chairing a Senate committee sitting",
-      sw: "Seneta Sigei akiongoza kikao cha kamati ya Seneti",
+      en: "The entrance to the Parliament Buildings in Nairobi",
+      sw: "Lango la Majengo ya Bunge, Nairobi",
     },
     caption: {
-      en: "Chairing the Justice, Legal Affairs and Human Rights Committee.",
-      sw: "Akiongoza Kamati ya Haki, Masuala ya Kisheria na Haki za Binadamu.",
+      en: "Committees meet here, in the Parliament Buildings.",
+      sw: "Kamati hukutana hapa, katika Majengo ya Bunge.",
     },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "senate-bill",
     category: "senate",
+    kind: "context",
+    gallery: true,
     slot: "SENATE: moving the Tea (Amendment) Bill, 4:3",
     ratio: "4 / 3",
     alt: {
-      en: "Sen. Sigei presenting the Tea (Amendment) Bill",
-      sw: "Seneta Sigei akiwasilisha Mswada wa Marekebisho ya Chai",
+      en: "The clock tower of the Parliament of Kenya seen from above",
+      sw: "Mnara wa saa wa Bunge la Kenya ukionekana kutoka juu",
     },
-    caption: {
-      en: "Moving the Tea (Amendment) Bill.",
-      sw: "Akiwasilisha Mswada wa Marekebisho ya Chai.",
-    },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    caption: { en: "The Parliament of Kenya clock tower.", sw: "Mnara wa saa wa Bunge la Kenya." },
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "field-inspection",
     category: "field",
+    kind: "context",
+    gallery: true,
     slot: "FIELD: inspecting a county project on site, 3:2",
     ratio: "3 / 2",
     alt: {
-      en: "Sen. Sigei at a project site in Bomet",
-      sw: "Seneta Sigei kwenye eneo la mradi Bomet",
+      en: "Green tea fields framed by trees in Bomet County",
+      sw: "Mashamba ya chai ya kijani yakizungukwa na miti, Kaunti ya Bomet",
     },
-    caption: {
-      en: "On site: oversight starts with seeing for yourself.",
-      sw: "Eneo la mradi: usimamizi huanza kwa kujionea mwenyewe.",
-    },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    caption: { en: "Bomet's tea country.", sw: "Nchi ya chai ya Bomet." },
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "field-water",
     category: "field",
+    kind: "context",
+    gallery: true,
     slot: "FIELD: at a water point or water project, 4:3",
     ratio: "4 / 3",
     alt: {
-      en: "Sen. Sigei at a water project in Bomet",
-      sw: "Seneta Sigei kwenye mradi wa maji Bomet",
+      en: "A spring tumbling down a rock face at Kaplong, Bomet County",
+      sw: "Chemchemi ikimiminika kwenye mwamba Kaplong, Kaunti ya Bomet",
     },
     caption: {
-      en: "Water and services for homes across Bomet.",
-      sw: "Maji na huduma kwa kaya kote Bomet.",
+      en: "Water from Bomet's hills: the basis of every water project.",
+      sw: "Maji kutoka vilima vya Bomet: msingi wa kila mradi wa maji.",
     },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "field-school",
     category: "field",
+    kind: "context",
+    gallery: true,
     slot: "FIELD: visiting an ECDE centre with learners, 3:2",
     ratio: "3 / 2",
     alt: {
-      en: "Sen. Sigei visiting an early learning centre",
-      sw: "Seneta Sigei akitembelea kituo cha elimu ya awali",
+      en: "Pupils and their teacher in a Kenyan primary school classroom",
+      sw: "Wanafunzi na mwalimu wao darasani katika shule ya msingi ya Kenya",
     },
     caption: {
       en: "Early learning: where every child's future begins.",
       sw: "Elimu ya awali: mwanzo wa mustakabali wa kila mtoto.",
     },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "community-elders",
     category: "community",
+    kind: "context",
+    gallery: true,
     slot: "COMMUNITY: with elders, 4:5 portrait",
     ratio: "4 / 5",
-    alt: { en: "Sen. Sigei with elders in Bomet", sw: "Seneta Sigei akiwa na wazee Bomet" },
-    caption: { en: "Learning from Bomet's elders.", sw: "Kujifunza kutoka kwa wazee wa Bomet." },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    alt: {
+      en: "A cup of mursik, the traditional fermented milk of the Kalenjin people, being poured",
+      sw: "Kikombe cha mursik, maziwa ya kitamaduni ya jamii ya Kalenjin, yakimiminwa",
+    },
+    caption: {
+      en: "Mursik: a Kalenjin tradition shared with guests.",
+      sw: "Mursik: mila ya Wakalenjin inayotolewa kwa wageni.",
+    },
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "community-youth",
     category: "community",
+    kind: "context",
+    gallery: true,
     slot: "COMMUNITY: with young people, 3:2",
     ratio: "3 / 2",
-    alt: { en: "Sen. Sigei with youth in Bomet", sw: "Seneta Sigei akiwa na vijana Bomet" },
+    alt: {
+      en: "Students walking home together from school in Kenya",
+      sw: "Wanafunzi wakitembea nyumbani pamoja kutoka shuleni, Kenya",
+    },
     caption: { en: "Bomet's young people: the next chapter.", sw: "Vijana wa Bomet: sura ijayo." },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "community-women",
     category: "community",
+    kind: "context",
+    gallery: true,
     slot: "COMMUNITY: with women's groups, 4:3",
     ratio: "4 / 3",
     alt: {
-      en: "Sen. Sigei meeting women's groups",
-      sw: "Seneta Sigei akikutana na vikundi vya wanawake",
+      en: "Four women standing together in a field of maize in Kenya",
+      sw: "Wanawake wanne wamesimama pamoja katika shamba la mahindi, Kenya",
     },
     caption: {
-      en: "Meeting women's groups across the county.",
-      sw: "Kukutana na vikundi vya wanawake kote kaunti.",
+      en: "Women who feed and lead their communities.",
+      sw: "Wanawake wanaolisha na kuongoza jamii zao.",
     },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "farmers-tea",
     category: "farmers",
+    kind: "context",
+    gallery: true,
     slot: "FARMERS: among tea bushes with growers, 3:2",
     ratio: "3 / 2",
     alt: {
-      en: "Sen. Sigei among tea bushes with growers",
-      sw: "Seneta Sigei miongoni mwa mashamba ya chai na wakulima",
+      en: "Tea pickers at work in a green tea field near Kericho, Kenya",
+      sw: "Wavunaji wa chai wakifanya kazi shambani karibu na Kericho, Kenya",
     },
-    caption: { en: "With small-scale tea growers.", sw: "Pamoja na wakulima wadogo wa chai." },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    caption: {
+      en: "The hands behind every cup of Kenyan tea.",
+      sw: "Mikono iliyo nyuma ya kila kikombe cha chai ya Kenya.",
+    },
+    date: "",
+    location: "",
     approvedForPress: false,
     featured: true,
   },
   {
     id: "farmers-meeting",
     category: "farmers",
+    kind: "context",
+    gallery: true,
     slot: "FARMERS: public participation forum with growers, 16:9",
     ratio: "16 / 9",
     alt: {
-      en: "Sen. Sigei at a forum with tea farmers",
-      sw: "Seneta Sigei kwenye kongamano na wakulima wa chai",
+      en: "Women farmers gathered around an agricultural extension officer in Kenya",
+      sw: "Wakulima wanawake wakikusanyika karibu na afisa wa ugani wa kilimo, Kenya",
     },
-    caption: { en: "Hearing growers directly.", sw: "Kuwasikiliza wakulima moja kwa moja." },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    caption: {
+      en: "Farmers learning together: growers deserve to be heard.",
+      sw: "Wakulima wakijifunza pamoja: wakulima wanastahili kusikilizwa.",
+    },
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "farmers-pluckers",
     category: "farmers",
+    kind: "context",
+    gallery: true,
     slot: "FARMERS: with tea pluckers at a buying centre, 4:5 portrait",
     ratio: "4 / 5",
-    alt: { en: "Sen. Sigei with tea pluckers", sw: "Seneta Sigei na wavunaji wa chai" },
-    caption: { en: "Every kilo counts.", sw: "Kila kilo ni muhimu." },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    alt: {
+      en: "A tea farm in Bomet County with a cloud-streaked sky",
+      sw: "Shamba la chai katika Kaunti ya Bomet chini ya anga lenye mawingu",
+    },
+    caption: { en: "A tea farm in Bomet.", sw: "Shamba la chai Bomet." },
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "events-rally",
     category: "events",
+    kind: "context",
+    gallery: true,
     slot: "EVENTS: a public gathering in Bomet, 16:9",
     ratio: "16 / 9",
     alt: {
-      en: "Sen. Sigei at a public gathering in Bomet",
-      sw: "Seneta Sigei kwenye mkutano wa hadhara Bomet",
+      en: "Voters queuing at a polling centre in Kenya",
+      sw: "Wapiga kura wakipanga foleni katika kituo cha kupigia kura, Kenya",
     },
-    caption: { en: "Together with the people of Bomet.", sw: "Pamoja na wananchi wa Bomet." },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    caption: {
+      en: "Election day: every voter counts.",
+      sw: "Siku ya uchaguzi: kila mpiga kura ni muhimu.",
+    },
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "events-church",
     category: "events",
+    kind: "context",
+    gallery: true,
     slot: "EVENTS: community or church function, 4:3",
     ratio: "4 / 3",
-    alt: { en: "Sen. Sigei at a community function", sw: "Seneta Sigei kwenye hafla ya jamii" },
-    caption: { en: "Standing with Bomet families.", sw: "Kusimama na familia za Bomet." },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    alt: {
+      en: "Cows grazing behind a wooden fence on a dairy farm in Bomet",
+      sw: "Ng'ombe wakilisha nyuma ya ua wa mbao katika shamba la maziwa Bomet",
+    },
+    caption: {
+      en: "Dairy farming: a livelihood across Bomet.",
+      sw: "Ufugaji wa ng'ombe wa maziwa: riziki kote Bomet.",
+    },
+    date: "",
+    location: "",
     approvedForPress: false,
   },
   {
     id: "events-launch",
     category: "events",
+    kind: "context",
+    gallery: true,
     slot: "EVENTS: project launch or handover, 3:2",
     ratio: "3 / 2",
-    alt: { en: "Sen. Sigei at a project launch", sw: "Seneta Sigei kwenye uzinduzi wa mradi" },
-    caption: {
-      en: "Marking progress with the community.",
-      sw: "Kuadhimisha maendeleo pamoja na jamii.",
+    alt: {
+      en: "A rainbow arching over farmland in Bomet County",
+      sw: "Upinde wa mvua juu ya mashamba katika Kaunti ya Bomet",
     },
-    date: TBC,
-    location: TBC,
-    credit: TBC,
+    caption: { en: "A new season for Bomet.", sw: "Msimu mpya kwa Bomet." },
+    date: "",
+    location: "",
     approvedForPress: false,
   },
 ];
@@ -325,7 +376,12 @@ const slots: Omit<Photo, "src" | "width" | "height" | "blurDataURL">[] = [
 type Gen = { src: string; width: number; height: number; blurDataURL: string };
 const gen = generated as Record<string, Gen>;
 
-export const photos: Photo[] = slots.map((s) => ({ ...s, ...(gen[s.id] ?? {}) }));
+export const photos: Photo[] = slots.map((s) => ({
+  ...s,
+  credit: creditLine(s.id),
+  creditUrl: cred[s.id]?.pageUrl ?? "",
+  ...(gen[s.id] ?? {}),
+}));
 
 const byId = new Map(photos.map((p) => [p.id, p]));
 

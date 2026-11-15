@@ -24,9 +24,7 @@ export function PillarFilter() {
             onClick={() => setPillar(p)}
             className={cn(
               "press min-h-11 shrink-0 rounded-full px-4 text-sm font-semibold",
-              pillar === p
-                ? "bg-deep text-on-brand dark:bg-accent dark:text-on-accent"
-                : "bg-surface text-fg hover:bg-fg/10",
+              pillar === p ? "bg-accent text-on-accent" : "bg-surface text-fg hover:bg-fg/10",
             )}
           >
             {t(`pillars.${p}`)}

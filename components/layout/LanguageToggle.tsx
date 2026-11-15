@@ -40,7 +40,7 @@ export function LanguageToggle({ tone = "default" }: { tone?: "default" | "light
           type="button"
           lang={code}
           aria-pressed={locale === code}
-          aria-label={code === "sw" ? t("switchToSw") : t("switchToEn")}
+          aria-label={`${label}: ${code === "sw" ? t("switchToSw") : t("switchToEn")}`}
           onClick={() => switchTo(code)}
           className={cn(
             "press min-h-11 min-w-11 rounded-full px-3 text-sm font-bold",

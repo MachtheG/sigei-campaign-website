@@ -3,6 +3,7 @@ import { alt } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { GalleryExplorer } from "@/components/gallery/GalleryExplorer";
 import { GalleryHero } from "@/components/gallery/GalleryHero";
+import { PhotoCredits } from "@/components/gallery/PhotoCredits";
 
 export async function generateMetadata({
   params,
@@ -21,6 +22,7 @@ export default async function GalleryPage({ params }: { params: Promise<{ locale
     <>
       <GalleryHero />
       <GalleryExplorer />
+      <PhotoCredits />
     </>
   );
 }

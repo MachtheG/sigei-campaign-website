@@ -11,13 +11,13 @@ const min = (r: string) =>
         : "2400×1600";
 const rows = photos.map(
   (p) =>
-    `| \`${p.id}\` | ${p.category}${p.hero ? " (hero)" : ""} | ${p.ratio.replace(" / ", ":")} | ${p.id === "hero-main" ? "≥ 2400 px wide" : min(p.ratio)} | ${p.slot.split(": ").slice(1).join(": ")} |`,
+    `| \`${p.id}\` | ${p.category} | ${p.ratio.replace(" / ", ":")} | ${p.id === "hero-main" ? "≥ 2400 px wide" : min(p.ratio)} | ${p.slot.split(": ").slice(1).join(": ")} |`,
 );
 writeFileSync(
   "docs/SHOT-LIST.md",
   `# Shot list
 
-Every photo slot on the site. Drop the file at \`public/images/senator/<category>/<id>.jpg\` (hero in \`hero/\`), then run \`npm run images\`.
+Every photo slot on the site. Slots currently hold openly licensed stand-ins (see data/photo-credits.json); replace each with a campaign photo of the Senator. Drop the file at \`public/images/senator/<category>/<id>.jpg\` (hero in \`hero/\`), then run \`npm run images\`.
 Only campaign-supplied or licensed photos. No press/news photos, no AI-generated images.
 Send originals (not WhatsApp-compressed). Landscape shots: keep the senator in the central 60% so mobile crops work.
 

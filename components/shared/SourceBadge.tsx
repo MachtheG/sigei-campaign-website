@@ -22,7 +22,7 @@ export function SourceBadge({ ids, className, tone = "default" }: { ids: readonl
         {t("label")}
         <span className="text-xs opacity-70">({list.length})</span>
       </summary>
-      <ul className="mt-1 w-[min(22rem,calc(100vw-2rem))] space-y-3 rounded-xl border border-line bg-bg p-4 text-fg shadow-lg sm:absolute sm:z-20">
+      <ul className="mt-1 w-full sm:w-[22rem] space-y-3 rounded-xl border border-line bg-bg p-4 text-fg shadow-lg sm:absolute sm:z-20">
         {list.map((s) => (
           <li key={s.id}>
             <p className="font-medium leading-snug">{s.title}</p>

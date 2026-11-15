@@ -1,1 +1,84 @@
-{}
+{
+  "meta": {
+    "title": "Another Term",
+    "description": "Why Bomet should send Sen. Hillary Sigei back to the Senate: his story, his record, and the draft commitments for a second term."
+  },
+  "hero": {
+    "title": "Another term for Bomet",
+    "lead": "A short story in five chapters, and the work still to finish.",
+    "scroll": "Scroll to read"
+  },
+  "chapters": {
+    "mtoto": {
+      "title": "Mtoto wa Bomet",
+      "subtitle": "Child of Bomet",
+      "body": "Ndamichonik Primary. Tenwek High. Then law at the University of Nairobi. A local son who became a lawyer.",
+      "stat": "years from his KCPE (1995) to his law degree (2005)"
+    },
+    "wakili": {
+      "title": "Wakili",
+      "subtitle": "The lawyer",
+      "body": "About thirteen years building a legal career, from Katwa & Kemboy Advocates in 2009 to managing partner of SMS Advocates LLP, and a Master of Laws on top. He brought that training to the Senate.",
+      "stat": "years at the bar before he entered the Senate"
+    },
+    "sauti": {
+      "title": "Sauti ya Bomet",
+      "subtitle": "The voice of Bomet",
+      "body": "Fellow senators chose him to chair the Justice, Legal Affairs and Human Rights Committee in October 2022, and chose him again in 2025.",
+      "stat": "times elected chair of the Senate Justice Committee"
+    },
+    "kazi": {
+      "title": "Kazi",
+      "subtitle": "The work",
+      "body": "The Tea (Amendment) Bill for small-scale growers, passed by the Senate. Oversight that put Bomet's county spending under scrutiny. Questions on ECDE milk, water, gender-based violence and county workers' arrears.",
+      "stat": "small-scale tea growers the Tea Bill is written for"
+    },
+    "iendelee": {
+      "title": "Kazi Iendelee",
+      "subtitle": "The work continues",
+      "body": "The Tea Bill still has to become law. The oversight that began has to be finished. And there is more to do. Here is what is proposed next, and how you can hold it to account.",
+      "stat": "election day, 10 August 2027",
+      "ctaCommitments": "See the commitments",
+      "ctaPledge": "Pledge your support"
+    }
+  },
+  "commitments": {
+    "title": "Commitments for a second term",
+    "lead": "Each one says what, why, how and how you can measure it. All are drafts until the Senator approves them.",
+    "draftBanner": "DRAFT: these commitments are awaiting the Senator's approval.",
+    "what": "What",
+    "why": "Why",
+    "how": "How, with the Senate's tools",
+    "measure": "How you can measure it",
+    "lever": {
+      "bill": "A bill",
+      "oversight": "Oversight",
+      "revenue": "County revenue share"
+    }
+  },
+  "why": {
+    "title": "Four reasons, backed by the record",
+    "lead": "Not promises. Things that have already happened, each with a source.",
+    "items": {
+      "law": { "title": "A lawyer's training, in service of Bomet", "body": "Years of practice before the Senate means he reads a bill, a contract and an audit query the way a lawyer does: closely." },
+      "trust": { "title": "Trusted by fellow senators", "body": "Chosen to lead the Justice Committee in 2022, and chosen again in 2025." },
+      "tea": { "title": "Delivers where tea farmers need it", "body": "He sponsored the Tea (Amendment) Bill and it passed the Senate. Next: the National Assembly." },
+      "oversight": { "title": "Holds spending to account", "body": "His statement led to a Senate committee inspecting stalled Bomet projects on site." }
+    }
+  },
+  "letter": {
+    "title": "A letter from the Senator",
+    "draft": "DRAFT: for the Senator to edit and sign",
+    "greeting": "Dear people of Bomet,",
+    "p1": "I grew up in this county. I know what a good tea season means for a household, what a classroom needs, and what it costs when promised projects stand unfinished.",
+    "p2": "In the Senate I have tried to do three things: sponsor laws that put farmers first, ask hard questions about how public money is spent, and defend the institutions that keep us safe and free.",
+    "p3": "There is unfinished work. I would be honoured to finish it with you.",
+    "signoff": "Hillary Sigei",
+    "signature": "[[TO CONFIRM: signature]]"
+  },
+  "cta": {
+    "title": "Walk with Bomet, 10 August 2027",
+    "body": "Make your pledge and bring one person with you.",
+    "cta": "Get involved"
+  }
+}

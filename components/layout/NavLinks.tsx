@@ -22,8 +22,8 @@ export function NavLinks({ className, onNavigate, large }: { className?: string;
               onClick={onNavigate}
               aria-current={active ? "page" : undefined}
               className={cn(
-                "press inline-flex min-h-11 items-center rounded-full font-semibold",
-                large ? "font-display w-full px-2 py-2 text-3xl" : "px-3 text-sm",
+                "press inline-flex min-h-11 items-center rounded-full font-semibold whitespace-nowrap",
+                large ? "font-display w-full px-2 py-2 text-3xl" : "px-2.5 text-sm",
                 active ? (large ? "text-accent" : "bg-brand text-on-brand") : large ? "text-on-brand" : "text-fg hover:bg-fg/5",
               )}
             >

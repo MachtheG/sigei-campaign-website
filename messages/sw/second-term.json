@@ -1,1 +1,84 @@
-{}
+{
+  "meta": {
+    "title": "Muhula wa Pili",
+    "description": "Kwa nini Bomet impeleke tena Seneta Hillary Sigei Senetini: hadithi yake, rekodi yake, na rasimu ya ahadi za muhula wa pili."
+  },
+  "hero": {
+    "title": "Muhula mwingine kwa Bomet",
+    "lead": "Hadithi fupi katika sura tano, na kazi bado ya kukamilisha.",
+    "scroll": "Sogeza chini kusoma"
+  },
+  "chapters": {
+    "mtoto": {
+      "title": "Mtoto wa Bomet",
+      "subtitle": "Alikotoka",
+      "body": "Ndamichonik Primary. Tenwek High. Kisha sheria katika Chuo Kikuu cha Nairobi. Mwana wa nyumbani aliyekuwa wakili.",
+      "stat": "miaka kutoka KCPE yake (1995) hadi shahada yake ya sheria (2005)"
+    },
+    "wakili": {
+      "title": "Wakili",
+      "subtitle": "Mtetezi wa sheria",
+      "body": "Takriban miaka kumi na mitatu ya kujenga taaluma ya sheria, kutoka Katwa & Kemboy Advocates mwaka 2009 hadi mshirika mkuu wa SMS Advocates LLP, pamoja na shahada ya uzamili ya sheria. Alileta mafunzo hayo Senetini.",
+      "stat": "miaka ya uwakili kabla ya kuingia Senetini"
+    },
+    "sauti": {
+      "title": "Sauti ya Bomet",
+      "subtitle": "Anayesemea Bomet",
+      "body": "Maseneta wenzake walimchagua kuongoza Kamati ya Haki, Masuala ya Kisheria na Haki za Binadamu Oktoba 2022, na wakamchagua tena mwaka 2025.",
+      "stat": "mara alizochaguliwa mwenyekiti wa Kamati ya Haki ya Seneti"
+    },
+    "kazi": {
+      "title": "Kazi",
+      "subtitle": "Kazi iliyofanyika",
+      "body": "Mswada wa Marekebisho ya Chai kwa wakulima wadogo, ulioidhinishwa na Seneti. Usimamizi uliofanya matumizi ya kaunti ya Bomet kuchunguzwa. Maswali kuhusu maziwa ya ECDE, maji, ukatili wa kijinsia na malimbikizo ya wafanyakazi wa kaunti.",
+      "stat": "wakulima wadogo wa chai ambao Mswada wa Chai unawalenga"
+    },
+    "iendelee": {
+      "title": "Kazi Iendelee",
+      "subtitle": "Safari inaendelea",
+      "body": "Mswada wa Chai bado unapaswa kuwa sheria. Usimamizi ulioanza lazima ukamilishwe. Na kuna mengi zaidi ya kufanya. Haya ndiyo yanayopendekezwa, na jinsi unavyoweza kuyawajibisha.",
+      "stat": "siku ya uchaguzi, 10 Agosti 2027",
+      "ctaCommitments": "Tazama ahadi",
+      "ctaPledge": "Ahidi kuniunga mkono"
+    }
+  },
+  "commitments": {
+    "title": "Ahadi za muhula wa pili",
+    "lead": "Kila moja inaeleza nini, kwa nini, jinsi gani na jinsi unavyoweza kuipima. Zote ni rasimu hadi Seneta atakapoziidhinisha.",
+    "draftBanner": "RASIMU: ahadi hizi zinasubiri idhini ya Seneta.",
+    "what": "Nini",
+    "why": "Kwa nini",
+    "how": "Jinsi gani, kwa zana za Seneti",
+    "measure": "Jinsi ya kuipima",
+    "lever": {
+      "bill": "Mswada",
+      "oversight": "Usimamizi",
+      "revenue": "Mgao wa mapato ya kaunti"
+    }
+  },
+  "why": {
+    "title": "Sababu nne, zikiungwa mkono na rekodi",
+    "lead": "Si ahadi. Ni mambo yaliyokwisha tokea, kila moja na chanzo.",
+    "items": {
+      "law": { "title": "Mafunzo ya wakili, kwa huduma ya Bomet", "body": "Miaka ya kutekeleza sheria kabla ya Seneti inamaanisha anasoma mswada, mkataba na hoja ya ukaguzi kama wakili: kwa makini." },
+      "trust": { "title": "Anaaminiwa na maseneta wenzake", "body": "Alichaguliwa kuongoza Kamati ya Haki mwaka 2022, na akachaguliwa tena mwaka 2025." },
+      "tea": { "title": "Anatekeleza pale wakulima wa chai wanapohitaji", "body": "Alidhamini Mswada wa Marekebisho ya Chai na ukapita Senetini. Hatua inayofuata: Bunge la Kitaifa." },
+      "oversight": { "title": "Anawajibisha matumizi ya fedha", "body": "Taarifa yake ilisababisha kamati ya Seneti kukagua miradi iliyokwama ya Bomet eneo la tukio." }
+    }
+  },
+  "letter": {
+    "title": "Barua kutoka kwa Seneta",
+    "draft": "RASIMU: kwa Seneta kuihariri na kuitia sahihi",
+    "greeting": "Wapendwa wananchi wa Bomet,",
+    "p1": "Nilikulia katika kaunti hii. Ninajua maana ya msimu mzuri wa chai kwa kaya, mahitaji ya darasa, na gharama ya miradi iliyoahidiwa kubaki bila kukamilika.",
+    "p2": "Senetini nimejaribu kufanya mambo matatu: kudhamini sheria zinazoweka wakulima mbele, kuuliza maswali magumu kuhusu matumizi ya fedha za umma, na kutetea taasisi zinazotulinda na kutuweka huru.",
+    "p3": "Kuna kazi ambayo haijakamilika. Ningependa kuikamilisha pamoja nanyi.",
+    "signoff": "Hillary Sigei",
+    "signature": "[[TO CONFIRM: sahihi]]"
+  },
+  "cta": {
+    "title": "Tembea na Bomet, 10 Agosti 2027",
+    "body": "Toa ahadi yako na uje na mtu mmoja.",
+    "cta": "Jiunge"
+  }
+}

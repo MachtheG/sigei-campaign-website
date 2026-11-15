@@ -1,1 +1,83 @@
-{}
+{
+  "meta": {
+    "title": "Rekodi Yangu",
+    "description": "Rekodi ya Seneta Hillary Sigei kwa Bomet: takwimu, ratiba ya matukio, kifuatiliaji cha mswada, usimamizi na ramani ya maeneo bunge, kila dai lina chanzo."
+  },
+  "hero": {
+    "title": "Rekodi Yangu",
+    "lead": "Takwimu, matukio, mswada na usimamizi, vyote mahali pamoja. Kila dai lina chanzo unachoweza kufungua."
+  },
+  "pillars": {
+    "all": "Maeneo yote",
+    "tea": "Chai na Wakulima",
+    "oversight": "Usimamizi na Uwajibikaji",
+    "justice": "Haki na Sheria",
+    "education": "Elimu",
+    "water": "Maji na Huduma",
+    "devolution": "Ugatuzi"
+  },
+  "filter": {
+    "label": "Chuja rekodi nzima kwa eneo",
+    "showing": "Inaonyesha: {pillar}"
+  },
+  "stats": {
+    "title": "Rekodi kwa namba",
+    "lead": "Gusa Chanzo chini ya namba yoyote kuona inatoka wapi.",
+    "share": "Shiriki",
+    "shareText": "{label}: {value}",
+    "context": "Muktadha",
+    "empty": "Hakuna takwimu yenye chanzo kwa eneo hili bado.",
+    "emptyPlaceholder": "[[TO CONFIRM: takwimu yenye chanzo kwa eneo hili]]",
+    "toConfirm": "[[TO CONFIRM: {what}]]"
+  },
+  "timeline": {
+    "title": "Ratiba ya matukio: 2022 hadi leo",
+    "lead": "Yaliyotokea, kwa mpangilio. Kila tukio lina kiungo cha hadithi kamili.",
+    "empty": "Hakuna kilichorekodiwa katika eneo hili bado."
+  },
+  "bills": {
+    "title": "Kifuatiliaji cha mswada",
+    "lead": "Hatua halisi ya sasa ya mswada alioudhamini.",
+    "current": "Tuko hapa",
+    "done": "Imekamilika",
+    "pending": "Bado inakuja",
+    "notLaw": "Bado si sheria. Unahitaji kupitishwa na Bunge la Kitaifa na idhini ya Rais.",
+    "empty": "Hakuna mswada katika eneo hili."
+  },
+  "oversight": {
+    "title": "Usimamizi kazini",
+    "lead": "Hatua zilizorekodiwa kwa mwaka, zimehesabiwa kutoka ratiba ya matukio yenye vyanzo.",
+    "note": "[[TO CONFIRM: idadi rasmi ya taarifa alizoomba, ukaguzi na vikao vya kamati kutoka kumbukumbu za Seneti]]",
+    "actions": "hatua",
+    "chartLabel": "Chati ya hatua zilizorekodiwa kwa mwaka kwa eneo"
+  },
+  "map": {
+    "title": "Bomet, eneo bunge kwa eneo bunge",
+    "lead": "Kaunti ya Bomet ina maeneo bunge matano. Gusa moja.",
+    "prompt": "Chagua eneo bunge kwenye ramani.",
+    "work": "Kazi ya eneo hilo",
+    "workPlaceholder": "[[TO CONFIRM: miradi iliyotekelezwa katika eneo bunge hili, pamoja na vyanzo]]",
+    "countyWide": "Kazi ya kaunti nzima katika eneo hili",
+    "stylised": "Ramani ya kimchoro, si kwa kipimo.",
+    "wardsNote": "Wadi 25 katika kaunti nzima.",
+    "none": "Hakuna kazi ya kaunti nzima katika eneo hili bado."
+  },
+  "promise": {
+    "title": "Ahadi dhidi ya utekelezaji",
+    "lead": "Yaliyosemwa 2022, yakilinganishwa na yaliyotokea. Ahadi zenye vyanzo pekee ndizo zinaonyeshwa.",
+    "promised": "Ahadi ya 2022",
+    "delivered": "Yaliyotokea",
+    "placeholder": "[[TO CONFIRM: ahadi ya 2022 yenye chanzo kuhusu suala hili]]"
+  },
+  "cards": {
+    "title": "Hadithi kamili",
+    "read": "Soma hadithi kamili"
+  },
+  "detail": {
+    "back": "Rudi kwenye Rekodi Yangu",
+    "what": "Kilichotokea",
+    "sources": "Vyanzo",
+    "photos": "Picha",
+    "more": "Zaidi kutoka eneo hili"
+  }
+}

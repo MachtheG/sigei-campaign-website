@@ -1,1 +1,33 @@
-{}
+{
+  "meta": { "title": "Get Involved", "description": "Pledge your support, volunteer, or share Sen. Hillary Sigei's campaign with someone in Bomet." },
+  "hero": { "title": "Get involved", "lead": "Three ways to help: pledge, volunteer, share. Each takes under a minute." },
+  "pledge": { "title": "Pledge your support", "lead": "Tell us you are with Bomet. We will only use your details to update you about the campaign.", "submit": "Pledge my support", "thanks": "Asante sana! Your pledge is recorded." },
+  "volunteer": { "title": "Volunteer", "lead": "Help in your ward: talking to neighbours, organising meetings, getting people registered.", "submit": "I want to volunteer", "thanks": "Asante sana! We will be in touch about how you can help." },
+  "share": { "title": "Share", "lead": "The most powerful campaign tool is you. Send this site to one person in Bomet today.", "button": "Share this site", "text": "Sen. Wakili Hillary Sigei: Bomet's son. The work continues." },
+  "fields": {
+    "name": "Full name",
+    "phone": "Phone number",
+    "phoneHint": "For example 0712 345 678",
+    "emailOptional": "Email (optional)",
+    "constituency": "Constituency",
+    "choose": "Choose…",
+    "other": "Outside Bomet",
+    "help": "How would you like to help? (optional)"
+  },
+  "consent": {
+    "label": "I agree that my details may be used for this campaign, as described in the privacy notice (Data Protection Act, 2019).",
+    "link": "Read the notice"
+  },
+  "errors": {
+    "name": "Please enter your full name.",
+    "phone": "Enter a valid Kenyan phone number, like 0712 345 678.",
+    "email": "Enter a valid email address.",
+    "constituency": "Please choose a constituency.",
+    "consent": "Please tick the box to agree.",
+    "message": "Please write at least 10 characters.",
+    "long": "That is too long.",
+    "rate": "Too many attempts. Please try again in a few minutes.",
+    "server": "Something went wrong. Please try again."
+  },
+  "sending": "Sending…"
+}

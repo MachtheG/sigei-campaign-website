@@ -1,1 +1,22 @@
-{}
+{
+  "meta": { "title": "Uchaguzi", "description": "Hesabu ya kurudi nyuma hadi Uchaguzi Mkuu wa 10 Agosti 2027, tarehe muhimu, jinsi ya kuhakiki usajili wako wa kupiga kura, na orodha ya mpiga kura." },
+  "hero": { "title": "Siku ya uchaguzi: Jumanne 10 Agosti 2027", "lead": "Vituo vya kupigia kura vitafunguliwa saa 12:00 asubuhi. Hakiki usajili wako sasa, na panga siku yako." },
+  "countdown": { "title": "Muda hadi vituo vifunguliwe", "calendar": "Weka kwenye kalenda", "registered": "Je, nimesajiliwa?", "iebc": "Tembelea IEBC", "note": "Tarehe na kanuni zinatoka kwa Tume Huru ya Uchaguzi na Mipaka (IEBC). Daima thibitisha kwenye iebc.or.ke." },
+  "dates": {
+    "title": "Tarehe muhimu",
+    "campaign-opens": "Kipindi cha kampeni kinaanza",
+    "campaign-closes": "Kipindi cha kampeni kinakwisha (saa 48 kabla ya kupiga kura)",
+    "election-day": "Siku ya uchaguzi, vituo vinafunguliwa saa 12:00 asubuhi"
+  },
+  "checklist": {
+    "title": "Orodha ya mpiga kura",
+    "lead": "Weka tiki kwa haya kabla ya siku ya uchaguzi.",
+    "items": {
+      "register": "Thibitisha kuwa niko kwenye daftari la wapiga kura (tumia huduma ya uhakiki ya IEBC).",
+      "station": "Jua kituo changu cha kupigia kura na jinsi nitakavyofika.",
+      "id": "Kuwa na kitambulisho changu cha kitaifa au pasipoti tayari: hati niliyosajili nayo.",
+      "early": "Panga kufika mapema. Vituo vinafunguliwa saa 12:00 asubuhi.",
+      "family": "Msaidie mwanafamilia au jirani mmoja kuhakiki usajili wake pia."
+    }
+  }
+}

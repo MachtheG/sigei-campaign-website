@@ -1,1 +1,25 @@
-{}
+{
+  "meta": { "title": "Contact", "description": "Contact Sen. Wakili Hillary Sigei's office: address, phone, email, social channels and a message form." },
+  "hero": { "title": "Contact", "lead": "Write to the Senator's office, or follow the campaign online." },
+  "office": {
+    "title": "Office",
+    "address": "Address",
+    "addressValue": "[[TO CONFIRM: office address]]",
+    "phone": "Phone",
+    "phoneValue": "[[TO CONFIRM: office phone]]",
+    "email": "Email",
+    "emailValue": "[[TO CONFIRM: office email]]",
+    "hours": "Hours",
+    "hoursValue": "[[TO CONFIRM: office hours]]"
+  },
+  "social": { "title": "Follow", "note": "[[TO CONFIRM: official handles]]" },
+  "form": {
+    "title": "Send a message",
+    "lead": "We read every message. Please do not send sensitive personal information.",
+    "name": "Full name",
+    "email": "Email",
+    "message": "Your message",
+    "submit": "Send message",
+    "thanks": "Asante! Your message has been sent."
+  }
+}

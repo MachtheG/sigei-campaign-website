@@ -1,1 +1,10 @@
-{}
+{
+  "meta": { "title": "Habari", "description": "Muhtasari wa habari na taarifa kuhusu kazi ya Seneta Wakili Hillary Sigei kwa Bomet, pamoja na viungo vya ripoti asili." },
+  "hero": { "title": "Habari", "lead": "Muhtasari wetu wa mstari mmoja wa ripoti kuhusu kazi yake, pamoja na viungo vya makala asili." },
+  "list": { "title": "Habari mashuhuri", "read": "Soma makala asili", "noLink": "[[TO CONFIRM: kiungo]]", "noDate": "[[TO CONFIRM: tarehe]]" },
+  "statements": {
+    "title": "Taarifa kwa vyombo vya habari",
+    "lead": "Taarifa kutoka ofisi ya Seneta zitachapishwa hapa.",
+    "empty": "[[TO CONFIRM: taarifa kwa vyombo vya habari kutoka kwa kampeni]]"
+  }
+}

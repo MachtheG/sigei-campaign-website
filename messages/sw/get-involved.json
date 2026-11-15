@@ -1,1 +1,33 @@
-{}
+{
+  "meta": { "title": "Jiunge", "description": "Ahidi kuunga mkono, jitolee, au shiriki kampeni ya Seneta Hillary Sigei na mtu wa Bomet." },
+  "hero": { "title": "Jiunge nasi", "lead": "Njia tatu za kusaidia: ahidi, jitolee, shiriki. Kila moja inachukua chini ya dakika moja." },
+  "pledge": { "title": "Ahidi kuniunga mkono", "lead": "Tuambie uko na Bomet. Tutatumia maelezo yako kukupa habari za kampeni tu.", "submit": "Ahidi kuniunga mkono", "thanks": "Asante sana! Ahadi yako imerekodiwa." },
+  "volunteer": { "title": "Jitolee", "lead": "Saidia katika wadi yako: kuzungumza na majirani, kuandaa mikutano, kusaidia watu kujisajili.", "submit": "Nataka kujitolea", "thanks": "Asante sana! Tutawasiliana nawe kuhusu jinsi unavyoweza kusaidia." },
+  "share": { "title": "Shiriki", "lead": "Zana yenye nguvu zaidi ya kampeni ni wewe. Mtumie mtu mmoja wa Bomet tovuti hii leo.", "button": "Shiriki tovuti hii", "text": "Seneta Wakili Hillary Sigei: Mtoto wa Bomet. Kazi Iendelee." },
+  "fields": {
+    "name": "Jina kamili",
+    "phone": "Nambari ya simu",
+    "phoneHint": "Kwa mfano 0712 345 678",
+    "emailOptional": "Barua pepe (si lazima)",
+    "constituency": "Eneo bunge",
+    "choose": "Chagua…",
+    "other": "Nje ya Bomet",
+    "help": "Ungependa kusaidiaje? (si lazima)"
+  },
+  "consent": {
+    "label": "Nakubali maelezo yangu yatumike kwa kampeni hii, kama ilivyoelezwa kwenye taarifa ya faragha (Sheria ya Ulinzi wa Data, 2019).",
+    "link": "Soma taarifa"
+  },
+  "errors": {
+    "name": "Tafadhali weka jina lako kamili.",
+    "phone": "Weka nambari halali ya simu ya Kenya, kama 0712 345 678.",
+    "email": "Weka barua pepe halali.",
+    "constituency": "Tafadhali chagua eneo bunge.",
+    "consent": "Tafadhali weka tiki kukubali.",
+    "message": "Tafadhali andika angalau herufi 10.",
+    "long": "Imezidi urefu unaoruhusiwa.",
+    "rate": "Majaribio mengi mno. Tafadhali jaribu tena baada ya dakika chache.",
+    "server": "Kuna hitilafu. Tafadhali jaribu tena."
+  },
+  "sending": "Inatuma…"
+}

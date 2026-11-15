@@ -154,3 +154,29 @@ html[data-lite="1"] .lite-hide { display: none !important; }
 
 /* Safe areas for the bottom nav */
 .pb-safe { padding-bottom: calc(env(safe-area-inset-bottom) + 0.25rem); }
+
+/* ───────── Record: CSS-driven pillar filter (SSR-friendly) ─────────
+   <PillarScope> sets data-pillar on a wrapper; anything tagged data-pillars="a b"
+   that doesn't include the active pillar is hidden. */
+[data-pillar="tea"] [data-pillars]:not([data-pillars~="tea"]),
+[data-pillar="oversight"] [data-pillars]:not([data-pillars~="oversight"]),
+[data-pillar="justice"] [data-pillars]:not([data-pillars~="justice"]),
+[data-pillar="education"] [data-pillars]:not([data-pillars~="education"]),
+[data-pillar="water"] [data-pillars]:not([data-pillars~="water"]),
+[data-pillar="devolution"] [data-pillars]:not([data-pillars~="devolution"]) {
+  display: none;
+}
+/* Placeholders for pillars with no sourced item show only when that pillar is chosen */
+[data-only-pillar] { display: none; }
+[data-pillar="tea"] [data-only-pillar="tea"],
+[data-pillar="oversight"] [data-only-pillar="oversight"],
+[data-pillar="justice"] [data-only-pillar="justice"],
+[data-pillar="education"] [data-only-pillar="education"],
+[data-pillar="water"] [data-only-pillar="water"],
+[data-pillar="devolution"] [data-only-pillar="devolution"] { display: block; }
+
+/* Timeline: the spine draws itself as the list scrolls through the viewport */
+@keyframes spine { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@supports (animation-timeline: view()) {
+  .tl-spine { transform-origin: top; animation: spine linear both; animation-timeline: view(); animation-range: entry 10% cover 70%; }
+}

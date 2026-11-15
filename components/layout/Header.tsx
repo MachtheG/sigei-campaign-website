@@ -15,7 +15,7 @@ export function Header() {
           <span aria-hidden className="grid size-9 place-items-center rounded-full bg-brand text-sm text-accent">S</span>
           <span className="hidden min-[400px]:block">
             {t("site.short")}
-            <span className="block text-[0.62rem] font-medium tracking-wide text-muted">{t("site.role")}</span>
+            <span className="block text-[0.62rem] font-medium tracking-wide whitespace-nowrap text-muted">{t("site.role")}</span>
           </span>
         </Link>
         <nav aria-label={t("a11y.mainNav")} className="mx-2 hidden xl:block">

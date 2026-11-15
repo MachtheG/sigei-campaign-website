@@ -1,1 +1,83 @@
-{}
+{
+  "meta": {
+    "title": "My Record",
+    "description": "Sen. Hillary Sigei's record for Bomet: statistics, timeline, bill tracker, oversight and the constituency explorer, every claim sourced."
+  },
+  "hero": {
+    "title": "My Record",
+    "lead": "The numbers, the timeline, the bill and the oversight, in one place. Every claim has a source you can open."
+  },
+  "pillars": {
+    "all": "All areas",
+    "tea": "Tea & Farmers",
+    "oversight": "Oversight & Accountability",
+    "justice": "Justice & Rights",
+    "education": "Education",
+    "water": "Water & Services",
+    "devolution": "Devolution"
+  },
+  "filter": {
+    "label": "Filter the whole record by area",
+    "showing": "Showing: {pillar}"
+  },
+  "stats": {
+    "title": "The record in numbers",
+    "lead": "Tap Source under any number to see where it comes from.",
+    "share": "Share",
+    "shareText": "{label}: {value}",
+    "context": "Context",
+    "empty": "No sourced figure for this area yet.",
+    "emptyPlaceholder": "[[TO CONFIRM: sourced statistic for this area]]",
+    "toConfirm": "[[TO CONFIRM: {what}]]"
+  },
+  "timeline": {
+    "title": "Timeline: 2022 to today",
+    "lead": "What happened, in order. Each entry links to the full story.",
+    "empty": "Nothing recorded in this area yet."
+  },
+  "bills": {
+    "title": "Bill tracker",
+    "lead": "The real, current stage of the bill he sponsored.",
+    "current": "We are here",
+    "done": "Done",
+    "pending": "Still to come",
+    "notLaw": "Not yet law. It still needs National Assembly passage and presidential assent.",
+    "empty": "No bill in this area."
+  },
+  "oversight": {
+    "title": "Oversight at work",
+    "lead": "Documented actions per year, counted from the sourced timeline.",
+    "note": "[[TO CONFIRM: official counts of statements sought, inspections and committee sittings from Senate records]]",
+    "actions": "actions",
+    "chartLabel": "Bar chart of documented actions per year by area"
+  },
+  "map": {
+    "title": "Bomet, constituency by constituency",
+    "lead": "Bomet County has five constituencies. Tap one.",
+    "prompt": "Choose a constituency on the map.",
+    "work": "Local work",
+    "workPlaceholder": "[[TO CONFIRM: projects delivered in this constituency, with sources]]",
+    "countyWide": "County-wide work in this area",
+    "stylised": "Stylised map, not to scale.",
+    "wardsNote": "25 wards across the county.",
+    "none": "No county-wide items in this area yet."
+  },
+  "promise": {
+    "title": "Promise vs delivered",
+    "lead": "What was said in 2022, set against what happened. Only sourced pledges are shown.",
+    "promised": "Promised in 2022",
+    "delivered": "What happened",
+    "placeholder": "[[TO CONFIRM: sourced 2022 pledge on this issue]]"
+  },
+  "cards": {
+    "title": "The full stories",
+    "read": "Read the full story"
+  },
+  "detail": {
+    "back": "Back to My Record",
+    "what": "What happened",
+    "sources": "Sources",
+    "photos": "Photos",
+    "more": "More from this area"
+  }
+}

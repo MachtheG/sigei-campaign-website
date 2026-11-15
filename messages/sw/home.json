@@ -1,1 +1,44 @@
-{}
+{
+  "meta": {
+    "title": "Nyumbani",
+    "description": "Seneta Wakili Hillary Sigei, Seneta wa Bomet: rekodi, hadithi na mpango wa muhula wa pili katika uchaguzi wa 10 Agosti 2027."
+  },
+  "hero": {
+    "name": "Seneta Wakili Hillary Sigei:",
+    "title": "Mtoto wa Bomet. Kazi Iendelee.",
+    "lead": "Seneta wa Bomet tangu 2022, na anaomba muhula wa pili tarehe 10 Agosti 2027.",
+    "ctaRecord": "Tazama rekodi yangu",
+    "ctaPledge": "Ahidi kuniunga mkono"
+  },
+  "countdown": {
+    "title": "Siku ya uchaguzi inakaribia",
+    "lead": "Vituo vya kupigia kura vitafunguliwa Jumanne 10 Agosti 2027 saa 12:00 asubuhi. Hakikisha umesajiliwa, na familia yako pia.",
+    "calendar": "Weka kwenye kalenda",
+    "details": "Orodha ya mpiga kura"
+  },
+  "stats": {
+    "title": "Rekodi kwa namba",
+    "lead": "Kila takwimu ina chanzo. Gusa Chanzo kukifungua.",
+    "cta": "Fungua rekodi kamili"
+  },
+  "story": {
+    "title": "Mtoto wa Bomet. Wakili. Seneta.",
+    "p1": "Kutoka Shule ya Msingi ya Ndamichonik hadi Tenwek High, kisha sheria Chuo Kikuu cha Nairobi, Hillary Sigei alijenga taaluma yake kama wakili kabla Bomet kumtuma Senetini mwaka 2022.",
+    "p2": "Huko anaongoza Kamati ya Haki, Masuala ya Kisheria na Haki za Binadamu, na amepeleka Mswada wa Marekebisho ya Chai kupitia Seneti kwa niaba ya wakulima wadogo.",
+    "cta": "Soma hadithi kamili"
+  },
+  "marquee": {
+    "title": "Pamoja na Bomet, popote kazi ilipo",
+    "aria": "Picha za Seneta Sigei Senetini na kote Bomet"
+  },
+  "record": {
+    "title": "Kazi za hivi karibuni",
+    "lead": "Aliyoifanyia Bomet Senetini, pamoja na vyanzo.",
+    "cta": "Gundua Rekodi Yangu"
+  },
+  "cta": {
+    "title": "Jiunge na kazi ya Bomet",
+    "body": "Ahidi kuunga mkono, jitolee, au shiriki tovuti hii na mtu wa Bomet.",
+    "cta": "Jiunge"
+  }
+}

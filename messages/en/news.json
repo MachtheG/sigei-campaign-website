@@ -1,1 +1,10 @@
-{}
+{
+  "meta": { "title": "In the News", "description": "Media highlights and statements on Sen. Wakili Hillary Sigei's work for Bomet, with links to the original reports." },
+  "hero": { "title": "In the News", "lead": "Our own one-line summaries of reporting on his work, with links to the original articles." },
+  "list": { "title": "Media highlights", "read": "Read the original", "noLink": "[[TO CONFIRM: link]]", "noDate": "[[TO CONFIRM: date]]" },
+  "statements": {
+    "title": "Press statements",
+    "lead": "Statements from the Senator's office will be published here.",
+    "empty": "[[TO CONFIRM: press statements supplied by the campaign]]"
+  }
+}

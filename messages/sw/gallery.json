@@ -1,1 +1,8 @@
-{}
+{
+  "meta": { "title": "Picha", "description": "Picha za Seneta Wakili Hillary Sigei Senetini, uwandani, na pamoja na wananchi wa Bomet." },
+  "hero": { "title": "Picha", "lead": "Seneta Senetini, uwandani, na miongoni mwa wananchi wa Bomet." },
+  "filters": { "label": "Chuja picha", "all": "Zote", "senate": "Seneti", "field": "Uwandani", "community": "Jamii", "farmers": "Wakulima", "portraits": "Picha rasmi", "events": "Matukio" },
+  "week": { "title": "Picha ya wiki", "open": "Tazama skrini nzima" },
+  "grid": { "title": "Picha zote", "open": "Fungua picha", "count": "Picha {count}", "none": "Hakuna picha katika kategoria hii bado." },
+  "press": { "note": "Picha zilizoidhinishwa kwa vyombo vya habari zinaweza kupakuliwa kutoka kwenye mwonekano wa skrini nzima." }
+}

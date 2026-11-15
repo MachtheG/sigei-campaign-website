@@ -1,1 +1,27 @@
-{}
+{
+  "meta": { "title": "Kuhusu", "description": "Safari ya Seneta Wakili Hillary Sigei: Shule ya Msingi ya Ndamichonik, Tenwek High, Chuo Kikuu cha Nairobi, taaluma ya uwakili, na Seneti." },
+  "hero": { "title": "Kutoka Ndamichonik hadi Seneti", "lead": "Mtoto wa Bomet aliyekuwa wakili, kisha Seneta wa Bomet." },
+  "journey": { "title": "Safari yake", "lead": "Shule, sheria, taaluma, utumishi wa umma." },
+  "credentials": {
+    "title": "Sifa za kitaaluma",
+    "education": "Elimu",
+    "career": "Taaluma",
+    "senate": "Senetini",
+    "eduItems": {
+      "a": "Shule ya Msingi ya Ndamichonik: KCPE 1995",
+      "b": "Shule ya Upili ya Tenwek: KCSE 1999",
+      "c": "LLB, Chuo Kikuu cha Nairobi (2001–2005)",
+      "d": "Shule ya Sheria ya Kenya (2006)",
+      "e": "LLM, Chuo Kikuu cha Nairobi (2012–2014)"
+    },
+    "careerItems": {
+      "a": "Katwa & Kemboy Advocates (2009–2011)",
+      "b": "Sigei & Associates (2012–2013)",
+      "c": "Mshirika Mkuu, SMS Advocates LLP (2013 hadi sasa)"
+    },
+    "senateItems": {
+      "a": "Seneta wa Kaunti ya Bomet tangu Agosti 2022, alichaguliwa kupitia tiketi ya UDA",
+      "b": "Mwenyekiti, Kamati ya Haki, Masuala ya Kisheria na Haki za Binadamu: alichaguliwa Oktoba 2022, tena 2025"
+    }
+  }
+}

@@ -1,1 +1,25 @@
-{}
+{
+  "meta": { "title": "Wasiliana", "description": "Wasiliana na ofisi ya Seneta Wakili Hillary Sigei: anwani, simu, barua pepe, mitandao ya kijamii na fomu ya ujumbe." },
+  "hero": { "title": "Wasiliana", "lead": "Andikia ofisi ya Seneta, au fuata kampeni mtandaoni." },
+  "office": {
+    "title": "Ofisi",
+    "address": "Anwani",
+    "addressValue": "[[TO CONFIRM: anwani ya ofisi]]",
+    "phone": "Simu",
+    "phoneValue": "[[TO CONFIRM: simu ya ofisi]]",
+    "email": "Barua pepe",
+    "emailValue": "[[TO CONFIRM: barua pepe ya ofisi]]",
+    "hours": "Saa za kazi",
+    "hoursValue": "[[TO CONFIRM: saa za kazi]]"
+  },
+  "social": { "title": "Tufuate", "note": "[[TO CONFIRM: akaunti rasmi]]" },
+  "form": {
+    "title": "Tuma ujumbe",
+    "lead": "Tunasoma kila ujumbe. Tafadhali usitume taarifa nyeti za kibinafsi.",
+    "name": "Jina kamili",
+    "email": "Barua pepe",
+    "message": "Ujumbe wako",
+    "submit": "Tuma ujumbe",
+    "thanks": "Asante! Ujumbe wako umetumwa."
+  }
+}

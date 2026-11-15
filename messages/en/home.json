@@ -1,1 +1,44 @@
-{}
+{
+  "meta": {
+    "title": "Home",
+    "description": "Sen. Wakili Hillary Sigei, Senator for Bomet: the record, the story and the plan for a second term in the 10 August 2027 election."
+  },
+  "hero": {
+    "name": "Sen. Wakili Hillary Sigei:",
+    "title": "Bomet's son. The work continues.",
+    "lead": "Senator for Bomet since 2022, and seeking a second term on 10 August 2027.",
+    "ctaRecord": "See my record",
+    "ctaPledge": "Pledge your support"
+  },
+  "countdown": {
+    "title": "Election day is coming",
+    "lead": "Polls open on Tuesday 10 August 2027 at 6:00 am. Be sure you are registered, and be sure your family is.",
+    "calendar": "Add to calendar",
+    "details": "Voter checklist"
+  },
+  "stats": {
+    "title": "The record in numbers",
+    "lead": "Every figure has a source. Tap Source to open it.",
+    "cta": "Open the full record"
+  },
+  "story": {
+    "title": "A son of Bomet. A lawyer. A Senator.",
+    "p1": "From Ndamichonik Primary to Tenwek High, then law at the University of Nairobi, Hillary Sigei built his career as an advocate before Bomet sent him to the Senate in 2022.",
+    "p2": "There he chairs the Justice, Legal Affairs and Human Rights Committee, and has carried the Tea (Amendment) Bill through the Senate for small-scale growers.",
+    "cta": "Read the full story"
+  },
+  "marquee": {
+    "title": "With Bomet, wherever the work is",
+    "aria": "Photos of Sen. Sigei in the Senate and across Bomet"
+  },
+  "record": {
+    "title": "Recent work",
+    "lead": "What he has done for Bomet in the Senate, with sources.",
+    "cta": "Explore My Record"
+  },
+  "cta": {
+    "title": "Join the work for Bomet",
+    "body": "Pledge your support, volunteer, or share this site with someone in Bomet.",
+    "cta": "Get involved"
+  }
+}

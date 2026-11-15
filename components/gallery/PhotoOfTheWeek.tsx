@@ -8,7 +8,7 @@ export function PhotoOfTheWeek({ photo, onOpen }: { photo: Photo; onOpen: () => 
   const t = useTranslations("gallery");
   const locale = useLocale();
   return (
-    <section aria-labelledby="gal-week" className="bg-brand text-on-brand">
+    <section aria-labelledby="gal-week" className="bg-clay text-white">
       <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[1.4fr_1fr] md:py-20 lg:px-8">
         <button
           type="button"

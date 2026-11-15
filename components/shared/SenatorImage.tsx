@@ -6,6 +6,15 @@ import { pick } from "@/data/types";
 import { cn } from "@/lib/utils";
 import { useLite } from "./LiteProvider";
 
+const TONE: Record<string, string> = {
+  senate: "ph-deep",
+  portraits: "ph-deep",
+  field: "ph-green",
+  community: "ph-clay",
+  farmers: "ph-amber",
+  events: "ph-clay",
+};
+
 type Props = {
   id: string;
   /** `sizes` attribute, set it correctly for every use. */
@@ -55,7 +64,7 @@ export function SenatorImage({ id, sizes, priority, className, ratio, position, 
     <div
       role="img"
       aria-label={`${alt} (${t("placeholder")})`}
-      className={cn("ph relative isolate overflow-hidden", className)}
+      className={cn("ph relative isolate overflow-hidden", TONE[photo.category], className)}
       style={style}
     >
       <svg

@@ -37,7 +37,7 @@ export function StatTile({ stat, share, className, feature }: Props) {
         {stat.context && <p className="text-muted mb-1 text-sm font-semibold">{t("context")}</p>}
         <p
           className={cn(
-            "font-display text-brand dark:text-accent leading-none font-extrabold",
+            "font-display text-deep dark:text-accent leading-none font-extrabold",
             feature ? "text-6xl sm:text-7xl" : "text-5xl",
           )}
         >

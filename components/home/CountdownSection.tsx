@@ -7,7 +7,7 @@ export function CountdownSection() {
   const t = useTranslations("home.countdown");
   const c = useTranslations("common.countdown");
   return (
-    <section aria-labelledby="home-countdown" className="bg-brand text-on-brand">
+    <section aria-labelledby="home-countdown" className="bg-deep text-on-brand">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         <h2 id="home-countdown" className="t-h2 max-w-[18ch]">
           {t("title")}

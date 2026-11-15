@@ -33,7 +33,7 @@ export function BillTracker() {
                       className={cn(
                         "grid size-9 shrink-0 place-items-center rounded-full text-sm font-bold",
                         s.state === "done" &&
-                          "bg-brand text-on-brand dark:bg-accent dark:text-on-accent",
+                          "bg-deep text-on-brand dark:bg-accent dark:text-on-accent",
                         s.state === "current" && "bg-accent text-on-accent ring-accent/30 ring-4",
                         s.state === "pending" && "border-line text-muted border-2 border-dashed",
                       )}

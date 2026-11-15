@@ -19,7 +19,7 @@ export function ConsentField({
           type="checkbox"
           {...register}
           aria-invalid={!!error}
-          className="mt-1 size-6 shrink-0 accent-[var(--brand)]"
+          className="mt-1 size-6 shrink-0 accent-[var(--deep)]"
         />
         <span className="text-[0.95rem]">
           {t("label")}{" "}

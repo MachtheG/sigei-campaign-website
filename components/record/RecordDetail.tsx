@@ -25,7 +25,7 @@ export function RecordDetail({ event }: { event: RecordEvent }) {
   ).slice(0, 3);
   return (
     <article>
-      <header className="bg-brand text-on-brand">
+      <header className="bg-deep text-on-brand">
         <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 md:py-16 lg:px-8">
           <div>
             <Link

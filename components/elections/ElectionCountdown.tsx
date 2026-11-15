@@ -8,7 +8,7 @@ export function ElectionCountdown() {
   const t = useTranslations("elections.countdown");
   const c = useTranslations("common.countdown");
   return (
-    <section aria-labelledby="el-countdown" className="bg-brand text-on-brand">
+    <section aria-labelledby="el-countdown" className="bg-deep text-on-brand">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-24 lg:px-8">
         <h2 id="el-countdown" className="t-h2">
           {t("title")}

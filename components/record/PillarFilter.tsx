@@ -25,7 +25,7 @@ export function PillarFilter() {
             className={cn(
               "press min-h-11 shrink-0 rounded-full px-4 text-sm font-semibold",
               pillar === p
-                ? "bg-brand text-on-brand dark:bg-accent dark:text-on-accent"
+                ? "bg-deep text-on-brand dark:bg-accent dark:text-on-accent"
                 : "bg-surface text-fg hover:bg-fg/10",
             )}
           >

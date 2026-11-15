@@ -13,7 +13,7 @@ type Props = {
 
 export function CTABand({ title, body, cta, href, photoId = "events-rally" }: Props) {
   return (
-    <section className="bg-brand text-on-brand">
+    <section className="bg-clay text-white">
       <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-14 sm:px-6 md:grid-cols-2 md:py-24 lg:px-8">
         <div>
           <h2 className="t-h2">{title}</h2>

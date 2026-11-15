@@ -25,7 +25,7 @@ export function JourneyTimeline() {
                   compact
                 />
                 <div className="p-5 sm:p-6">
-                  <p className="font-display text-brand dark:text-accent text-2xl font-extrabold">
+                  <p className="font-display text-deep dark:text-accent text-2xl font-extrabold">
                     {m.year}
                   </p>
                   <h3 className="mt-1 text-xl font-bold">{pick(m.title, locale)}</h3>

@@ -43,7 +43,7 @@ export function StoryChapter({ chapter, index }: { chapter: ChapterDef; index: n
           </h2>
           <p className="mt-5 max-w-[48ch] text-lg sm:text-xl">{t("body")}</p>
           <div className="border-accent mt-8 border-l-4 pl-5">
-            <p className="font-display text-brand dark:text-accent text-6xl leading-none font-extrabold sm:text-7xl">
+            <p className="font-display text-deep dark:text-accent text-6xl leading-none font-extrabold sm:text-7xl">
               {chapter.value !== null ? (
                 <StatCounter value={chapter.value} suffix={chapter.suffix} />
               ) : (

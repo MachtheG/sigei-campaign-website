@@ -23,7 +23,7 @@ export function GalleryFilter({ value, onChange }: Props) {
           className={cn(
             "press min-h-11 shrink-0 rounded-full px-4 text-sm font-semibold",
             value === o
-              ? "bg-brand text-on-brand dark:bg-accent dark:text-on-accent"
+              ? "bg-deep text-on-brand dark:bg-accent dark:text-on-accent"
               : "bg-surface hover:bg-fg/10",
           )}
         >

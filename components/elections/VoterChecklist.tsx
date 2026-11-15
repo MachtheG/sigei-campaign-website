@@ -41,7 +41,7 @@ export function VoterChecklist() {
                   type="checkbox"
                   checked={!!done[k]}
                   onChange={(e) => setDone((d) => ({ ...d, [k]: e.target.checked }))}
-                  className="mt-0.5 size-6 shrink-0 accent-[var(--brand)]"
+                  className="mt-0.5 size-6 shrink-0 accent-[var(--deep)]"
                 />
                 <span className={cn("text-lg", done[k] && "line-through")}>{t(`items.${k}`)}</span>
               </label>

@@ -11,7 +11,7 @@ export function WhyHim() {
   const t = useTranslations("secondTerm.why");
   const locale = useLocale();
   return (
-    <section aria-labelledby="st-why" className="bg-brand text-on-brand">
+    <section aria-labelledby="st-why" className="bg-deep text-on-brand">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-24 lg:px-8">
         <SectionHeading id="st-why" title={t("title")} lead={t("lead")} tone="light" />
         <div className="mt-10 grid gap-4 md:grid-cols-2">

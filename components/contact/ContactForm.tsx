@@ -22,7 +22,7 @@ export function ContactForm() {
 
   if (state === "done")
     return (
-      <p role="status" className="bg-brand/10 rounded-2xl p-6 text-lg font-semibold">
+      <p role="status" className="bg-sky rounded-2xl p-6 text-lg font-semibold">
         {t("thanks")}
       </p>
     );

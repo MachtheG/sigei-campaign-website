@@ -24,7 +24,7 @@ export function PledgeForm() {
 
   if (state === "done")
     return (
-      <p role="status" className="bg-brand/10 rounded-2xl p-6 text-lg font-semibold">
+      <p role="status" className="bg-sky rounded-2xl p-6 text-lg font-semibold">
         {t("pledge.thanks")}
       </p>
     );

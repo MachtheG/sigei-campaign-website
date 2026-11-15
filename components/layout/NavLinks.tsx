@@ -31,7 +31,7 @@ export function NavLinks({
               aria-current={active ? "page" : undefined}
               className={cn(
                 "press inline-flex min-h-11 items-center rounded-full font-semibold whitespace-nowrap",
-                large ? "font-display w-full px-2 py-2 text-3xl" : "px-2.5 text-sm",
+                large ? "font-display w-full px-2 py-2 text-3xl" : "px-2 text-sm",
                 active
                   ? large
                     ? "text-accent"

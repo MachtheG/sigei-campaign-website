@@ -10,7 +10,7 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         accent: "bg-accent text-on-accent hover:brightness-95",
-        brand: "bg-brand text-on-brand hover:bg-brand-2",
+        brand: "bg-deep text-on-brand hover:brightness-125",
         outline: "border-2 border-current bg-transparent hover:bg-fg/5",
         ghost: "bg-transparent hover:bg-fg/5",
       },

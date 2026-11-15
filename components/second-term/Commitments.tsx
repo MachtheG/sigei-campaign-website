@@ -31,7 +31,7 @@ export function Commitments() {
               <span className="bg-accent text-on-accent rounded-full px-3 py-1 text-xs font-extrabold">
                 {d("badge")}
               </span>
-              <span className="bg-brand/10 text-link rounded-full px-3 py-1 text-sm font-semibold">
+              <span className="bg-sky text-link rounded-full px-3 py-1 text-sm font-semibold">
                 {t(`lever.${c.lever}`)}
               </span>
             </div>

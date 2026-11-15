@@ -10,10 +10,10 @@ export function Header() {
   return (
     <header className="border-line bg-bg sticky top-0 z-30 border-b">
       <div className="scroll-progress bg-accent absolute inset-x-0 bottom-0 h-0.5" aria-hidden />
-      <div className="mx-auto flex max-w-7xl items-center gap-2 px-3 py-1.5 sm:gap-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-[96rem] items-center gap-2 px-3 py-1.5 sm:gap-3 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="press font-display text-brand dark:text-fg mr-auto flex min-h-11 items-center gap-2 text-lg leading-none font-extrabold"
+          className="press font-display text-deep dark:text-fg mr-auto flex min-h-11 items-center gap-2 text-lg leading-none font-extrabold"
         >
           <span
             aria-hidden
@@ -28,7 +28,7 @@ export function Header() {
             </span>
           </span>
         </Link>
-        <nav aria-label={t("a11y.mainNav")} className="mx-2 hidden xl:block">
+        <nav aria-label={t("a11y.mainNav")} className="mx-2 hidden min-[1360px]:block">
           <NavLinks className="flex items-center gap-0.5" />
         </nav>
         <CountdownPill />

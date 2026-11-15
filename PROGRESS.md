@@ -2,8 +2,8 @@
 
 ## Phase status
 - [x] Phase 0: research, data files, sources, docs
-- [ ] Phase 1: scaffold
-- [ ] Phase 2: layout shell
+- [x] Phase 1: scaffold
+- [x] Phase 2: layout shell (header, bottom nav, menu, language toggle, countdown pill, footer, Lite mode, view transitions)
 - [ ] Phase 3: Home
 - [ ] Phase 4: My Record
 - [ ] Phase 5: Another Term

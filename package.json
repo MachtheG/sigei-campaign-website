@@ -6,8 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "docs:shotlist": "tsx scripts/gen-shotlist.ts"
+    "lint": "eslint .",
+    "docs:shotlist": "tsx scripts/gen-shotlist.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "images": "node scripts/optimize-images.mjs",
+    "check:sources": "tsx scripts/check-sources.ts",
+    "check:i18n": "tsx scripts/check-translations.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@hookform/resolvers": "^7.0.6",

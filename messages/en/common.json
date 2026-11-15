@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "Sen. Wakili Hillary Sigei | Senator for Bomet",
+    "titleTemplate": "%s | Sen. Wakili Hillary Sigei",
+    "description": "The record, the story and the plan for a second term. Sen. Wakili Hillary Kiprotich Sigei, Senator for Bomet County."
+  },
+  "site": {
+    "name": "Sen. Wakili Hillary Sigei",
+    "short": "Sigei",
+    "role": "Senator for Bomet County",
+    "slogan": "Bomet's son. The work continues."
+  },
+  "nav": {
+    "home": "Home",
+    "record": "My Record",
+    "secondTerm": "Another Term",
+    "gallery": "Gallery",
+    "news": "In the News",
+    "about": "About",
+    "party": "UDA & Party",
+    "elections": "Elections",
+    "getInvolved": "Get Involved",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "menu": "Menu"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "mobileNav": "Quick navigation",
+    "language": "Language",
+    "switchToSw": "Switch to Kiswahili",
+    "switchToEn": "Switch to English"
+  },
+  "countdown": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Min",
+    "seconds": "Sec",
+    "daysShort": "d",
+    "hoursShort": "h",
+    "minutesShort": "m",
+    "pillAria": "Countdown to election day: tap for details",
+    "until": "until polls open",
+    "date": "Tuesday 10 August 2027, 6:00 am",
+    "open": "Polls are open",
+    "thanks": "Thank you, Bomet",
+    "fallback": "10 Aug 2027"
+  },
+  "lite": {
+    "label": "Lite mode",
+    "hint": "Less motion and lighter images for slow connections.",
+    "on": "On",
+    "off": "Off"
+  },
+  "source": {
+    "label": "Source",
+    "sources": "Sources",
+    "toConfirmLink": "[[TO CONFIRM: link]]",
+    "toConfirmDate": "[[TO CONFIRM: date]]",
+    "notVerified": "Not yet verified",
+    "open": "Open source"
+  },
+  "share": {
+    "share": "Share",
+    "copied": "Link copied",
+    "whatsapp": "WhatsApp",
+    "x": "X"
+  },
+  "photo": {
+    "placeholder": "Photo coming soon",
+    "download": "Download",
+    "pressApproved": "Press-approved"
+  },
+  "draft": {
+    "badge": "DRAFT",
+    "note": "Draft, awaiting the Senator's approval"
+  },
+  "common": {
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "back": "Back",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "send": "Send",
+    "sending": "Sending…"
+  },
+  "footer": {
+    "slogan": "Bomet's son. The work continues.",
+    "quickLinks": "Quick links",
+    "followUs": "Follow",
+    "authorised": "Authorised by [[TO CONFIRM: campaign committee]]",
+    "notOfficial": "This is a campaign website. It is not an official website of the Parliament of Kenya.",
+    "privacy": "Privacy notice",
+    "facebook": "Facebook",
+    "x": "X (Twitter)"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "That page does not exist. Let's get you back on track.",
+    "cta": "Back to home"
+  }
+}

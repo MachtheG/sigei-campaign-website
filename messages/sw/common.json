@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "Seneta Wakili Hillary Sigei | Seneta wa Bomet",
+    "titleTemplate": "%s | Seneta Wakili Hillary Sigei",
+    "description": "Rekodi, hadithi na mpango wa muhula wa pili. Seneta Wakili Hillary Kiprotich Sigei, Seneta wa Kaunti ya Bomet."
+  },
+  "site": {
+    "name": "Seneta Wakili Hillary Sigei",
+    "short": "Sigei",
+    "role": "Seneta wa Kaunti ya Bomet",
+    "slogan": "Mtoto wa Bomet. Kazi Iendelee."
+  },
+  "nav": {
+    "home": "Nyumbani",
+    "record": "Rekodi Yangu",
+    "secondTerm": "Muhula wa Pili",
+    "gallery": "Picha",
+    "news": "Habari",
+    "about": "Kuhusu",
+    "party": "Chama",
+    "elections": "Uchaguzi",
+    "getInvolved": "Jiunge",
+    "contact": "Wasiliana",
+    "privacy": "Faragha",
+    "menu": "Menyu"
+  },
+  "a11y": {
+    "skip": "Ruka hadi maudhui",
+    "closeMenu": "Funga menyu",
+    "mainNav": "Urambazaji mkuu",
+    "mobileNav": "Urambazaji wa haraka",
+    "language": "Lugha",
+    "switchToSw": "Badilisha hadi Kiswahili",
+    "switchToEn": "Badilisha hadi Kiingereza"
+  },
+  "countdown": {
+    "days": "Siku",
+    "hours": "Saa",
+    "minutes": "Dak",
+    "seconds": "Sek",
+    "daysShort": "s",
+    "hoursShort": "sa",
+    "minutesShort": "d",
+    "pillAria": "Hesabu ya kurudi nyuma hadi siku ya uchaguzi: gusa kwa maelezo",
+    "until": "hadi vituo vya kupigia kura vifunguliwe",
+    "date": "Jumanne 10 Agosti 2027, saa 12:00 asubuhi",
+    "open": "Vituo vya kupigia kura viko wazi",
+    "thanks": "Asante, Bomet",
+    "fallback": "10 Ago 2027"
+  },
+  "lite": {
+    "label": "Hali nyepesi",
+    "hint": "Mwendo mdogo na picha nyepesi kwa mtandao wa polepole.",
+    "on": "Imewashwa",
+    "off": "Imezimwa"
+  },
+  "source": {
+    "label": "Chanzo",
+    "sources": "Vyanzo",
+    "toConfirmLink": "[[TO CONFIRM: kiungo]]",
+    "toConfirmDate": "[[TO CONFIRM: tarehe]]",
+    "notVerified": "Bado haijathibitishwa",
+    "open": "Fungua chanzo"
+  },
+  "share": {
+    "share": "Shiriki",
+    "copied": "Kiungo kimenakiliwa",
+    "whatsapp": "WhatsApp",
+    "x": "X"
+  },
+  "photo": {
+    "placeholder": "Picha inakuja hivi karibuni",
+    "download": "Pakua",
+    "pressApproved": "Imeidhinishwa kwa vyombo vya habari"
+  },
+  "draft": {
+    "badge": "RASIMU",
+    "note": "Rasimu, inasubiri idhini ya Seneta"
+  },
+  "common": {
+    "readMore": "Soma zaidi",
+    "viewAll": "Tazama zote",
+    "back": "Rudi",
+    "close": "Funga",
+    "previous": "Iliyotangulia",
+    "next": "Inayofuata",
+    "send": "Tuma",
+    "sending": "Inatuma…"
+  },
+  "footer": {
+    "slogan": "Mtoto wa Bomet. Kazi Iendelee.",
+    "quickLinks": "Viungo vya haraka",
+    "followUs": "Tufuate",
+    "authorised": "Imeidhinishwa na [[TO CONFIRM: kamati ya kampeni]]",
+    "notOfficial": "Hii ni tovuti ya kampeni. Si tovuti rasmi ya Bunge la Kenya.",
+    "privacy": "Taarifa ya faragha",
+    "facebook": "Facebook",
+    "x": "X (Twitter)"
+  },
+  "notFound": {
+    "title": "Ukurasa haujapatikana",
+    "body": "Ukurasa huo haupo. Tukurudishe njiani.",
+    "cta": "Rudi nyumbani"
+  }
+}

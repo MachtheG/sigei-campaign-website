@@ -11,17 +11,24 @@ export function NewsCard({ item }: { item: NewsItem }) {
   const s = sources[item.sourceId];
   const prec = s.date.length === 4 ? "year" : s.date.length === 7 ? "month" : "day";
   return (
-    <article className="flex flex-col rounded-3xl bg-surface p-6">
+    <article className="bg-surface flex flex-col rounded-3xl p-6">
       <div className="flex flex-wrap items-center gap-2 text-sm">
         <PillarChip pillar={item.pillar} />
         <span className="font-semibold">{s.outlet}</span>
-        <span className="text-muted">{s.date ? formatDate(s.date, locale, prec) : t("noDate")}</span>
+        <span className="text-muted">
+          {s.date ? formatDate(s.date, locale, prec) : t("noDate")}
+        </span>
       </div>
-      <p className="mt-3 text-lg font-semibold leading-snug">{pick(item.summary, locale)}</p>
-      <p className="mt-2 text-sm text-muted">{s.title}</p>
+      <p className="mt-3 text-lg leading-snug font-semibold">{pick(item.summary, locale)}</p>
+      <p className="text-muted mt-2 text-sm">{s.title}</p>
       <div className="mt-auto pt-3">
         {s.url ? (
-          <a href={s.url} target="_blank" rel="noopener noreferrer" className="press inline-flex min-h-11 items-center font-semibold text-link underline underline-offset-4">
+          <a
+            href={s.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="press text-link inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
+          >
             {t("read")} ↗
           </a>
         ) : (

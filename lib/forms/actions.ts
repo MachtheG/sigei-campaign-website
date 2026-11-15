@@ -18,11 +18,16 @@ function limited(ip: string) {
   const recent = (hits.get(ip) ?? []).filter((t) => now - t < WINDOW);
   recent.push(now);
   hits.set(ip, recent);
-  if (hits.size > 5000) for (const [k, v] of hits) if (v.every((t) => now - t > WINDOW)) hits.delete(k);
+  if (hits.size > 5000)
+    for (const [k, v] of hits) if (v.every((t) => now - t > WINDOW)) hits.delete(k);
   return recent.length > MAX;
 }
 
-export async function submitForm(kind: FormKind, locale: string, raw: unknown): Promise<FormResult> {
+export async function submitForm(
+  kind: FormKind,
+  locale: string,
+  raw: unknown,
+): Promise<FormResult> {
   const schema = schemas[kind];
   if (!schema) return { ok: false, error: "validation" };
 
@@ -31,7 +36,8 @@ export async function submitForm(kind: FormKind, locale: string, raw: unknown): 
   if (limited(ip)) return { ok: false, error: "rate" };
 
   // Honeypot: bots fill the hidden "website" field. Pretend success, deliver nothing.
-  if (raw && typeof raw === "object" && "website" in raw && (raw as { website?: string }).website) return { ok: true };
+  if (raw && typeof raw === "object" && "website" in raw && (raw as { website?: string }).website)
+    return { ok: true };
 
   const parsed = schema.safeParse(raw);
   if (!parsed.success) {

@@ -4,15 +4,26 @@ import type { UseFormRegisterReturn } from "react-hook-form";
 import { Link } from "@/lib/i18n/navigation";
 
 /** Data Protection Act, 2019 consent checkbox. Required on every form. */
-export function ConsentField({ register, error }: { register: UseFormRegisterReturn; error?: string }) {
+export function ConsentField({
+  register,
+  error,
+}: {
+  register: UseFormRegisterReturn;
+  error?: string;
+}) {
   const t = useTranslations("getInvolved.consent");
   return (
     <div>
       <label className="flex min-h-11 items-start gap-3">
-        <input type="checkbox" {...register} aria-invalid={!!error} className="mt-1 size-6 shrink-0 accent-[var(--brand)]" />
+        <input
+          type="checkbox"
+          {...register}
+          aria-invalid={!!error}
+          className="mt-1 size-6 shrink-0 accent-[var(--brand)]"
+        />
         <span className="text-[0.95rem]">
           {t("label")}{" "}
-          <Link href="/privacy" className="font-semibold text-link underline underline-offset-4">
+          <Link href="/privacy" className="text-link font-semibold underline underline-offset-4">
             {t("link")}
           </Link>
         </span>

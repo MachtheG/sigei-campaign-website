@@ -8,7 +8,10 @@ export function RecordCards() {
   const t = useTranslations("record.cards");
   const events = [...timeline].sort((a, b) => b.date.localeCompare(a.date));
   return (
-    <section aria-labelledby="rec-cards" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
+    <section
+      aria-labelledby="rec-cards"
+      className="cv mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8"
+    >
       <SectionHeading id="rec-cards" title={t("title")} />
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {events.map((e, i) => (

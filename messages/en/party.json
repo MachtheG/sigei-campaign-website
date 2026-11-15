@@ -1,6 +1,12 @@
 {
-  "meta": { "title": "UDA & Party", "description": "Sen. Wakili Hillary Sigei's role in UDA, and UDA programmes relevant to Bomet." },
-  "hero": { "title": "UDA & the party", "lead": "Elected on the UDA ticket in 2022. Here is his role, and what the party has delivered in Bomet." },
+  "meta": {
+    "title": "UDA & Party",
+    "description": "Sen. Wakili Hillary Sigei's role in UDA, and UDA programmes relevant to Bomet."
+  },
+  "hero": {
+    "title": "UDA & the party",
+    "lead": "Elected on the UDA ticket in 2022. Here is his role, and what the party has delivered in Bomet."
+  },
   "role": {
     "title": "His role in the party",
     "body": "Sen. Sigei was elected Senator for Bomet on the United Democratic Alliance (UDA) ticket in August 2022.",

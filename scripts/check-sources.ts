@@ -45,7 +45,10 @@ for (const s of Object.values(sources)) {
 
 const unverified = Object.values(sources).filter((s) => !s.verified);
 console.log(`Checked ${items.length} cited items against ${Object.keys(sources).length} sources.`);
-if (unverified.length) console.warn(`⚠ ${unverified.length} sources not fully verified: ${unverified.map((s) => s.id).join(", ")}`);
+if (unverified.length)
+  console.warn(
+    `⚠ ${unverified.length} sources not fully verified: ${unverified.map((s) => s.id).join(", ")}`,
+  );
 if (errors) {
   console.error(`\n${errors} problem(s).`);
   process.exit(1);

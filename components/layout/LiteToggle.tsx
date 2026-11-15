@@ -16,10 +16,22 @@ export function LiteToggle({ tone = "default" }: { tone?: "default" | "light" })
         onClick={() => setLite(!lite)}
         className="press inline-flex min-h-11 items-center gap-3 rounded-full pr-1 text-sm font-semibold"
       >
-        <span className={cn("relative h-7 w-12 rounded-full transition-colors", lite ? "bg-accent" : tone === "light" ? "bg-white/25" : "bg-fg/25")}>
-          <span className={cn("absolute top-1 left-1 size-5 rounded-full bg-white transition-transform", lite && "translate-x-5 !bg-on-accent")} />
+        <span
+          className={cn(
+            "relative h-7 w-12 rounded-full transition-colors",
+            lite ? "bg-accent" : tone === "light" ? "bg-white/25" : "bg-fg/25",
+          )}
+        >
+          <span
+            className={cn(
+              "absolute top-1 left-1 size-5 rounded-full bg-white transition-transform",
+              lite && "!bg-on-accent translate-x-5",
+            )}
+          />
         </span>
-        <span>{t("label")}: {lite ? t("on") : t("off")}</span>
+        <span>
+          {t("label")}: {lite ? t("on") : t("off")}
+        </span>
       </button>
       <span className="sr-only">{t("hint")}</span>
     </div>

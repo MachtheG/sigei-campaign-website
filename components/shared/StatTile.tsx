@@ -22,26 +22,42 @@ export function StatTile({ stat, share, className, feature }: Props) {
   const value = statValue(stat);
   const label = pick(stat.label, locale);
   return (
-    <article className={cn("flex flex-col overflow-hidden rounded-3xl bg-surface", className)}>
+    <article className={cn("bg-surface flex flex-col overflow-hidden rounded-3xl", className)}>
       <SenatorImage
         id={stat.photoId}
-        sizes={feature ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"}
+        sizes={
+          feature
+            ? "(min-width: 1024px) 50vw, 100vw"
+            : "(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+        }
         ratio={feature ? "16 / 10" : "16 / 9"}
         compact
       />
       <div className="flex flex-1 flex-col p-5 sm:p-6">
-        {stat.context && <p className="mb-1 text-sm font-semibold text-muted">{t("context")}</p>}
-        <p className={cn("font-display leading-none font-extrabold text-brand dark:text-accent", feature ? "text-6xl sm:text-7xl" : "text-5xl")}>
+        {stat.context && <p className="text-muted mb-1 text-sm font-semibold">{t("context")}</p>}
+        <p
+          className={cn(
+            "font-display text-brand dark:text-accent leading-none font-extrabold",
+            feature ? "text-6xl sm:text-7xl" : "text-5xl",
+          )}
+        >
           <StatCounter value={value} decimals={stat.decimals} suffix={stat.suffix} />
         </p>
-        <h3 className="mt-3 font-sans text-base leading-snug font-semibold tracking-normal">{label}</h3>
-        <p className="mt-1.5 text-[0.95rem] text-muted">{pick(stat.note, locale)}</p>
-        {stat.confirm && <p className="mt-1 text-sm font-semibold">{t("toConfirm", { what: stat.confirm })}</p>}
+        <h3 className="mt-3 font-sans text-base leading-snug font-semibold tracking-normal">
+          {label}
+        </h3>
+        <p className="text-muted mt-1.5 text-[0.95rem]">{pick(stat.note, locale)}</p>
+        {stat.confirm && (
+          <p className="mt-1 text-sm font-semibold">{t("toConfirm", { what: stat.confirm })}</p>
+        )}
         <div className="mt-auto flex flex-wrap items-center gap-1 pt-3">
           <SourceBadge ids={stat.sourceIds} />
           {share && (
             <ShareButton
-              text={t("shareText", { label, value: formatNumber(value, locale, stat.decimals ?? 0) + (stat.suffix ?? "") })}
+              text={t("shareText", {
+                label,
+                value: formatNumber(value, locale, stat.decimals ?? 0) + (stat.suffix ?? ""),
+              })}
               url={`/api/og?stat=${stat.id}&locale=${locale}`}
             />
           )}

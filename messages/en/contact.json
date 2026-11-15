@@ -1,6 +1,12 @@
 {
-  "meta": { "title": "Contact", "description": "Contact Sen. Wakili Hillary Sigei's office: address, phone, email, social channels and a message form." },
-  "hero": { "title": "Contact", "lead": "Write to the Senator's office, or follow the campaign online." },
+  "meta": {
+    "title": "Contact",
+    "description": "Contact Sen. Wakili Hillary Sigei's office: address, phone, email, social channels and a message form."
+  },
+  "hero": {
+    "title": "Contact",
+    "lead": "Write to the Senator's office, or follow the campaign online."
+  },
   "office": {
     "title": "Office",
     "address": "Address",

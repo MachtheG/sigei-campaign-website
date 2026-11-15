@@ -1,6 +1,18 @@
 import { expect, test } from "@playwright/test";
 
-const PAGES = ["", "/record", "/second-term", "/gallery", "/news", "/about", "/party", "/elections", "/get-involved", "/contact", "/privacy"];
+const PAGES = [
+  "",
+  "/record",
+  "/second-term",
+  "/gallery",
+  "/news",
+  "/about",
+  "/party",
+  "/elections",
+  "/get-involved",
+  "/contact",
+  "/privacy",
+];
 
 for (const locale of ["en", "sw"]) {
   test(`all tabs render in ${locale}`, async ({ page }) => {
@@ -17,7 +29,10 @@ for (const locale of ["en", "sw"]) {
 
 test("language toggle keeps the page and the query", async ({ page }) => {
   await page.goto("/en/record?pillar=tea");
-  await page.getByRole("button", { name: /Kiswahili/ }).first().click();
+  await page
+    .getByRole("button", { name: /Kiswahili/ })
+    .first()
+    .click();
   await page.waitForURL(/\/sw\/record\?pillar=tea/);
   await expect(page.locator("h1").first()).toHaveText("Rekodi Yangu");
 });
@@ -37,12 +52,18 @@ test("record filter updates URL and hides other pillars", async ({ page }) => {
   const hidden = page.locator('[data-pillars="education"]').first();
   await expect(hidden).toBeHidden();
   await page.reload();
-  await expect(page.getByRole("button", { name: "Tea & Farmers" }).first()).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByRole("button", { name: "Tea & Farmers" }).first()).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
 });
 
 test("gallery lightbox opens and closes", async ({ page }) => {
   await page.goto("/en/gallery");
-  await page.getByRole("button", { name: /Open photo/ }).first().click();
+  await page
+    .getByRole("button", { name: /Open photo/ })
+    .first()
+    .click();
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog")).toBeHidden();

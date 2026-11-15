@@ -9,7 +9,14 @@ const name = z.string().trim().min(2, { message: "name" }).max(80, { message: "n
 const consent = z.literal(true, { message: "consent" });
 const honeypot = z.string().max(0).optional();
 
-export const CONSTITUENCY_IDS = ["sotik", "chepalungu", "bomet-central", "bomet-east", "konoin", "other"] as const;
+export const CONSTITUENCY_IDS = [
+  "sotik",
+  "chepalungu",
+  "bomet-central",
+  "bomet-east",
+  "konoin",
+  "other",
+] as const;
 const constituency = z.enum(CONSTITUENCY_IDS, { message: "constituency" });
 
 export const pledgeSchema = z.object({
@@ -38,7 +45,11 @@ export const contactSchema = z.object({
   website: honeypot,
 });
 
-export const schemas = { pledge: pledgeSchema, volunteer: volunteerSchema, contact: contactSchema } as const;
+export const schemas = {
+  pledge: pledgeSchema,
+  volunteer: volunteerSchema,
+  contact: contactSchema,
+} as const;
 export type FormKind = keyof typeof schemas;
 export type PledgeInput = z.input<typeof pledgeSchema>;
 export type VolunteerInput = z.input<typeof volunteerSchema>;

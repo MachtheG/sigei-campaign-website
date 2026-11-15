@@ -16,12 +16,20 @@ export function JourneyTimeline() {
         <ol className="mt-10 space-y-5">
           {journey.map((m) => (
             <li key={m.id}>
-              <Reveal className="grid overflow-hidden rounded-3xl bg-bg sm:grid-cols-[12rem_1fr]">
-                <SenatorImage id={m.photoId} sizes="(min-width: 640px) 192px, 100vw" ratio="fill" className="aspect-[16/9] sm:aspect-auto sm:h-full" compact />
+              <Reveal className="bg-bg grid overflow-hidden rounded-3xl sm:grid-cols-[12rem_1fr]">
+                <SenatorImage
+                  id={m.photoId}
+                  sizes="(min-width: 640px) 192px, 100vw"
+                  ratio="fill"
+                  className="aspect-[16/9] sm:aspect-auto sm:h-full"
+                  compact
+                />
                 <div className="p-5 sm:p-6">
-                  <p className="font-display text-2xl font-extrabold text-brand dark:text-accent">{m.year}</p>
+                  <p className="font-display text-brand dark:text-accent text-2xl font-extrabold">
+                    {m.year}
+                  </p>
                   <h3 className="mt-1 text-xl font-bold">{pick(m.title, locale)}</h3>
-                  <p className="mt-1 text-muted">{pick(m.body, locale)}</p>
+                  <p className="text-muted mt-1">{pick(m.body, locale)}</p>
                   <SourceBadge ids={m.sourceIds} className="mt-1 -ml-3" />
                 </div>
               </Reveal>

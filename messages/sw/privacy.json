@@ -1,16 +1,43 @@
 {
-  "meta": { "title": "Faragha", "description": "Jinsi tovuti hii ya kampeni inavyokusanya na kutumia data binafsi chini ya Sheria ya Ulinzi wa Data, 2019." },
+  "meta": {
+    "title": "Faragha",
+    "description": "Jinsi tovuti hii ya kampeni inavyokusanya na kutumia data binafsi chini ya Sheria ya Ulinzi wa Data, 2019."
+  },
   "title": "Taarifa ya faragha",
   "lead": "Jinsi tunavyoshughulikia maelezo unayotupa kwenye tovuti hii, chini ya Sheria ya Ulinzi wa Data ya Kenya, 2019.",
   "updated": "Ilisasishwa mwisho: [[TO CONFIRM: tarehe]]",
   "sections": {
-    "controller": { "title": "Nani anawajibika", "body": "Mdhibiti wa data ni [[TO CONFIRM: jina halali la kamati ya kampeni na usajili na Ofisi ya Kamishna wa Ulinzi wa Data]]. Mawasiliano: [[TO CONFIRM: barua pepe ya mawasiliano ya ulinzi wa data]]." },
-    "collect": { "title": "Tunachokusanya", "body": "Tunakusanya tu unachoandika kwenye fomu zetu: jina lako, nambari ya simu, eneo bunge, barua pepe (hiari), na ujumbe wowote unaoandika. Hatutumii vidakuzi vya kufuatilia. Mpangilio mdogo hukumbuka lugha yako na Hali nyepesi kwenye kifaa chako mwenyewe." },
-    "why": { "title": "Kwa nini tunakusanya", "body": "Kurekodi ahadi yako au ombi lako la kujitolea, kujibu ujumbe wako, na kukupa habari za kampeni. Hatuuzi data yako." },
-    "basis": { "title": "Msingi wetu wa kisheria", "body": "Idhini yako, unayoitoa kwa kuweka tiki kwenye kila fomu. Unaweza kuiondoa wakati wowote." },
-    "share": { "title": "Nani anayeiona", "body": "Wafanyakazi wa kampeni na watoa huduma wanaotuma barua pepe zetu au kuhifadhi data kwa niaba yetu. Hatushiriki maelezo yako na mtu mwingine isipokuwa sheria inapohitaji." },
-    "keep": { "title": "Tunaihifadhi kwa muda gani", "body": "[[TO CONFIRM: kipindi cha kuhifadhi]]. Tunafuta data isipohitajika tena kwa madhumuni uliyoyatoa." },
-    "rights": { "title": "Haki zako", "body": "Unaweza kuomba kuona, kusahihisha au kufuta data yako, kupinga matumizi yake, na kuondoa idhini. Unaweza pia kuwasilisha malalamiko kwa Ofisi ya Kamishna wa Ulinzi wa Data." },
-    "security": { "title": "Kuiweka salama", "body": "Fomu hutumwa kupitia HTTPS, zina ulinzi dhidi ya barua taka, na zinafikiwa na wafanyakazi walioidhinishwa wa kampeni pekee." }
+    "controller": {
+      "title": "Nani anawajibika",
+      "body": "Mdhibiti wa data ni [[TO CONFIRM: jina halali la kamati ya kampeni na usajili na Ofisi ya Kamishna wa Ulinzi wa Data]]. Mawasiliano: [[TO CONFIRM: barua pepe ya mawasiliano ya ulinzi wa data]]."
+    },
+    "collect": {
+      "title": "Tunachokusanya",
+      "body": "Tunakusanya tu unachoandika kwenye fomu zetu: jina lako, nambari ya simu, eneo bunge, barua pepe (hiari), na ujumbe wowote unaoandika. Hatutumii vidakuzi vya kufuatilia. Mpangilio mdogo hukumbuka lugha yako na Hali nyepesi kwenye kifaa chako mwenyewe."
+    },
+    "why": {
+      "title": "Kwa nini tunakusanya",
+      "body": "Kurekodi ahadi yako au ombi lako la kujitolea, kujibu ujumbe wako, na kukupa habari za kampeni. Hatuuzi data yako."
+    },
+    "basis": {
+      "title": "Msingi wetu wa kisheria",
+      "body": "Idhini yako, unayoitoa kwa kuweka tiki kwenye kila fomu. Unaweza kuiondoa wakati wowote."
+    },
+    "share": {
+      "title": "Nani anayeiona",
+      "body": "Wafanyakazi wa kampeni na watoa huduma wanaotuma barua pepe zetu au kuhifadhi data kwa niaba yetu. Hatushiriki maelezo yako na mtu mwingine isipokuwa sheria inapohitaji."
+    },
+    "keep": {
+      "title": "Tunaihifadhi kwa muda gani",
+      "body": "[[TO CONFIRM: kipindi cha kuhifadhi]]. Tunafuta data isipohitajika tena kwa madhumuni uliyoyatoa."
+    },
+    "rights": {
+      "title": "Haki zako",
+      "body": "Unaweza kuomba kuona, kusahihisha au kufuta data yako, kupinga matumizi yake, na kuondoa idhini. Unaweza pia kuwasilisha malalamiko kwa Ofisi ya Kamishna wa Ulinzi wa Data."
+    },
+    "security": {
+      "title": "Kuiweka salama",
+      "body": "Fomu hutumwa kupitia HTTPS, zina ulinzi dhidi ya barua taka, na zinafikiwa na wafanyakazi walioidhinishwa wa kampeni pekee."
+    }
   }
 }

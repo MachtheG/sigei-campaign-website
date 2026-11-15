@@ -14,26 +14,43 @@ import { RecordCard } from "./RecordCard";
 export function RecordDetail({ event }: { event: RecordEvent }) {
   const t = useTranslations("record.detail");
   const locale = useLocale();
-  const related = timeline.filter((e) => e.pillar === event.pillar && e.slug !== event.slug).slice(0, 3);
-  const photoIds = Array.from(new Set([event.photoId, ...timeline.filter((e) => e.pillar === event.pillar).map((e) => e.photoId)])).slice(0, 3);
+  const related = timeline
+    .filter((e) => e.pillar === event.pillar && e.slug !== event.slug)
+    .slice(0, 3);
+  const photoIds = Array.from(
+    new Set([
+      event.photoId,
+      ...timeline.filter((e) => e.pillar === event.pillar).map((e) => e.photoId),
+    ]),
+  ).slice(0, 3);
   return (
     <article>
       <header className="bg-brand text-on-brand">
         <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 md:py-16 lg:px-8">
           <div>
-            <Link href="/record" className="press -ml-2 inline-flex min-h-11 items-center px-2 font-semibold text-accent">
+            <Link
+              href="/record"
+              className="press text-accent -ml-2 inline-flex min-h-11 items-center px-2 font-semibold"
+            >
               ← {t("back")}
             </Link>
             <div className="mt-4 flex flex-wrap items-center gap-3">
-              <PillarChip pillar={event.pillar} className="bg-white/15 !text-on-brand" />
+              <PillarChip pillar={event.pillar} className="!text-on-brand bg-white/15" />
               <time dateTime={event.date} className="text-on-brand/80">
                 {formatDate(event.date, locale, event.datePrecision)}
               </time>
             </div>
             <h1 className="t-h1 mt-4">{pick(event.title, locale)}</h1>
-            <p className="mt-5 max-w-[48ch] text-lg text-on-brand/85">{pick(event.summary, locale)}</p>
+            <p className="text-on-brand/85 mt-5 max-w-[48ch] text-lg">
+              {pick(event.summary, locale)}
+            </p>
           </div>
-          <SenatorImage id={event.photoId} sizes="(min-width: 768px) 50vw, 100vw" priority className="rounded-3xl" />
+          <SenatorImage
+            id={event.photoId}
+            sizes="(min-width: 768px) 50vw, 100vw"
+            priority
+            className="rounded-3xl"
+          />
         </div>
       </header>
 
@@ -41,7 +58,11 @@ export function RecordDetail({ event }: { event: RecordEvent }) {
         <div>
           <h2 className="t-h2">{t("what")}</h2>
           <p className="mt-5 max-w-[62ch] text-lg">{pick(event.detail, locale)}</p>
-          <ShareButton text={pick(event.title, locale)} url={`/${locale}/record/${event.slug}`} className="mt-4 -ml-4" />
+          <ShareButton
+            text={pick(event.title, locale)}
+            url={`/${locale}/record/${event.slug}`}
+            className="mt-4 -ml-4"
+          />
         </div>
         <aside>
           <h2 className="font-sans text-xl font-bold tracking-normal">{t("sources")}</h2>
@@ -55,7 +76,14 @@ export function RecordDetail({ event }: { event: RecordEvent }) {
         </h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {photoIds.map((id) => (
-            <SenatorImage key={id} id={id} sizes="(min-width: 640px) 33vw, 100vw" className="rounded-3xl" ratio="4 / 3" compact />
+            <SenatorImage
+              key={id}
+              id={id}
+              sizes="(min-width: 640px) 33vw, 100vw"
+              className="rounded-3xl"
+              ratio="4 / 3"
+              compact
+            />
           ))}
         </div>
       </section>
@@ -71,7 +99,10 @@ export function RecordDetail({ event }: { event: RecordEvent }) {
                 <RecordCard key={e.slug} event={e} />
               ))}
             </div>
-            <Link href="/record" className={buttonVariants({ size: "lg", variant: "brand", className: "mt-10" })}>
+            <Link
+              href="/record"
+              className={buttonVariants({ size: "lg", variant: "brand", className: "mt-10" })}
+            >
               {t("back")}
             </Link>
           </div>

@@ -9,9 +9,9 @@ export function CountdownPill() {
     <Link
       href="/elections"
       aria-label={t("pillAria")}
-      className="press inline-flex min-h-11 items-center gap-2 rounded-full bg-accent px-3.5 text-sm font-bold whitespace-nowrap text-on-accent"
+      className="press bg-accent text-on-accent inline-flex min-h-11 items-center gap-2 rounded-full px-3.5 text-sm font-bold whitespace-nowrap"
     >
-      <span aria-hidden className="size-2 animate-pulse rounded-full bg-on-accent" />
+      <span aria-hidden className="bg-on-accent size-2 animate-pulse rounded-full" />
       <Countdown variant="pill" />
     </Link>
   );

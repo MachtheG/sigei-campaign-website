@@ -60,10 +60,22 @@
     "title": "Four reasons, backed by the record",
     "lead": "Not promises. Things that have already happened, each with a source.",
     "items": {
-      "law": { "title": "A lawyer's training, in service of Bomet", "body": "Years of practice before the Senate means he reads a bill, a contract and an audit query the way a lawyer does: closely." },
-      "trust": { "title": "Trusted by fellow senators", "body": "Chosen to lead the Justice Committee in 2022, and chosen again in 2025." },
-      "tea": { "title": "Delivers where tea farmers need it", "body": "He sponsored the Tea (Amendment) Bill and it passed the Senate. Next: the National Assembly." },
-      "oversight": { "title": "Holds spending to account", "body": "His statement led to a Senate committee inspecting stalled Bomet projects on site." }
+      "law": {
+        "title": "A lawyer's training, in service of Bomet",
+        "body": "Years of practice before the Senate means he reads a bill, a contract and an audit query the way a lawyer does: closely."
+      },
+      "trust": {
+        "title": "Trusted by fellow senators",
+        "body": "Chosen to lead the Justice Committee in 2022, and chosen again in 2025."
+      },
+      "tea": {
+        "title": "Delivers where tea farmers need it",
+        "body": "He sponsored the Tea (Amendment) Bill and it passed the Senate. Next: the National Assembly."
+      },
+      "oversight": {
+        "title": "Holds spending to account",
+        "body": "His statement led to a Senate committee inspecting stalled Bomet projects on site."
+      }
     }
   },
   "letter": {

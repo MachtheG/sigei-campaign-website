@@ -11,7 +11,10 @@ const SLUGS = ["tea-bill-passed-senate", "stalled-projects-inspection", "ecde-mi
 export function RecordPreview() {
   const t = useTranslations("home.record");
   return (
-    <section aria-labelledby="home-record" className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 md:pb-24 lg:px-8">
+    <section
+      aria-labelledby="home-record"
+      className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 md:pb-24 lg:px-8"
+    >
       <SectionHeading id="home-record" title={t("title")} lead={t("lead")} />
       <div className="mt-10 grid gap-5 md:grid-cols-3">
         {SLUGS.map((slug, i) => (
@@ -20,7 +23,10 @@ export function RecordPreview() {
           </Reveal>
         ))}
       </div>
-      <Link href="/record" className={buttonVariants({ size: "lg", variant: "brand", className: "mt-10" })}>
+      <Link
+        href="/record"
+        className={buttonVariants({ size: "lg", variant: "brand", className: "mt-10" })}
+      >
         {t("cta")}
       </Link>
     </section>

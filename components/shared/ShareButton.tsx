@@ -4,7 +4,13 @@ import { useState } from "react";
 import { Share2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type Props = { text: string; url: string; className?: string; label?: string; tone?: "default" | "light" };
+type Props = {
+  text: string;
+  url: string;
+  className?: string;
+  label?: string;
+  tone?: "default" | "light";
+};
 
 /** Native share sheet on phones (WhatsApp, etc.); WhatsApp link fallback on desktop. */
 export function ShareButton({ text, url, className, label, tone = "default" }: Props) {
@@ -18,7 +24,11 @@ export function ShareButton({ text, url, className, label, tone = "default" }: P
         await navigator.share({ text, url: abs });
         return;
       }
-      window.open(`https://wa.me/?text=${encodeURIComponent(`${text} ${abs}`)}`, "_blank", "noopener,noreferrer");
+      window.open(
+        `https://wa.me/?text=${encodeURIComponent(`${text} ${abs}`)}`,
+        "_blank",
+        "noopener,noreferrer",
+      );
     } catch {
       try {
         await navigator.clipboard.writeText(abs);

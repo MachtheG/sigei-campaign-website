@@ -11,11 +11,32 @@ export type ChapterDef = {
 
 export const chapters: ChapterDef[] = [
   { id: "mtoto", photoId: "portrait-casual", value: 10, sourceIds: ["parliament-profile"] },
-  { id: "wakili", photoId: "portrait-formal", value: 13, sourceIds: ["parliament-profile"], confirm: "start year of practice" },
-  { id: "sauti", photoId: "senate-floor", value: 2, suffix: "×", sourceIds: ["standard-chair-2022", "eastleigh-chair-2025"] },
   {
-    id: "kazi", photoId: "farmers-tea", value: 600000, suffix: "+",
-    sourceIds: ["nation-tea-bill", "parliament-tea-bill", "peopledaily-audit", "peopledaily-ecde-milk", "unverified-gbv-arrears"],
+    id: "wakili",
+    photoId: "portrait-formal",
+    value: 13,
+    sourceIds: ["parliament-profile"],
+    confirm: "start year of practice",
+  },
+  {
+    id: "sauti",
+    photoId: "senate-floor",
+    value: 2,
+    suffix: "×",
+    sourceIds: ["standard-chair-2022", "eastleigh-chair-2025"],
+  },
+  {
+    id: "kazi",
+    photoId: "farmers-tea",
+    value: 600000,
+    suffix: "+",
+    sourceIds: [
+      "nation-tea-bill",
+      "parliament-tea-bill",
+      "peopledaily-audit",
+      "peopledaily-ecde-milk",
+      "unverified-gbv-arrears",
+    ],
     confirm: "growers figure against article text",
   },
   { id: "iendelee", photoId: "events-rally", value: null, sourceIds: ["iebc-date-notice"] },

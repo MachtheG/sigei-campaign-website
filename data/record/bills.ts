@@ -28,10 +28,28 @@ export const bills: Bill[] = [
     },
     pillar: "tea",
     stages: [
-      { id: "published", label: { en: "Published", sw: "Ulichapishwa" }, date: "2023-01", state: "done" },
-      { id: "senate", label: { en: "Passed by the Senate", sw: "Uliidhinishwa na Seneti" }, date: "2024-10-08", state: "done" },
-      { id: "assembly", label: { en: "National Assembly", sw: "Bunge la Kitaifa" }, state: "current" },
-      { id: "assent", label: { en: "Presidential assent", sw: "Idhini ya Rais" }, state: "pending" },
+      {
+        id: "published",
+        label: { en: "Published", sw: "Ulichapishwa" },
+        date: "2023-01",
+        state: "done",
+      },
+      {
+        id: "senate",
+        label: { en: "Passed by the Senate", sw: "Uliidhinishwa na Seneti" },
+        date: "2024-10-08",
+        state: "done",
+      },
+      {
+        id: "assembly",
+        label: { en: "National Assembly", sw: "Bunge la Kitaifa" },
+        state: "current",
+      },
+      {
+        id: "assent",
+        label: { en: "Presidential assent", sw: "Idhini ya Rais" },
+        state: "pending",
+      },
     ],
     sourceIds: ["parliament-tea-bill", "mzalendo-tea-bill"],
   },

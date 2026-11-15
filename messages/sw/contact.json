@@ -1,5 +1,8 @@
 {
-  "meta": { "title": "Wasiliana", "description": "Wasiliana na ofisi ya Seneta Wakili Hillary Sigei: anwani, simu, barua pepe, mitandao ya kijamii na fomu ya ujumbe." },
+  "meta": {
+    "title": "Wasiliana",
+    "description": "Wasiliana na ofisi ya Seneta Wakili Hillary Sigei: anwani, simu, barua pepe, mitandao ya kijamii na fomu ya ujumbe."
+  },
   "hero": { "title": "Wasiliana", "lead": "Andikia ofisi ya Seneta, au fuata kampeni mtandaoni." },
   "office": {
     "title": "Ofisi",

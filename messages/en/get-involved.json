@@ -1,9 +1,30 @@
 {
-  "meta": { "title": "Get Involved", "description": "Pledge your support, volunteer, or share Sen. Hillary Sigei's campaign with someone in Bomet." },
-  "hero": { "title": "Get involved", "lead": "Three ways to help: pledge, volunteer, share. Each takes under a minute." },
-  "pledge": { "title": "Pledge your support", "lead": "Tell us you are with Bomet. We will only use your details to update you about the campaign.", "submit": "Pledge my support", "thanks": "Asante sana! Your pledge is recorded." },
-  "volunteer": { "title": "Volunteer", "lead": "Help in your ward: talking to neighbours, organising meetings, getting people registered.", "submit": "I want to volunteer", "thanks": "Asante sana! We will be in touch about how you can help." },
-  "share": { "title": "Share", "lead": "The most powerful campaign tool is you. Send this site to one person in Bomet today.", "button": "Share this site", "text": "Sen. Wakili Hillary Sigei: Bomet's son. The work continues." },
+  "meta": {
+    "title": "Get Involved",
+    "description": "Pledge your support, volunteer, or share Sen. Hillary Sigei's campaign with someone in Bomet."
+  },
+  "hero": {
+    "title": "Get involved",
+    "lead": "Three ways to help: pledge, volunteer, share. Each takes under a minute."
+  },
+  "pledge": {
+    "title": "Pledge your support",
+    "lead": "Tell us you are with Bomet. We will only use your details to update you about the campaign.",
+    "submit": "Pledge my support",
+    "thanks": "Asante sana! Your pledge is recorded."
+  },
+  "volunteer": {
+    "title": "Volunteer",
+    "lead": "Help in your ward: talking to neighbours, organising meetings, getting people registered.",
+    "submit": "I want to volunteer",
+    "thanks": "Asante sana! We will be in touch about how you can help."
+  },
+  "share": {
+    "title": "Share",
+    "lead": "The most powerful campaign tool is you. Send this site to one person in Bomet today.",
+    "button": "Share this site",
+    "text": "Sen. Wakili Hillary Sigei: Bomet's son. The work continues."
+  },
   "fields": {
     "name": "Full name",
     "phone": "Phone number",

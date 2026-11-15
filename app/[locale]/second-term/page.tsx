@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { alt } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CTABand } from "@/components/shared/CTABand";
 import { Commitments } from "@/components/second-term/Commitments";
@@ -7,10 +8,18 @@ import { SecondTermHero } from "@/components/second-term/SecondTermHero";
 import { StoryScroller } from "@/components/second-term/StoryScroller";
 import { WhyHim } from "@/components/second-term/WhyHim";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "secondTerm.meta" });
-  return { title: t("title"), description: t("description") };
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: alt(locale, "/second-term"),
+  };
 }
 
 export default async function SecondTermPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -24,7 +33,13 @@ export default async function SecondTermPage({ params }: { params: Promise<{ loc
       <Commitments />
       <WhyHim />
       <LetterFromSenator />
-      <CTABand title={t("title")} body={t("body")} cta={t("cta")} href="/get-involved" photoId="events-launch" />
+      <CTABand
+        title={t("title")}
+        body={t("body")}
+        cta={t("cta")}
+        href="/get-involved"
+        photoId="events-launch"
+      />
     </>
   );
 }

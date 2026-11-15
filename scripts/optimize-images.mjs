@@ -25,13 +25,20 @@ for (const folder of FOLDERS) {
     const img = sharp(join(ROOT, folder, file)).rotate(); // honour EXIF orientation
     const meta = await img.metadata();
     const w = meta.width ?? 0;
-    if (id === "hero-main" && w < 2400) console.warn(`⚠ ${id}: ${w}px wide, hero should be ≥ 2400px`);
+    if (id === "hero-main" && w < 2400)
+      console.warn(`⚠ ${id}: ${w}px wide, hero should be ≥ 2400px`);
     const widths = WIDTHS.filter((x) => x <= w || x === WIDTHS[0]);
     if (!widths.includes(w) && w < WIDTHS.at(-1)) widths.push(w);
     for (const width of widths) {
       const base = img.clone().resize({ width, withoutEnlargement: true });
-      await base.clone().webp({ quality: 78 }).toFile(join(OUT, `${id}-${width}.webp`));
-      await base.clone().avif({ quality: 55 }).toFile(join(OUT, `${id}-${width}.avif`));
+      await base
+        .clone()
+        .webp({ quality: 78 })
+        .toFile(join(OUT, `${id}-${width}.webp`));
+      await base
+        .clone()
+        .avif({ quality: 55 })
+        .toFile(join(OUT, `${id}-${width}.avif`));
     }
     const best = Math.max(...widths);
     const blur = await img.clone().resize({ width: 16 }).webp({ quality: 40 }).toBuffer();

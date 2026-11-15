@@ -1,6 +1,12 @@
 {
-  "meta": { "title": "About", "description": "The journey of Sen. Wakili Hillary Sigei: Ndamichonik Primary, Tenwek High, the University of Nairobi, a career as an advocate, and the Senate." },
-  "hero": { "title": "From Ndamichonik to the Senate", "lead": "A Bomet child who became an advocate, then Senator for Bomet." },
+  "meta": {
+    "title": "About",
+    "description": "The journey of Sen. Wakili Hillary Sigei: Ndamichonik Primary, Tenwek High, the University of Nairobi, a career as an advocate, and the Senate."
+  },
+  "hero": {
+    "title": "From Ndamichonik to the Senate",
+    "lead": "A Bomet child who became an advocate, then Senator for Bomet."
+  },
   "journey": { "title": "The journey", "lead": "School, law, practice, public service." },
   "credentials": {
     "title": "Credentials",

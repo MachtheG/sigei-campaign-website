@@ -1,7 +1,11 @@
 import { ELECTION } from "@/data/election";
 
 // Add-to-calendar file for election day. Times are converted to UTC so every calendar app agrees.
-const fmt = (iso: string) => new Date(iso).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+const fmt = (iso: string) =>
+  new Date(iso)
+    .toISOString()
+    .replace(/[-:]/g, "")
+    .replace(/\.\d{3}/, "");
 
 export function GET() {
   const stamp = fmt(new Date().toISOString());
@@ -26,8 +30,7 @@ export function GET() {
     "END:VEVENT",
     "END:VCALENDAR",
     "",
-  ]
-    .join("\r\n");
+  ].join("\r\n");
   return new Response(ics, {
     headers: {
       "Content-Type": "text/calendar; charset=utf-8",

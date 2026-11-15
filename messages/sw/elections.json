@@ -1,7 +1,19 @@
 {
-  "meta": { "title": "Uchaguzi", "description": "Hesabu ya kurudi nyuma hadi Uchaguzi Mkuu wa 10 Agosti 2027, tarehe muhimu, jinsi ya kuhakiki usajili wako wa kupiga kura, na orodha ya mpiga kura." },
-  "hero": { "title": "Siku ya uchaguzi: Jumanne 10 Agosti 2027", "lead": "Vituo vya kupigia kura vitafunguliwa saa 12:00 asubuhi. Hakiki usajili wako sasa, na panga siku yako." },
-  "countdown": { "title": "Muda hadi vituo vifunguliwe", "calendar": "Weka kwenye kalenda", "registered": "Je, nimesajiliwa?", "iebc": "Tembelea IEBC", "note": "Tarehe na kanuni zinatoka kwa Tume Huru ya Uchaguzi na Mipaka (IEBC). Daima thibitisha kwenye iebc.or.ke." },
+  "meta": {
+    "title": "Uchaguzi",
+    "description": "Hesabu ya kurudi nyuma hadi Uchaguzi Mkuu wa 10 Agosti 2027, tarehe muhimu, jinsi ya kuhakiki usajili wako wa kupiga kura, na orodha ya mpiga kura."
+  },
+  "hero": {
+    "title": "Siku ya uchaguzi: Jumanne 10 Agosti 2027",
+    "lead": "Vituo vya kupigia kura vitafunguliwa saa 12:00 asubuhi. Hakiki usajili wako sasa, na panga siku yako."
+  },
+  "countdown": {
+    "title": "Muda hadi vituo vifunguliwe",
+    "calendar": "Weka kwenye kalenda",
+    "registered": "Je, nimesajiliwa?",
+    "iebc": "Tembelea IEBC",
+    "note": "Tarehe na kanuni zinatoka kwa Tume Huru ya Uchaguzi na Mipaka (IEBC). Daima thibitisha kwenye iebc.or.ke."
+  },
   "dates": {
     "title": "Tarehe muhimu",
     "campaign-opens": "Kipindi cha kampeni kinaanza",

@@ -48,10 +48,8 @@ export function Countdown({ variant, className }: Props) {
     return (
       <span className={cn("tabular-nums", className)}>
         <Roll value={String(days)} />
-        <span className="opacity-70">{t("daysShort")}</span>{" "}
-        <Roll value={pad(hours)} />
-        <span className="opacity-70">{t("hoursShort")}</span>{" "}
-        <Roll value={pad(minutes)} />
+        <span className="opacity-70">{t("daysShort")}</span> <Roll value={pad(hours)} />
+        <span className="opacity-70">{t("hoursShort")}</span> <Roll value={pad(minutes)} />
         <span className="opacity-70">{t("minutesShort")}</span>
       </span>
     );
@@ -64,7 +62,11 @@ export function Countdown({ variant, className }: Props) {
     { v: pad(seconds), l: t("seconds") },
   ];
   return (
-    <div className={cn("grid grid-cols-4 gap-2 sm:gap-4", className)} role="timer" aria-label={`${days} ${t("days")}, ${hours} ${t("hours")}, ${minutes} ${t("minutes")} ${t("until")}`}>
+    <div
+      className={cn("grid grid-cols-4 gap-2 sm:gap-4", className)}
+      role="timer"
+      aria-label={`${days} ${t("days")}, ${hours} ${t("hours")}, ${minutes} ${t("minutes")} ${t("until")}`}
+    >
       {cells.map((c) => (
         <div key={c.l} className="rounded-2xl bg-white/10 px-1 py-4 text-center sm:py-8">
           <div className="font-display text-[clamp(2rem,9vw,5.5rem)] leading-none font-extrabold">

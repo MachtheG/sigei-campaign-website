@@ -6,14 +6,17 @@ export type Adapter = (s: Submission) => Promise<void>;
 
 const clean = (p: Record<string, unknown>) => {
   const { website: _hp, consent: _c, ...rest } = p;
-  void _hp; void _c;
+  void _hp;
+  void _c;
   return rest;
 };
 
 /** Email via Resend (RESEND_API_KEY + RESEND_TO [+ RESEND_FROM]). */
 const resendAdapter: Adapter = async (s) => {
   const resend = new Resend(process.env.RESEND_API_KEY);
-  const body = Object.entries(clean(s.payload)).map(([k, v]) => `${k}: ${String(v ?? "")}`).join("\n");
+  const body = Object.entries(clean(s.payload))
+    .map(([k, v]) => `${k}: ${String(v ?? "")}`)
+    .join("\n");
   const { error } = await resend.emails.send({
     from: process.env.RESEND_FROM ?? "Campaign site <onboarding@resend.dev>",
     to: process.env.RESEND_TO!.split(",").map((x) => x.trim()),
@@ -41,13 +44,18 @@ const supabaseAdapter: Adapter = async (s) => {
 /** Fallback: log to the server console (personal data is masked). */
 const consoleAdapter: Adapter = async (s) => {
   const masked = Object.fromEntries(
-    Object.entries(clean(s.payload)).map(([k, v]) => [k, /phone|email|name/.test(k) ? `${String(v).slice(0, 2)}…` : v]),
+    Object.entries(clean(s.payload)).map(([k, v]) => [
+      k,
+      /phone|email|name/.test(k) ? `${String(v).slice(0, 2)}…` : v,
+    ]),
   );
   console.log(`[forms:console] ${s.kind} (${s.locale})`, masked);
 };
 
 export function pickAdapter(): { name: string; run: Adapter } {
-  if (process.env.RESEND_API_KEY && process.env.RESEND_TO) return { name: "resend", run: resendAdapter };
-  if (process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_KEY) return { name: "supabase", run: supabaseAdapter };
+  if (process.env.RESEND_API_KEY && process.env.RESEND_TO)
+    return { name: "resend", run: resendAdapter };
+  if (process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_KEY)
+    return { name: "supabase", run: supabaseAdapter };
   return { name: "console", run: consoleAdapter };
 }

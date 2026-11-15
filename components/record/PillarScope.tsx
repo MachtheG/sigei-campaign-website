@@ -4,7 +4,10 @@ import { createContext, useCallback, useContext, useMemo } from "react";
 import { PILLARS, type PillarId } from "@/data/types";
 
 export type PillarSel = PillarId | "all";
-const Ctx = createContext<{ pillar: PillarSel; setPillar: (p: PillarSel) => void }>({ pillar: "all", setPillar: () => {} });
+const Ctx = createContext<{ pillar: PillarSel; setPillar: (p: PillarSel) => void }>({
+  pillar: "all",
+  setPillar: () => {},
+});
 export const usePillar = () => useContext(Ctx);
 
 /**
@@ -14,7 +17,9 @@ export const usePillar = () => useContext(Ctx);
 export function PillarScope({ children }: { children: React.ReactNode }) {
   const params = useSearchParams();
   const raw = params.get("pillar") ?? "";
-  const pillar: PillarSel = (PILLARS as readonly string[]).includes(raw) ? (raw as PillarId) : "all";
+  const pillar: PillarSel = (PILLARS as readonly string[]).includes(raw)
+    ? (raw as PillarId)
+    : "all";
 
   const setPillar = useCallback((p: PillarSel) => {
     const url = new URL(window.location.href);

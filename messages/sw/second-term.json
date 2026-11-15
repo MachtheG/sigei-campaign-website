@@ -60,10 +60,22 @@
     "title": "Sababu nne, zikiungwa mkono na rekodi",
     "lead": "Si ahadi. Ni mambo yaliyokwisha tokea, kila moja na chanzo.",
     "items": {
-      "law": { "title": "Mafunzo ya wakili, kwa huduma ya Bomet", "body": "Miaka ya kutekeleza sheria kabla ya Seneti inamaanisha anasoma mswada, mkataba na hoja ya ukaguzi kama wakili: kwa makini." },
-      "trust": { "title": "Anaaminiwa na maseneta wenzake", "body": "Alichaguliwa kuongoza Kamati ya Haki mwaka 2022, na akachaguliwa tena mwaka 2025." },
-      "tea": { "title": "Anatekeleza pale wakulima wa chai wanapohitaji", "body": "Alidhamini Mswada wa Marekebisho ya Chai na ukapita Senetini. Hatua inayofuata: Bunge la Kitaifa." },
-      "oversight": { "title": "Anawajibisha matumizi ya fedha", "body": "Taarifa yake ilisababisha kamati ya Seneti kukagua miradi iliyokwama ya Bomet eneo la tukio." }
+      "law": {
+        "title": "Mafunzo ya wakili, kwa huduma ya Bomet",
+        "body": "Miaka ya kutekeleza sheria kabla ya Seneti inamaanisha anasoma mswada, mkataba na hoja ya ukaguzi kama wakili: kwa makini."
+      },
+      "trust": {
+        "title": "Anaaminiwa na maseneta wenzake",
+        "body": "Alichaguliwa kuongoza Kamati ya Haki mwaka 2022, na akachaguliwa tena mwaka 2025."
+      },
+      "tea": {
+        "title": "Anatekeleza pale wakulima wa chai wanapohitaji",
+        "body": "Alidhamini Mswada wa Marekebisho ya Chai na ukapita Senetini. Hatua inayofuata: Bunge la Kitaifa."
+      },
+      "oversight": {
+        "title": "Anawajibisha matumizi ya fedha",
+        "body": "Taarifa yake ilisababisha kamati ya Seneti kukagua miradi iliyokwama ya Bomet eneo la tukio."
+      }
     }
   },
   "letter": {

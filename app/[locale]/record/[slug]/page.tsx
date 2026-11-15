@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { alt } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { RecordDetail } from "@/components/record/RecordDetail";
@@ -20,7 +21,11 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   const { locale, slug } = await params;
   const e = bySlug(slug);
   if (!e) return {};
-  return { title: pick(e.title, locale), description: pick(e.summary, locale) };
+  return {
+    title: pick(e.title, locale),
+    description: pick(e.summary, locale),
+    alternates: alt(locale, `/record/${slug}`),
+  };
 }
 
 export default async function RecordItemPage({ params }: P) {
@@ -32,7 +37,13 @@ export default async function RecordItemPage({ params }: P) {
   return (
     <>
       <RecordDetail event={event} />
-      <CTABand title={t("title")} body={t("body")} cta={t("cta")} href="/get-involved" photoId="community-youth" />
+      <CTABand
+        title={t("title")}
+        body={t("body")}
+        cta={t("cta")}
+        href="/get-involved"
+        photoId="community-youth"
+      />
     </>
   );
 }

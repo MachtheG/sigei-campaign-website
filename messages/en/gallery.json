@@ -1,8 +1,28 @@
 {
-  "meta": { "title": "Gallery", "description": "Photos of Sen. Wakili Hillary Sigei in the Senate, in the field, and with the people of Bomet." },
-  "hero": { "title": "Gallery", "lead": "The Senator in the Senate, in the field, and among the people of Bomet." },
-  "filters": { "label": "Filter photos", "all": "All", "senate": "Senate", "field": "Field", "community": "Community", "farmers": "Farmers", "portraits": "Portraits", "events": "Events" },
+  "meta": {
+    "title": "Gallery",
+    "description": "Photos of Sen. Wakili Hillary Sigei in the Senate, in the field, and with the people of Bomet."
+  },
+  "hero": {
+    "title": "Gallery",
+    "lead": "The Senator in the Senate, in the field, and among the people of Bomet."
+  },
+  "filters": {
+    "label": "Filter photos",
+    "all": "All",
+    "senate": "Senate",
+    "field": "Field",
+    "community": "Community",
+    "farmers": "Farmers",
+    "portraits": "Portraits",
+    "events": "Events"
+  },
   "week": { "title": "Photo of the week", "open": "View full screen" },
-  "grid": { "title": "All photos", "open": "Open photo", "count": "{count} photos", "none": "No photos in this category yet." },
+  "grid": {
+    "title": "All photos",
+    "open": "Open photo",
+    "count": "{count} photos",
+    "none": "No photos in this category yet."
+  },
   "press": { "note": "Photos marked press-approved can be downloaded from the full-screen view." }
 }

@@ -28,7 +28,11 @@ export function LanguageToggle({ tone = "default" }: { tone?: "default" | "light
     <div
       role="group"
       aria-label={t("language")}
-      className={cn("inline-flex rounded-full p-0.5", tone === "light" ? "bg-white/10" : "bg-fg/8", pending && "opacity-70")}
+      className={cn(
+        "inline-flex rounded-full p-0.5",
+        tone === "light" ? "bg-white/10" : "bg-fg/8",
+        pending && "opacity-70",
+      )}
     >
       {LOCALES.map(({ code, label }) => (
         <button
@@ -40,7 +44,11 @@ export function LanguageToggle({ tone = "default" }: { tone?: "default" | "light
           onClick={() => switchTo(code)}
           className={cn(
             "press min-h-11 min-w-11 rounded-full px-3 text-sm font-bold",
-            locale === code ? "bg-accent text-on-accent" : tone === "light" ? "text-on-brand" : "text-fg",
+            locale === code
+              ? "bg-accent text-on-accent"
+              : tone === "light"
+                ? "text-on-brand"
+                : "text-fg",
           )}
         >
           {label}

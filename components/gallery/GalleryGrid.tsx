@@ -15,8 +15,18 @@ export function GalleryGrid({ photos, onOpen }: Props) {
     <ul className="mt-6 columns-2 gap-3 md:columns-3 lg:columns-4 [&>li]:mb-3 [&>li]:break-inside-avoid">
       {photos.map((p, i) => (
         <li key={p.id}>
-          <button type="button" onClick={() => onOpen(i)} aria-label={`${t("open")}: ${pick(p.alt, locale)}`} className="press group block w-full overflow-hidden rounded-2xl text-left">
-            <SenatorImage id={p.id} sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw" className="w-full transition-transform duration-300 group-hover:scale-[1.02] motion-reduce:transition-none" compact />
+          <button
+            type="button"
+            onClick={() => onOpen(i)}
+            aria-label={`${t("open")}: ${pick(p.alt, locale)}`}
+            className="press group block w-full overflow-hidden rounded-2xl text-left"
+          >
+            <SenatorImage
+              id={p.id}
+              sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+              className="w-full transition-transform duration-300 group-hover:scale-[1.02] motion-reduce:transition-none"
+              compact
+            />
           </button>
         </li>
       ))}

@@ -10,7 +10,7 @@ export function MenuButton() {
     <button
       type="button"
       onClick={openMenu}
-      className="press hidden min-h-11 items-center gap-2 rounded-full border-2 border-fg/15 px-4 text-sm font-bold md:inline-flex xl:hidden"
+      className="press border-fg/15 hidden min-h-11 items-center gap-2 rounded-full border-2 px-4 text-sm font-bold md:inline-flex xl:hidden"
     >
       <Menu aria-hidden className="size-4" />
       {t("menu")}

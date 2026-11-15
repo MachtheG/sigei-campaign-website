@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { alt } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
 import { BillTracker } from "@/components/record/BillTracker";
@@ -15,10 +16,14 @@ import { CTABand } from "@/components/shared/CTABand";
 
 export const revalidate = 86400;
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "record.meta" });
-  return { title: t("title"), description: t("description") };
+  return { title: t("title"), description: t("description"), alternates: alt(locale, "/record") };
 }
 
 export default async function RecordPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -44,7 +49,13 @@ export default async function RecordPage({ params }: { params: Promise<{ locale:
       <Suspense fallback={<div data-pillar="all">{body}</div>}>
         <PillarScope>{body}</PillarScope>
       </Suspense>
-      <CTABand title={t("title")} body={t("body")} cta={t("cta")} href="/get-involved" photoId="farmers-meeting" />
+      <CTABand
+        title={t("title")}
+        body={t("body")}
+        cta={t("cta")}
+        href="/get-involved"
+        photoId="farmers-meeting"
+      />
     </>
   );
 }

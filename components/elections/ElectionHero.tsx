@@ -10,7 +10,12 @@ export function ElectionHero() {
           <h1 className="t-h1">{t("title")}</h1>
           <p className="t-lead mt-4 max-w-[46ch]">{t("lead")}</p>
         </div>
-        <SenatorImage id="community-youth" sizes="(min-width: 768px) 45vw, 100vw" priority className="rounded-3xl" />
+        <SenatorImage
+          id="community-youth"
+          sizes="(min-width: 768px) 45vw, 100vw"
+          priority
+          className="rounded-3xl"
+        />
       </div>
     </section>
   );

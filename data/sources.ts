@@ -45,7 +45,8 @@ const list: Source[] = [
   },
   {
     id: "standard-chair-2022",
-    title: "Senator Sigei elected as Senate Justice, Legal Affairs and Human Rights Committee chairperson",
+    title:
+      "Senator Sigei elected as Senate Justice, Legal Affairs and Human Rights Committee chairperson",
     outlet: "The Standard",
     date: "2022-10-21",
     url: "https://www.standardmedia.co.ke/politics/article/2001458672/senator-sigei-elected-as-senate-justice-legal-affairs-and-human-rights-committee-chairperson",
@@ -223,8 +224,6 @@ const list: Source[] = [
   },
 ];
 
-export const sources: Record<string, Source> = Object.fromEntries(
-  list.map((s) => [s.id, s]),
-);
+export const sources: Record<string, Source> = Object.fromEntries(list.map((s) => [s.id, s]));
 
 export const sourceList = list;

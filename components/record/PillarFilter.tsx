@@ -10,8 +10,12 @@ export function PillarFilter() {
   const { pillar, setPillar } = usePillar();
   const options: PillarSel[] = ["all", ...PILLARS];
   return (
-    <div className="sticky top-14 z-20 border-b border-line bg-bg">
-      <div role="group" aria-label={t("filter.label")} className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-2 [scrollbar-width:none] sm:px-6 lg:px-8 [&::-webkit-scrollbar]:hidden">
+    <div className="border-line bg-bg sticky top-14 z-20 border-b">
+      <div
+        role="group"
+        aria-label={t("filter.label")}
+        className="mx-auto flex max-w-7xl [scrollbar-width:none] gap-2 overflow-x-auto px-4 py-2 sm:px-6 lg:px-8 [&::-webkit-scrollbar]:hidden"
+      >
         {options.map((p) => (
           <button
             key={p}
@@ -20,7 +24,9 @@ export function PillarFilter() {
             onClick={() => setPillar(p)}
             className={cn(
               "press min-h-11 shrink-0 rounded-full px-4 text-sm font-semibold",
-              pillar === p ? "bg-brand text-on-brand dark:bg-accent dark:text-on-accent" : "bg-surface text-fg hover:bg-fg/10",
+              pillar === p
+                ? "bg-brand text-on-brand dark:bg-accent dark:text-on-accent"
+                : "bg-surface text-fg hover:bg-fg/10",
             )}
           >
             {t(`pillars.${p}`)}

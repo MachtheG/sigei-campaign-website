@@ -1,9 +1,30 @@
 {
-  "meta": { "title": "Jiunge", "description": "Ahidi kuunga mkono, jitolee, au shiriki kampeni ya Seneta Hillary Sigei na mtu wa Bomet." },
-  "hero": { "title": "Jiunge nasi", "lead": "Njia tatu za kusaidia: ahidi, jitolee, shiriki. Kila moja inachukua chini ya dakika moja." },
-  "pledge": { "title": "Ahidi kuniunga mkono", "lead": "Tuambie uko na Bomet. Tutatumia maelezo yako kukupa habari za kampeni tu.", "submit": "Ahidi kuniunga mkono", "thanks": "Asante sana! Ahadi yako imerekodiwa." },
-  "volunteer": { "title": "Jitolee", "lead": "Saidia katika wadi yako: kuzungumza na majirani, kuandaa mikutano, kusaidia watu kujisajili.", "submit": "Nataka kujitolea", "thanks": "Asante sana! Tutawasiliana nawe kuhusu jinsi unavyoweza kusaidia." },
-  "share": { "title": "Shiriki", "lead": "Zana yenye nguvu zaidi ya kampeni ni wewe. Mtumie mtu mmoja wa Bomet tovuti hii leo.", "button": "Shiriki tovuti hii", "text": "Seneta Wakili Hillary Sigei: Mtoto wa Bomet. Kazi Iendelee." },
+  "meta": {
+    "title": "Jiunge",
+    "description": "Ahidi kuunga mkono, jitolee, au shiriki kampeni ya Seneta Hillary Sigei na mtu wa Bomet."
+  },
+  "hero": {
+    "title": "Jiunge nasi",
+    "lead": "Njia tatu za kusaidia: ahidi, jitolee, shiriki. Kila moja inachukua chini ya dakika moja."
+  },
+  "pledge": {
+    "title": "Ahidi kuniunga mkono",
+    "lead": "Tuambie uko na Bomet. Tutatumia maelezo yako kukupa habari za kampeni tu.",
+    "submit": "Ahidi kuniunga mkono",
+    "thanks": "Asante sana! Ahadi yako imerekodiwa."
+  },
+  "volunteer": {
+    "title": "Jitolee",
+    "lead": "Saidia katika wadi yako: kuzungumza na majirani, kuandaa mikutano, kusaidia watu kujisajili.",
+    "submit": "Nataka kujitolea",
+    "thanks": "Asante sana! Tutawasiliana nawe kuhusu jinsi unavyoweza kusaidia."
+  },
+  "share": {
+    "title": "Shiriki",
+    "lead": "Zana yenye nguvu zaidi ya kampeni ni wewe. Mtumie mtu mmoja wa Bomet tovuti hii leo.",
+    "button": "Shiriki tovuti hii",
+    "text": "Seneta Wakili Hillary Sigei: Mtoto wa Bomet. Kazi Iendelee."
+  },
   "fields": {
     "name": "Jina kamili",
     "phone": "Nambari ya simu",

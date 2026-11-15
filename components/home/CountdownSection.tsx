@@ -12,14 +12,21 @@ export function CountdownSection() {
         <h2 id="home-countdown" className="t-h2 max-w-[18ch]">
           {t("title")}
         </h2>
-        <p className="mt-4 max-w-[56ch] text-lg text-on-brand/80">{t("lead")}</p>
+        <p className="text-on-brand/80 mt-4 max-w-[56ch] text-lg">{t("lead")}</p>
         <Countdown variant="large" className="mt-10" />
-        <p className="mt-4 text-sm text-on-brand/70">{c("date")}</p>
+        <p className="text-on-brand/70 mt-4 text-sm">{c("date")}</p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a href="/api/election.ics" className={buttonVariants({ size: "lg" })}>
             {t("calendar")}
           </a>
-          <Link href="/elections" className={buttonVariants({ size: "lg", variant: "outline", className: "text-on-brand" })}>
+          <Link
+            href="/elections"
+            className={buttonVariants({
+              size: "lg",
+              variant: "outline",
+              className: "text-on-brand",
+            })}
+          >
             {t("details")}
           </Link>
         </div>

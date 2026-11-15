@@ -18,13 +18,18 @@ export function WhyHim() {
           {reasons.map((r, i) => {
             const s = stats.find((x) => x.id === r.statId)!;
             return (
-              <Reveal key={r.id} delay={(i % 2) * 0.06} as="article" className="rounded-3xl bg-white/10 p-6 sm:p-8">
-                <p className="font-display text-5xl leading-none font-extrabold text-accent">
+              <Reveal
+                key={r.id}
+                delay={(i % 2) * 0.06}
+                as="article"
+                className="rounded-3xl bg-white/10 p-6 sm:p-8"
+              >
+                <p className="font-display text-accent text-5xl leading-none font-extrabold">
                   <StatCounter value={s.value} suffix={s.suffix} />
                 </p>
-                <p className="mt-1 text-sm text-on-brand/75">{pick(s.label, locale)}</p>
+                <p className="text-on-brand/75 mt-1 text-sm">{pick(s.label, locale)}</p>
                 <h3 className="mt-5 text-2xl font-bold">{t(`items.${r.id}.title`)}</h3>
-                <p className="mt-2 text-on-brand/85">{t(`items.${r.id}.body`)}</p>
+                <p className="text-on-brand/85 mt-2">{t(`items.${r.id}.body`)}</p>
                 <SourceBadge ids={s.sourceIds} tone="light" className="mt-2 -ml-3" />
               </Reveal>
             );

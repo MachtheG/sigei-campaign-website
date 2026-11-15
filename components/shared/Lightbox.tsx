@@ -21,7 +21,11 @@ export function Lightbox({ photos, startIndex, onClose }: Props) {
     const d = dialogRef.current;
     if (d && !d.open) d.showModal();
     const track = trackRef.current;
-    if (track) track.scrollTo({ left: startIndex * track.clientWidth, behavior: "instant" as ScrollBehavior });
+    if (track)
+      track.scrollTo({
+        left: startIndex * track.clientWidth,
+        behavior: "instant" as ScrollBehavior,
+      });
     return () => d?.close();
   }, [startIndex]);
 
@@ -80,23 +84,43 @@ export function Lightbox({ photos, startIndex, onClose }: Props) {
             const el = e.currentTarget;
             setIndex(Math.round(el.scrollLeft / el.clientWidth));
           }}
-          className="flex min-h-0 flex-1 snap-x snap-mandatory overflow-x-auto overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="flex min-h-0 flex-1 snap-x snap-mandatory [scrollbar-width:none] overflow-x-auto overscroll-x-contain [&::-webkit-scrollbar]:hidden"
         >
           {photos.map((p, i) => (
-            <figure key={p.id} className="flex w-screen shrink-0 snap-center flex-col items-center justify-center gap-4 px-3">
+            <figure
+              key={p.id}
+              className="flex w-screen shrink-0 snap-center flex-col items-center justify-center gap-4 px-3"
+            >
               <div style={{ width: `min(94vw, calc(68dvh * ${p.ratio.replace(" / ", " / ")}))` }}>
-                <SenatorImage id={p.id} sizes="100vw" priority={Math.abs(i - startIndex) < 1} className="w-full rounded-lg" />
+                <SenatorImage
+                  id={p.id}
+                  sizes="100vw"
+                  priority={Math.abs(i - startIndex) < 1}
+                  className="w-full rounded-lg"
+                />
               </div>
-              <figcaption className="max-w-prose text-center text-base text-white/90">{pick(p.caption, locale)}</figcaption>
+              <figcaption className="max-w-prose text-center text-base text-white/90">
+                {pick(p.caption, locale)}
+              </figcaption>
             </figure>
           ))}
         </div>
 
         <div className="hidden justify-between p-3 sm:flex">
-          <button type="button" onClick={() => go(index - 1)} disabled={index === 0} className="press min-h-11 rounded-full px-5 hover:bg-white/10 disabled:opacity-30">
+          <button
+            type="button"
+            onClick={() => go(index - 1)}
+            disabled={index === 0}
+            className="press min-h-11 rounded-full px-5 hover:bg-white/10 disabled:opacity-30"
+          >
             ← {t("previous")}
           </button>
-          <button type="button" onClick={() => go(index + 1)} disabled={index === photos.length - 1} className="press min-h-11 rounded-full px-5 hover:bg-white/10 disabled:opacity-30">
+          <button
+            type="button"
+            onClick={() => go(index + 1)}
+            disabled={index === photos.length - 1}
+            className="press min-h-11 rounded-full px-5 hover:bg-white/10 disabled:opacity-30"
+          >
             {t("next")} →
           </button>
         </div>

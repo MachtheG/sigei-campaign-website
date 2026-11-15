@@ -6,8 +6,14 @@ import { SenatorImage } from "@/components/shared/SenatorImage";
 export const metadata: Metadata = { title: "Styleguide", robots: { index: false, follow: false } };
 
 const swatches = [
-  ["bg-bg", "bg"], ["bg-surface", "surface"], ["bg-brand", "brand (tea green)"], ["bg-brand-2", "brand-2"],
-  ["bg-accent", "accent (UDA yellow, placeholder)"], ["bg-fg", "ink"], ["bg-muted", "muted"], ["bg-line", "line"],
+  ["bg-bg", "bg"],
+  ["bg-surface", "surface"],
+  ["bg-brand", "brand (tea green)"],
+  ["bg-brand-2", "brand-2"],
+  ["bg-accent", "accent (UDA yellow, placeholder)"],
+  ["bg-fg", "ink"],
+  ["bg-muted", "muted"],
+  ["bg-line", "line"],
 ];
 
 export default async function Styleguide({ params }: { params: Promise<{ locale: string }> }) {
@@ -20,7 +26,10 @@ export default async function Styleguide({ params }: { params: Promise<{ locale:
         <h2 className="t-h2">Colour</h2>
         <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {swatches.map(([c, n]) => (
-            <li key={c}><div className={`${c} h-20 rounded-2xl border border-line`} /><p className="mt-1 text-sm">{n}</p></li>
+            <li key={c}>
+              <div className={`${c} border-line h-20 rounded-2xl border`} />
+              <p className="mt-1 text-sm">{n}</p>
+            </li>
           ))}
         </ul>
       </section>
@@ -35,13 +44,17 @@ export default async function Styleguide({ params }: { params: Promise<{ locale:
       <section>
         <h2 className="t-h2">Buttons</h2>
         <div className="mt-4 flex flex-wrap gap-3">
-          <Button>Accent</Button><Button variant="brand">Brand</Button>
-          <Button variant="outline">Outline</Button><Button variant="ghost">Ghost</Button>
+          <Button>Accent</Button>
+          <Button variant="brand">Brand</Button>
+          <Button variant="outline">Outline</Button>
+          <Button variant="ghost">Ghost</Button>
         </div>
       </section>
       <section>
         <h2 className="t-h2">Photo placeholder</h2>
-        <div className="mt-4 max-w-sm"><SenatorImage id="portrait-formal" sizes="384px" /></div>
+        <div className="mt-4 max-w-sm">
+          <SenatorImage id="portrait-formal" sizes="384px" />
+        </div>
       </section>
     </div>
   );

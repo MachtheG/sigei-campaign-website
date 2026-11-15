@@ -1,7 +1,19 @@
 {
-  "meta": { "title": "Elections", "description": "Countdown to the 10 August 2027 General Election, key dates, how to check your voter registration, and a voter checklist." },
-  "hero": { "title": "Election day: Tuesday 10 August 2027", "lead": "Polls open at 6:00 am. Check your registration now, and plan your day." },
-  "countdown": { "title": "Time to polls opening", "calendar": "Add to calendar", "registered": "Am I registered?", "iebc": "Visit IEBC", "note": "Dates and rules come from the Independent Electoral and Boundaries Commission. Always confirm on iebc.or.ke." },
+  "meta": {
+    "title": "Elections",
+    "description": "Countdown to the 10 August 2027 General Election, key dates, how to check your voter registration, and a voter checklist."
+  },
+  "hero": {
+    "title": "Election day: Tuesday 10 August 2027",
+    "lead": "Polls open at 6:00 am. Check your registration now, and plan your day."
+  },
+  "countdown": {
+    "title": "Time to polls opening",
+    "calendar": "Add to calendar",
+    "registered": "Am I registered?",
+    "iebc": "Visit IEBC",
+    "note": "Dates and rules come from the Independent Electoral and Boundaries Commission. Always confirm on iebc.or.ke."
+  },
   "dates": {
     "title": "Key dates",
     "campaign-opens": "Campaign period opens",

@@ -9,7 +9,10 @@ export function RecordStatsGrid() {
   const t = useTranslations("record");
   const empty = PILLARS.filter((p) => !stats.some((s) => s.pillars.includes(p)));
   return (
-    <section aria-labelledby="rec-stats" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
+    <section
+      aria-labelledby="rec-stats"
+      className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8"
+    >
       <SectionHeading id="rec-stats" title={t("stats.title")} lead={t("stats.lead")} />
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {stats.map((s, i) => (
@@ -18,9 +21,13 @@ export function RecordStatsGrid() {
           </Reveal>
         ))}
         {empty.map((p) => (
-          <div key={p} data-only-pillar={p} className="rounded-3xl border-2 border-dashed border-line p-6 sm:col-span-2 lg:col-span-3">
+          <div
+            key={p}
+            data-only-pillar={p}
+            className="border-line rounded-3xl border-2 border-dashed p-6 sm:col-span-2 lg:col-span-3"
+          >
             <p className="font-semibold">{t("stats.empty")}</p>
-            <p className="mt-1 font-semibold text-muted">{t("stats.emptyPlaceholder")}</p>
+            <p className="text-muted mt-1 font-semibold">{t("stats.emptyPlaceholder")}</p>
           </div>
         ))}
       </div>

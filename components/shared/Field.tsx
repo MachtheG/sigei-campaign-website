@@ -15,9 +15,13 @@ export function Field({ id, label, error, hint, children }: Props) {
         {label}
       </label>
       {children}
-      {hint && !error && <p className="mt-1 text-sm text-muted">{hint}</p>}
+      {hint && !error && <p className="text-muted mt-1 text-sm">{hint}</p>}
       {error && (
-        <p id={`${id}-err`} role="alert" className="mt-1 text-sm font-semibold text-red-700 dark:text-red-300">
+        <p
+          id={`${id}-err`}
+          role="alert"
+          className="mt-1 text-sm font-semibold text-red-700 dark:text-red-300"
+        >
           {error}
         </p>
       )}

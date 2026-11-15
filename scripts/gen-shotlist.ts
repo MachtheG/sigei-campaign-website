@@ -1,8 +1,18 @@
 import { writeFileSync } from "node:fs";
 import { photos } from "../data/photos";
 
-const min = (r: string) => (r.startsWith("16") ? "2400×1350" : r.startsWith("4 / 5") ? "1600×2000" : r.startsWith("4 / 3") ? "2000×1500" : "2400×1600");
-const rows = photos.map((p) => `| \`${p.id}\` | ${p.category}${p.hero ? " (hero)" : ""} | ${p.ratio.replace(" / ", ":")} | ${p.id === "hero-main" ? "≥ 2400 px wide" : min(p.ratio)} | ${p.slot.split(": ").slice(1).join(": ")} |`);
+const min = (r: string) =>
+  r.startsWith("16")
+    ? "2400×1350"
+    : r.startsWith("4 / 5")
+      ? "1600×2000"
+      : r.startsWith("4 / 3")
+        ? "2000×1500"
+        : "2400×1600";
+const rows = photos.map(
+  (p) =>
+    `| \`${p.id}\` | ${p.category}${p.hero ? " (hero)" : ""} | ${p.ratio.replace(" / ", ":")} | ${p.id === "hero-main" ? "≥ 2400 px wide" : min(p.ratio)} | ${p.slot.split(": ").slice(1).join(": ")} |`,
+);
 writeFileSync(
   "docs/SHOT-LIST.md",
   `# Shot list

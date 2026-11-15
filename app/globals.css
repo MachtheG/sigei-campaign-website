@@ -61,32 +61,61 @@ body {
   overflow-x: clip;
   text-rendering: optimizeLegibility;
 }
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display);
   letter-spacing: -0.02em;
   line-height: 1.05;
   text-wrap: balance;
 }
-p { text-wrap: pretty; }
+p {
+  text-wrap: pretty;
+}
 :focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
   border-radius: 4px;
 }
-::selection { background: var(--accent); color: var(--on-accent); }
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
 
 .skip-link {
-  position: absolute; left: 1rem; top: -4rem; z-index: 100;
-  background: var(--accent); color: var(--on-accent);
-  padding: 0.75rem 1rem; border-radius: 0.5rem; font-weight: 600;
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--accent);
+  color: var(--on-accent);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
 }
-.skip-link:focus { top: 1rem; }
+.skip-link:focus {
+  top: 1rem;
+}
 
 /* Fluid display sizes (mobile first, 375px) */
-.t-display { font-size: clamp(2.5rem, 9vw + 0.5rem, 6.25rem); font-weight: 800; line-height: 0.98; }
-.t-h1 { font-size: clamp(2.25rem, 6vw + 0.5rem, 4.5rem); font-weight: 800; }
-.t-h2 { font-size: clamp(1.75rem, 3.5vw + 0.75rem, 3.25rem); font-weight: 750; }
-.t-lead { font-size: clamp(1.125rem, 0.6vw + 1rem, 1.375rem); color: var(--muted); }
+.t-display {
+  font-size: clamp(2.5rem, 9vw + 0.5rem, 6.25rem);
+  font-weight: 800;
+  line-height: 0.98;
+}
+.t-h1 {
+  font-size: clamp(2.25rem, 6vw + 0.5rem, 4.5rem);
+  font-weight: 800;
+}
+.t-h2 {
+  font-size: clamp(1.75rem, 3.5vw + 0.75rem, 3.25rem);
+  font-weight: 750;
+}
+.t-lead {
+  font-size: clamp(1.125rem, 0.6vw + 1rem, 1.375rem);
+  color: var(--muted);
+}
 
 /* ───────── Placeholder & imagery ───────── */
 .ph {
@@ -98,20 +127,45 @@ p { text-wrap: pretty; }
 
 /* ───────── Motion ───────── */
 @keyframes roll-in {
-  from { transform: translateY(35%); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(35%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-.roll { animation: roll-in 320ms var(--ease-out) both; display: inline-block; }
+.roll {
+  animation: roll-in 320ms var(--ease-out) both;
+  display: inline-block;
+}
 
 @keyframes marquee {
-  from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
-.marquee-track { animation: marquee 60s linear infinite; width: max-content; }
+.marquee-track {
+  animation: marquee 60s linear infinite;
+  width: max-content;
+}
 .marquee:hover .marquee-track,
-.marquee:focus-within .marquee-track { animation-play-state: paused; }
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
 
-@keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 @supports (animation-timeline: scroll()) {
   .scroll-progress {
     transform-origin: left;
@@ -120,40 +174,82 @@ p { text-wrap: pretty; }
   }
 }
 
-.press { transition: transform 160ms var(--ease-out), background-color 160ms ease, color 160ms ease; }
-.press:active { transform: scale(0.97); }
+.press {
+  transition:
+    transform 160ms var(--ease-out),
+    background-color 160ms ease,
+    color 160ms ease;
+}
+.press:active {
+  transform: scale(0.97);
+}
 
 /* View transitions (React <ViewTransition> + browser API) */
-::view-transition-old(root) { animation: 160ms ease-out both vt-out; }
-::view-transition-new(root) { animation: 260ms var(--ease-out) both vt-in; }
-@keyframes vt-out { to { opacity: 0; } }
-@keyframes vt-in { from { opacity: 0; transform: translateY(6px); } }
+::view-transition-old(root) {
+  animation: 160ms ease-out both vt-out;
+}
+::view-transition-new(root) {
+  animation: 260ms var(--ease-out) both vt-in;
+}
+@keyframes vt-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes vt-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
 
 /* Lite mode (slow networks) and reduced motion: no travel, no loops */
-html[data-lite="1"] *, html[data-lite="1"] *::before, html[data-lite="1"] *::after {
+html[data-lite="1"] *,
+html[data-lite="1"] *::before,
+html[data-lite="1"] *::after {
   animation-duration: 0.001ms !important;
   animation-iteration-count: 1 !important;
   transition-duration: 0.001ms !important;
   scroll-behavior: auto !important;
 }
-html[data-lite="1"] .marquee-track { animation: none !important; }
-html[data-lite="1"] .lite-hide { display: none !important; }
+html[data-lite="1"] .marquee-track {
+  animation: none !important;
+}
+html[data-lite="1"] .lite-hide {
+  display: none !important;
+}
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
-  .marquee-track { animation: none !important; }
-  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+  .marquee-track {
+    animation: none !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
 }
 
 /* Hover only where hover exists */
-@media (hover: none) { .hover-only { display: none; } }
+@media (hover: none) {
+  .hover-only {
+    display: none;
+  }
+}
 
 /* Safe areas for the bottom nav */
-.pb-safe { padding-bottom: calc(env(safe-area-inset-bottom) + 0.25rem); }
+.pb-safe {
+  padding-bottom: calc(env(safe-area-inset-bottom) + 0.25rem);
+}
 
 /* ───────── Record: CSS-driven pillar filter (SSR-friendly) ─────────
    <PillarScope> sets data-pillar on a wrapper; anything tagged data-pillars="a b"
@@ -167,16 +263,38 @@ html[data-lite="1"] .lite-hide { display: none !important; }
   display: none;
 }
 /* Placeholders for pillars with no sourced item show only when that pillar is chosen */
-[data-only-pillar] { display: none; }
+[data-only-pillar] {
+  display: none;
+}
 [data-pillar="tea"] [data-only-pillar="tea"],
 [data-pillar="oversight"] [data-only-pillar="oversight"],
 [data-pillar="justice"] [data-only-pillar="justice"],
 [data-pillar="education"] [data-only-pillar="education"],
 [data-pillar="water"] [data-only-pillar="water"],
-[data-pillar="devolution"] [data-only-pillar="devolution"] { display: block; }
+[data-pillar="devolution"] [data-only-pillar="devolution"] {
+  display: block;
+}
 
 /* Timeline: the spine draws itself as the list scrolls through the viewport */
-@keyframes spine { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes spine {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
 @supports (animation-timeline: view()) {
-  .tl-spine { transform-origin: top; animation: spine linear both; animation-timeline: view(); animation-range: entry 10% cover 70%; }
+  .tl-spine {
+    transform-origin: top;
+    animation: spine linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 70%;
+  }
+}
+
+/* Skip rendering work for long below-the-fold sections until they approach the viewport */
+.cv {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 }

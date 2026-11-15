@@ -3,7 +3,19 @@ import { timeline } from "@/data/record/timeline";
 import { routing } from "@/lib/i18n/routing";
 import { SITE_URL } from "@/lib/utils";
 
-const PATHS = ["", "/record", "/second-term", "/gallery", "/news", "/about", "/party", "/elections", "/get-involved", "/contact", "/privacy"];
+const PATHS = [
+  "",
+  "/record",
+  "/second-term",
+  "/gallery",
+  "/news",
+  "/about",
+  "/party",
+  "/elections",
+  "/get-involved",
+  "/contact",
+  "/privacy",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const all = [...PATHS, ...timeline.map((e) => `/record/${e.slug}`)];

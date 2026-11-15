@@ -1,6 +1,15 @@
 import { useTranslations } from "next-intl";
 
-const SECTIONS = ["controller", "collect", "why", "basis", "share", "keep", "rights", "security"] as const;
+const SECTIONS = [
+  "controller",
+  "collect",
+  "why",
+  "basis",
+  "share",
+  "keep",
+  "rights",
+  "security",
+] as const;
 
 export function PrivacyNotice() {
   const t = useTranslations("privacy");
@@ -12,7 +21,9 @@ export function PrivacyNotice() {
       <div className="mt-10 space-y-8">
         {SECTIONS.map((s) => (
           <section key={s} aria-labelledby={`pv-${s}`}>
-            <h2 id={`pv-${s}`} className="font-display text-2xl font-bold">{t(`sections.${s}.title`)}</h2>
+            <h2 id={`pv-${s}`} className="font-display text-2xl font-bold">
+              {t(`sections.${s}.title`)}
+            </h2>
             <p className="mt-2 text-lg">{t(`sections.${s}.body`)}</p>
           </section>
         ))}

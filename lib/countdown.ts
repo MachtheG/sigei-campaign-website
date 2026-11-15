@@ -23,7 +23,11 @@ export function getRemaining(targetMs: number, nowMs: number): Remaining {
 }
 
 /** Polls are open from opens → closes. */
-export function electionPhase(nowMs: number, opensMs: number, closesMs: number): "before" | "open" | "after" {
+export function electionPhase(
+  nowMs: number,
+  opensMs: number,
+  closesMs: number,
+): "before" | "open" | "after" {
   if (nowMs < opensMs) return "before";
   if (nowMs < closesMs) return "open";
   return "after";

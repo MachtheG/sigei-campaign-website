@@ -1,6 +1,12 @@
 {
-  "meta": { "title": "Kuhusu", "description": "Safari ya Seneta Wakili Hillary Sigei: Shule ya Msingi ya Ndamichonik, Tenwek High, Chuo Kikuu cha Nairobi, taaluma ya uwakili, na Seneti." },
-  "hero": { "title": "Kutoka Ndamichonik hadi Seneti", "lead": "Mtoto wa Bomet aliyekuwa wakili, kisha Seneta wa Bomet." },
+  "meta": {
+    "title": "Kuhusu",
+    "description": "Safari ya Seneta Wakili Hillary Sigei: Shule ya Msingi ya Ndamichonik, Tenwek High, Chuo Kikuu cha Nairobi, taaluma ya uwakili, na Seneti."
+  },
+  "hero": {
+    "title": "Kutoka Ndamichonik hadi Seneti",
+    "lead": "Mtoto wa Bomet aliyekuwa wakili, kisha Seneta wa Bomet."
+  },
   "journey": { "title": "Safari yake", "lead": "Shule, sheria, taaluma, utumishi wa umma." },
   "credentials": {
     "title": "Sifa za kitaaluma",

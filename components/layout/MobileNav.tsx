@@ -41,7 +41,7 @@ export function MobileNav() {
     <>
       <nav
         aria-label={t("a11y.mobileNav")}
-        className="pb-safe fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-line bg-bg md:hidden"
+        className="pb-safe border-line bg-bg fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t md:hidden"
       >
         {items.map(({ href, key, Icon }) => {
           const active = isActive(pathname, href);
@@ -50,7 +50,10 @@ export function MobileNav() {
               key={key}
               href={href}
               aria-current={active ? "page" : undefined}
-              className={cn("press flex min-h-14 flex-col items-center justify-center gap-0.5 text-[0.72rem] font-semibold", active ? "text-link" : "text-muted")}
+              className={cn(
+                "press flex min-h-14 flex-col items-center justify-center gap-0.5 text-[0.72rem] font-semibold",
+                active ? "text-link" : "text-muted",
+              )}
             >
               <Icon aria-hidden className="size-5" />
               {t(`nav.${key}`)}
@@ -60,7 +63,7 @@ export function MobileNav() {
         <button
           type="button"
           onClick={openMenu}
-          className="press flex min-h-14 flex-col items-center justify-center gap-0.5 text-[0.72rem] font-semibold text-muted"
+          className="press text-muted flex min-h-14 flex-col items-center justify-center gap-0.5 text-[0.72rem] font-semibold"
         >
           <Menu aria-hidden className="size-5" />
           {t("nav.menu")}
@@ -71,7 +74,7 @@ export function MobileNav() {
         ref={ref}
         onClose={() => setOpen(false)}
         aria-label={t("nav.menu")}
-        className="fixed inset-0 m-0 h-dvh max-h-none w-screen max-w-none bg-brand p-0 text-on-brand backdrop:bg-brand"
+        className="bg-brand text-on-brand backdrop:bg-brand fixed inset-0 m-0 h-dvh max-h-none w-screen max-w-none p-0"
       >
         {open && (
           <div className="flex h-full flex-col overflow-y-auto px-5 pt-3 pb-8">

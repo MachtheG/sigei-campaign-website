@@ -16,8 +16,13 @@ export function PartyPrograms() {
         <SectionHeading id="pt-programs" title={t("title")} lead={t("lead")} />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {partyPrograms.map((p, i) => (
-            <article key={p.id} className="overflow-hidden rounded-3xl bg-bg">
-              <SenatorImage id={PHOTOS[i % PHOTOS.length]} sizes="(min-width: 768px) 33vw, 100vw" ratio="16 / 9" compact />
+            <article key={p.id} className="bg-bg overflow-hidden rounded-3xl">
+              <SenatorImage
+                id={PHOTOS[i % PHOTOS.length]}
+                sizes="(min-width: 768px) 33vw, 100vw"
+                ratio="16 / 9"
+                compact
+              />
               <div className="p-5">
                 <h3 className="text-lg font-bold">{pick(p.title, locale)}</h3>
                 <p className="mt-2 font-semibold">{t("placeholder")}</p>

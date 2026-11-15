@@ -1,16 +1,43 @@
 {
-  "meta": { "title": "Privacy", "description": "How this campaign website collects and uses personal data under the Data Protection Act, 2019." },
+  "meta": {
+    "title": "Privacy",
+    "description": "How this campaign website collects and uses personal data under the Data Protection Act, 2019."
+  },
   "title": "Privacy notice",
   "lead": "How we handle the details you give us on this website, under Kenya's Data Protection Act, 2019.",
   "updated": "Last updated: [[TO CONFIRM: date]]",
   "sections": {
-    "controller": { "title": "Who is responsible", "body": "The data controller is [[TO CONFIRM: campaign committee legal name and registration with the Office of the Data Protection Commissioner]]. Contact: [[TO CONFIRM: data protection contact email]]." },
-    "collect": { "title": "What we collect", "body": "Only what you type into our forms: your name, phone number, constituency, optionally your email, and any message you write. We do not use tracking cookies. A small setting remembers your language and Lite mode on your own device." },
-    "why": { "title": "Why we collect it", "body": "To record your pledge or volunteer offer, to reply to your message, and to update you about the campaign. We do not sell your data." },
-    "basis": { "title": "Our legal basis", "body": "Your consent, given by ticking the box on each form. You can withdraw it at any time." },
-    "share": { "title": "Who sees it", "body": "Campaign staff and the service providers that deliver our email or store submissions on our behalf. We do not share your details with anyone else unless the law requires it." },
-    "keep": { "title": "How long we keep it", "body": "[[TO CONFIRM: retention period]]. We delete submissions when they are no longer needed for the purpose you gave them." },
-    "rights": { "title": "Your rights", "body": "You may ask to see, correct or delete your data, object to its use, and withdraw consent. You can also complain to the Office of the Data Protection Commissioner." },
-    "security": { "title": "Keeping it safe", "body": "Forms are sent over HTTPS, include spam protection, and are accessible only to authorised campaign staff." }
+    "controller": {
+      "title": "Who is responsible",
+      "body": "The data controller is [[TO CONFIRM: campaign committee legal name and registration with the Office of the Data Protection Commissioner]]. Contact: [[TO CONFIRM: data protection contact email]]."
+    },
+    "collect": {
+      "title": "What we collect",
+      "body": "Only what you type into our forms: your name, phone number, constituency, optionally your email, and any message you write. We do not use tracking cookies. A small setting remembers your language and Lite mode on your own device."
+    },
+    "why": {
+      "title": "Why we collect it",
+      "body": "To record your pledge or volunteer offer, to reply to your message, and to update you about the campaign. We do not sell your data."
+    },
+    "basis": {
+      "title": "Our legal basis",
+      "body": "Your consent, given by ticking the box on each form. You can withdraw it at any time."
+    },
+    "share": {
+      "title": "Who sees it",
+      "body": "Campaign staff and the service providers that deliver our email or store submissions on our behalf. We do not share your details with anyone else unless the law requires it."
+    },
+    "keep": {
+      "title": "How long we keep it",
+      "body": "[[TO CONFIRM: retention period]]. We delete submissions when they are no longer needed for the purpose you gave them."
+    },
+    "rights": {
+      "title": "Your rights",
+      "body": "You may ask to see, correct or delete your data, object to its use, and withdraw consent. You can also complain to the Office of the Data Protection Commissioner."
+    },
+    "security": {
+      "title": "Keeping it safe",
+      "body": "Forms are sent over HTTPS, include spam protection, and are accessible only to authorised campaign staff."
+    }
   }
 }

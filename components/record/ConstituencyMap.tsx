@@ -21,11 +21,19 @@ export function ConstituencyMap() {
   const countyWide = timeline.filter((e) => pillar === "all" || e.pillar === pillar);
 
   return (
-    <section aria-labelledby="rec-map" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
+    <section
+      aria-labelledby="rec-map"
+      className="cv mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20 lg:px-8"
+    >
       <SectionHeading id="rec-map" title={t("title")} lead={t("lead")} />
       <div className="mt-10 grid items-start gap-8 md:grid-cols-2">
         <div>
-          <svg viewBox="0 0 100 100" role="group" aria-label={t("title")} className="w-full rounded-3xl bg-surface">
+          <svg
+            viewBox="0 0 100 100"
+            role="group"
+            aria-label={t("title")}
+            className="bg-surface w-full rounded-3xl"
+          >
             {constituencies.map((c) => {
               const active = sel === c.id;
               return (
@@ -36,7 +44,9 @@ export function ConstituencyMap() {
                   aria-pressed={active}
                   aria-label={pick(c.name, locale)}
                   onClick={() => setSel(c.id)}
-                  onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), setSel(c.id))}
+                  onKeyDown={(e) =>
+                    (e.key === "Enter" || e.key === " ") && (e.preventDefault(), setSel(c.id))
+                  }
                   className="cursor-pointer outline-none [&:focus-visible>rect]:stroke-[var(--accent)] [&:focus-visible>rect]:[stroke-width:1.2]"
                 >
                   <rect
@@ -45,45 +55,67 @@ export function ConstituencyMap() {
                     width="30"
                     height="22"
                     rx="7"
-                    className={cn("transition-colors", active ? "fill-[var(--accent)]" : "fill-[var(--brand)] hover:fill-[var(--brand-2)]")}
+                    className={cn(
+                      "transition-colors",
+                      active
+                        ? "fill-[var(--accent)]"
+                        : "fill-[var(--brand)] hover:fill-[var(--brand-2)]",
+                    )}
                   />
-                  <text x={c.x} y={c.y + 1.6} textAnchor="middle" fontSize="4.4" fontWeight="700" fill={active ? "#111a16" : "#faf7f0"} className="pointer-events-none select-none">
+                  <text
+                    x={c.x}
+                    y={c.y + 1.6}
+                    textAnchor="middle"
+                    fontSize="4.4"
+                    fontWeight="700"
+                    fill={active ? "#111a16" : "#faf7f0"}
+                    className="pointer-events-none select-none"
+                  >
                     {pick(c.name, locale)}
                   </text>
                 </g>
               );
             })}
           </svg>
-          <p className="mt-2 text-sm text-muted">
+          <p className="text-muted mt-2 text-sm">
             {t("stylised")} {t("wardsNote")}
           </p>
         </div>
 
-        <div aria-live="polite" className="rounded-3xl bg-surface p-6 sm:p-8">
+        <div aria-live="polite" className="bg-surface rounded-3xl p-6 sm:p-8">
           {current ? (
             <>
-              <h3 className="font-sans text-2xl font-bold tracking-normal">{pick(current.name, locale)}</h3>
-              <h4 className="mt-4 font-sans text-sm font-bold tracking-normal text-muted">{t("work")}</h4>
+              <h3 className="font-sans text-2xl font-bold tracking-normal">
+                {pick(current.name, locale)}
+              </h3>
+              <h4 className="text-muted mt-4 font-sans text-sm font-bold tracking-normal">
+                {t("work")}
+              </h4>
               <p className="mt-1 font-semibold">{t("workPlaceholder")}</p>
               <SourceBadge ids={current.sourceIds} className="mt-1 -ml-3" />
             </>
           ) : (
             <p className="font-semibold">{t("prompt")}</p>
           )}
-          <h4 className="mt-6 font-sans text-sm font-bold tracking-normal text-muted">{t("countyWide")}</h4>
+          <h4 className="text-muted mt-6 font-sans text-sm font-bold tracking-normal">
+            {t("countyWide")}
+          </h4>
           {countyWide.length ? (
             <ul className="mt-2 space-y-2">
               {countyWide.slice(0, 5).map((e) => (
                 <li key={e.slug} className="flex flex-wrap items-center gap-2">
                   <PillarChip pillar={e.pillar} />
-                  <Link href={`/record/${e.slug}`} className="min-h-11 content-center font-semibold underline underline-offset-4">
+                  <Link
+                    href={`/record/${e.slug}`}
+                    className="min-h-11 content-center font-semibold underline underline-offset-4"
+                  >
                     {pick(e.title, locale)}
                   </Link>
                 </li>
               ))}
             </ul>
           ) : (
-            <p className="mt-2 text-muted">{t("none")}</p>
+            <p className="text-muted mt-2">{t("none")}</p>
           )}
         </div>
       </div>

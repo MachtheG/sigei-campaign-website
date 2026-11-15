@@ -1,6 +1,12 @@
 {
-  "meta": { "title": "Chama", "description": "Nafasi ya Seneta Wakili Hillary Sigei katika UDA, na programu za UDA zinazohusu Bomet." },
-  "hero": { "title": "UDA na chama", "lead": "Alichaguliwa kupitia tiketi ya UDA mwaka 2022. Hii ni nafasi yake, na yale ambayo chama kimetekeleza Bomet." },
+  "meta": {
+    "title": "Chama",
+    "description": "Nafasi ya Seneta Wakili Hillary Sigei katika UDA, na programu za UDA zinazohusu Bomet."
+  },
+  "hero": {
+    "title": "UDA na chama",
+    "lead": "Alichaguliwa kupitia tiketi ya UDA mwaka 2022. Hii ni nafasi yake, na yale ambayo chama kimetekeleza Bomet."
+  },
   "role": {
     "title": "Nafasi yake katika chama",
     "body": "Seneta Sigei alichaguliwa Seneta wa Bomet kupitia tiketi ya United Democratic Alliance (UDA) Agosti 2022.",

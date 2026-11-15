@@ -34,7 +34,7 @@ export function SenatorImage({ id, sizes, priority, className, ratio, position, 
 
   if (hasRealPhoto(photo)) {
     return (
-      <div className={cn("relative overflow-hidden bg-surface", className)} style={style}>
+      <div className={cn("bg-surface relative overflow-hidden", className)} style={style}>
         <Image
           src={photo.src!}
           alt={alt}
@@ -68,7 +68,7 @@ export function SenatorImage({ id, sizes, priority, className, ratio, position, 
         <path d="M20 240c0-56 36-92 80-92s80 36 80 92Z" fill="currentColor" />
       </svg>
       <div className="absolute inset-x-0 bottom-0 p-3 text-[0.7rem] leading-snug sm:p-4 sm:text-xs">
-        <span className="inline-block rounded-full bg-accent px-2.5 py-0.5 font-semibold text-on-accent">
+        <span className="bg-accent text-on-accent inline-block rounded-full px-2.5 py-0.5 font-semibold">
           {t("placeholder")}
         </span>
         {!compact && <p className="mt-1.5 max-w-[34ch] opacity-80">{photo.slot}</p>}

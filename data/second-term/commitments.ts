@@ -90,7 +90,7 @@ export const commitments: Commitment[] = [
       en: "Bills and amendments tabled and passed; committee reports published.",
       sw: "Miswada na marekebisho yaliyowasilishwa na kupitishwa; ripoti za kamati zilizochapishwa.",
     },
-    sourceIds: ["standard-chair-2022", "unverified-gbv-arrears"],
+    sourceIds: ["standard-chair-2022", "standard-gbv-2026"],
   },
   {
     id: "ecde",
@@ -165,6 +165,6 @@ export const commitments: Commitment[] = [
       en: "Salary arrears cleared; share of the county budget going to youth programmes, per Controller of Budget.",
       sw: "Malimbikizo ya mishahara kulipwa; sehemu ya bajeti ya kaunti kwa programu za vijana, kulingana na Mdhibiti wa Bajeti.",
     },
-    sourceIds: ["unverified-gbv-arrears", "bomet-county-about"],
+    sourceIds: ["bomet-county-about", "peopledaily-audit"],
   },
 ];

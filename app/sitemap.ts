@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/utils";
 const PATHS = [
   "",
   "/record",
-  "/second-term",
+  "/kazi-iendelee",
   "/gallery",
   "/news",
   "/about",

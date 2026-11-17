@@ -11,7 +11,7 @@ export function NewsHero() {
           <p className="text-muted mt-4 max-w-[46ch] text-lg">{t("lead")}</p>
         </div>
         <SenatorImage
-          id="events-launch"
+          id="rainbow-farmland"
           sizes="(min-width: 768px) 45vw, 100vw"
           priority
           className="rounded-3xl"

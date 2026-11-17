@@ -61,7 +61,8 @@
     "toConfirmLink": "[[TO CONFIRM: kiungo]]",
     "toConfirmDate": "[[TO CONFIRM: tarehe]]",
     "notVerified": "Bado haijathibitishwa",
-    "open": "Fungua chanzo"
+    "open": "Fungua chanzo",
+    "accessed": "ukurasa ulisomwa {date}"
   },
   "share": {
     "share": "Shiriki",

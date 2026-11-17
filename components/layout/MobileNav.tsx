@@ -34,7 +34,7 @@ export function MobileNav() {
   const items = [
     { href: "/", key: "home", Icon: Home },
     { href: "/record", key: "record", Icon: LineChart },
-    { href: "/second-term", key: "secondTerm", Icon: Sprout },
+    { href: "/kazi-iendelee", key: "secondTerm", Icon: Sprout },
   ] as const;
 
   return (

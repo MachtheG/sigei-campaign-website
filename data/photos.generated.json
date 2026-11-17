@@ -41,8 +41,8 @@
     "height": 1083,
     "blurDataURL": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBACdASoQABgAPu1iqU2ppaOiMAgBMB2JagCdL1ygQAm2XZiydUw3mAAA/uhQPDxMr2JWoyzIfgQAVaUaOopIbb8EDJlurJYOYyX264EzLvYG1r7T1LLs1SUJ+7nThRYaKB9Qt8UV5dkjzsayQ6f21lRUF/z/Ib7gV5dvy/9THGAaqrgVZbbrv2R9i3RJZ155y4CKcwT7gAAA"
   },
-  "portrait-casual": {
-    "src": "/images/senator/_opt/portrait-casual-720.webp",
+  "kaplong-hills": {
+    "src": "/images/senator/_opt/kaplong-hills-720.webp",
     "width": 720,
     "height": 479,
     "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoAA4BaJZACsAD1cWfjcU8SgAD+9/PPLrZJNTbcOrFsh8HnvC5jyjRjqRZzTlJPF86TYAjZtTqlYm/meCAA"
@@ -89,14 +89,14 @@
     "height": 418,
     "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAQCdASoQAAsAA4BaJaACdAYwxL0hNtQA/glYPA6U15ob3XZor6Mi7F3EVZRhBdBTwyS0OJoHHRwSHNv2ZU2qfxdb9VMd3gYD0xj9p3Cu1sHM2R9ab/OUYc4QUZrEb+EGMjme4AA="
   },
-  "events-church": {
-    "src": "/images/senator/_opt/events-church-2400.webp",
+  "dairy-farm": {
+    "src": "/images/senator/_opt/dairy-farm-2400.webp",
     "width": 2400,
     "height": 1800,
     "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAwAA4BaJZgC7AEO6pFe1VwAAP7VFTSCuyL3q2dOzAhy4zvED4smVBUqPUWuH/FEhqX3NNVk4SHRtstDmwt09uW/sgLdeixAAA=="
   },
-  "events-launch": {
-    "src": "/images/senator/_opt/events-launch-2400.webp",
+  "rainbow-farmland": {
+    "src": "/images/senator/_opt/rainbow-farmland-2400.webp",
     "width": 2400,
     "height": 1800,
     "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAwAA4BaJbACdAED97exbIAA/tOe/vwc1x3IdOAC8Vtq+y2eae57UuAp8IeP2OBbls3fQL55FUAA"

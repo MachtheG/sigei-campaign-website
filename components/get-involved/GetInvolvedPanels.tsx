@@ -31,7 +31,7 @@ export function GetInvolvedPanels() {
           <ShareKit />
         </div>
         <SenatorImage
-          id="events-church"
+          id="dairy-farm"
           sizes="(min-width: 768px) 40vw, 100vw"
           className="rounded-2xl"
         />

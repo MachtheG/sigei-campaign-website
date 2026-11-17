@@ -10,13 +10,12 @@ export type ChapterDef = {
 };
 
 export const chapters: ChapterDef[] = [
-  { id: "mtoto", photoId: "portrait-casual", value: 10, sourceIds: ["parliament-profile"] },
+  { id: "mtoto", photoId: "kaplong-hills", value: 10, sourceIds: ["parliament-profile"] },
   {
     id: "wakili",
     photoId: "portrait-formal",
     value: 13,
     sourceIds: ["parliament-profile"],
-    confirm: "start year of practice",
   },
   {
     id: "sauti",
@@ -35,9 +34,8 @@ export const chapters: ChapterDef[] = [
       "parliament-tea-bill",
       "peopledaily-audit",
       "peopledaily-ecde-milk",
-      "unverified-gbv-arrears",
+      "standard-gbv-2026",
     ],
-    confirm: "growers figure against article text",
   },
   { id: "iendelee", photoId: "events-rally", value: null, sourceIds: ["iebc-date-notice"] },
 ];
@@ -47,5 +45,5 @@ export const reasons = [
   { id: "law", statId: "bar-years" },
   { id: "trust", statId: "chair-terms" },
   { id: "tea", statId: "bills-sponsored" },
-  { id: "oversight", statId: "inspection" },
+  { id: "oversight", statId: "contributions" },
 ] as const;

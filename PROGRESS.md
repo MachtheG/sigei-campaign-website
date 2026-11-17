@@ -1,6 +1,31 @@
 # PROGRESS
 
-## Phase status
+## Redesign (branch `redesign`): combining Reference A (dignity, story) and Reference B (proof, conversion)
+
+- [x] **Phase 1: audit & content fixes** (2026-11-17). See `docs/REDESIGN-AUDIT.md`. Waiting at **Checkpoint 1**.
+- [ ] Phase 2: design exploration (/design artboards) → Checkpoint 2
+- [ ] Phase 3: design system
+- [ ] Phase 4: home page
+- [ ] Phase 5: inner pages + redirects
+- [ ] Phase 6: polish → Checkpoint 3
+- [ ] Phase 7: ship (PR + preview)
+
+### Phase 1 checks
+
+lint ✓ · typecheck ✓ · 16 unit tests ✓ · build ✓ · check:i18n ✓ (12 files in sync) · check:sources ✓ (26 sources, 1 not fully verified: KNBS) · 375/768/1440 px: no horizontal overflow on /en, /sw, /en/kazi-iendelee, /en/record, /en/news, /en/gallery, /en/about; the only visible `[[TO CONFIRM]]` markers are campaign-owned (Authorised-by, letter signature, press statements). `/en/second-term`, `/sw/second-term` and `/second-term` return 308 → `/kazi-iendelee`.
+
+### Research items still open (not campaign-owned)
+
+- **KNBS 2019 census (875,689):** now linked to KNBS Volume I, but knbs.or.ke could not be opened from our tools (TLS/proxy). A person must read the Bomet row. Shown as "Not yet verified" until then.
+- **Nation Tea Bill article:** year 2023 established from context; the exact day was not visible (nation.africa blocks our fetcher). Figures confirmed against the article text.
+- **Education News ECDE article:** year 2026 only (site blocks our fetcher). The KNA version of the same story carries 20 Aug 2026; re-check that this is the publication date, not the page's display date.
+- **Mzalendo counts** (2 bills, 220 contributions, 237,192 votes) read 17 Nov 2026: re-read and update `accessed`/`asOf` before launch. Mzalendo's ranking box (52 motions/questions/statements) and its tabs (45 statements, 9 motions, 1 question) do not reconcile, so none of these is used as a stat.
+- IEBC voter-verification deep link; gazetted polls-closing time; High Court (Malindi) ruling on the election year (IEBC says 10 Aug 2027 stands).
+- BOMWASCO figures differ between outlets, so none is used as a headline stat (unchanged).
+
+## Earlier build (v1, main branch)
+
+### Phase status
 
 - [x] Phase 0: research, data files, sources, docs
 - [x] Phase 1: scaffold
@@ -14,18 +39,9 @@
 - [x] Phase 9: QA
 - [ ] Phase 10: GitHub
 
-## Open placeholders (`[[TO CONFIRM: …]]`)
+### Open placeholders
 
-- Parliament profile page not retrievable in research: education/career dates, 16 Aug 2022 start (campaign brief only).
-- 2025 committee re-election: exact date (Eastleigh Voice).
-- Tea Bill: 600,000+ growers / 69 KTDA factories, re-check against Nation/The Star text; Nation article date.
-- Total number of bills sponsored; official counts of statements, inspections, committee sittings.
-- Mzalendo contribution count (220 at research time).
-- BOMWASCO figures differ between outlets, so none used as headline stats.
-- Links/dates for GBV, county salary arrears, Law Courts arson (Aug 2025), political violence (Apr 2026).
-- KNBS census: link directly to KNBS Vol. I (figure 875,689 confirmed via secondary report).
-- IEBC voter-verification deep link; polls closing time; High Court (Malindi) ruling on election year noted by IEBC coverage.
-- Contacts, campaign committee name, UDA logo/hex, social handles, UDA programmes, constituency work, 2022 pledges.
+Superseded on 2026-11-17: most items were resolved in redesign Phase 1. The open research items are listed above under "Research items still open", and campaign-owned items are in `docs/CONTENT-NEEDED.md`.
 
 ## Kiswahili lines for native-speaker review
 

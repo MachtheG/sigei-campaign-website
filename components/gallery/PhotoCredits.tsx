@@ -2,6 +2,11 @@ import { useLocale, useTranslations } from "next-intl";
 import { photos } from "@/data/photos";
 import { pick } from "@/data/types";
 
+/** One credit per image file: slots that reuse a file (hero + portrait) are listed once. */
+const credited = photos.filter(
+  (p, i) => !p.creditUrl || photos.findIndex((q) => q.creditUrl === p.creditUrl) === i,
+);
+
 /** Every image carries its photographer and licence; links go to the original file page. */
 export function PhotoCredits() {
   const t = useTranslations("gallery.credits");
@@ -14,7 +19,7 @@ export function PhotoCredits() {
         </h2>
         <p className="text-muted mt-3 max-w-[70ch]">{t("lead")}</p>
         <ul className="mt-6 grid gap-x-8 gap-y-2 text-sm md:grid-cols-2">
-          {photos.map((p) => (
+          {credited.map((p) => (
             <li key={p.id} className="flex flex-col py-1">
               <span className="font-semibold">{pick(p.caption, locale)}</span>
               <span className="text-muted">

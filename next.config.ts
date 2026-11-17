@@ -13,10 +13,32 @@ const nextConfig: NextConfig = {
   // Order matters: saved cookie first, then browser language, then English.
   async redirects() {
     return [
-      { source: "/", has: [{ type: "cookie", key: "NEXT_LOCALE", value: "sw" }], destination: "/sw", permanent: false },
-      { source: "/", has: [{ type: "cookie", key: "NEXT_LOCALE", value: "en" }], destination: "/en", permanent: false },
-      { source: "/", has: [{ type: "header", key: "accept-language", value: "^sw.*" }], destination: "/sw", permanent: false },
+      {
+        source: "/",
+        has: [{ type: "cookie", key: "NEXT_LOCALE", value: "sw" }],
+        destination: "/sw",
+        permanent: false,
+      },
+      {
+        source: "/",
+        has: [{ type: "cookie", key: "NEXT_LOCALE", value: "en" }],
+        destination: "/en",
+        permanent: false,
+      },
+      {
+        source: "/",
+        has: [{ type: "header", key: "accept-language", value: "^sw.*" }],
+        destination: "/sw",
+        permanent: false,
+      },
       { source: "/", destination: "/en", permanent: false },
+      // Renamed pages: old URLs keep working (308).
+      {
+        source: "/:locale(en|sw)/second-term",
+        destination: "/:locale/kazi-iendelee",
+        permanent: true,
+      },
+      { source: "/second-term", destination: "/en/kazi-iendelee", permanent: true },
     ];
   },
   // Tailwind v4 through Turbopack (as set up by create-next-app).

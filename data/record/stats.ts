@@ -14,11 +14,14 @@ export type Stat = {
   sourceIds: string[];
   /** Show a visible [[TO CONFIRM]] flag next to the number. */
   confirm?: string;
+  /** ISO date a running count was read. Computed stats show today's date instead. */
+  asOf?: string;
   /** Neutral context (not a claim about his performance). */
   context?: boolean;
 };
 
-export const SENATOR_SINCE = "2022-08-16";
+/** 13th Parliament swearing-in began 8 Sep 2022 (source: star-swearing-in-2022). */
+export const SENATOR_SINCE = "2022-09-08";
 
 export const stats: Stat[] = [
   {
@@ -28,12 +31,12 @@ export const stats: Stat[] = [
     decimals: 1,
     label: { en: "Years serving Bomet in the Senate", sw: "Miaka ya kuhudumia Bomet Senetini" },
     note: {
-      en: "Senator for Bomet since 16 August 2022, elected on the UDA ticket.",
-      sw: "Seneta wa Bomet tangu 16 Agosti 2022, alichaguliwa kupitia tiketi ya UDA.",
+      en: "Elected on the UDA ticket in August 2022; the 13th Parliament was sworn in from 8 September 2022.",
+      sw: "Alichaguliwa kupitia tiketi ya UDA Agosti 2022; Bunge la 13 liliapishwa kuanzia 8 Septemba 2022.",
     },
     pillars: ["devolution", "justice"],
     photoId: "portrait-formal",
-    sourceIds: ["parliament-profile", "mzalendo-profile"],
+    sourceIds: ["mzalendo-profile", "star-swearing-in-2022"],
   },
   {
     id: "chair-terms",
@@ -44,29 +47,28 @@ export const stats: Stat[] = [
       sw: "Mara alizochaguliwa mwenyekiti wa Kamati ya Haki ya Seneti",
     },
     note: {
-      en: "Elected October 2022 and re-elected in 2025.",
-      sw: "Alichaguliwa Oktoba 2022 na kuchaguliwa tena 2025.",
+      en: "Elected 21 October 2022; re-elected 25 February 2025.",
+      sw: "Alichaguliwa 21 Oktoba 2022; akachaguliwa tena 25 Februari 2025.",
     },
     pillars: ["justice"],
     photoId: "senate-committee",
     sourceIds: ["standard-chair-2022", "eastleigh-chair-2025"],
-    confirm: "exact 2025 re-election date",
   },
   {
     id: "bills-sponsored",
-    value: 1,
+    value: 2,
     label: {
-      en: "Bill passed by the Senate, the Tea (Amendment) Bill",
-      sw: "Mswada ulioidhinishwa na Seneti: Mswada wa Marekebisho ya Chai",
+      en: "Senate bills he has sponsored this Parliament, counted by Mzalendo",
+      sw: "Miswada ya Seneti aliyodhamini katika Bunge hili, kwa hesabu ya Mzalendo",
     },
     note: {
-      en: "Passed 8 October 2024; now before the National Assembly. Not yet law.",
-      sw: "Uliidhinishwa 8 Oktoba 2024; sasa uko Bunge la Kitaifa. Bado si sheria.",
+      en: "One, the Tea (Amendment) Bill, passed the Senate on 8 October 2024 and is before the National Assembly. Not yet law.",
+      sw: "Mmoja, Mswada wa Marekebisho ya Chai, uliidhinishwa na Seneti 8 Oktoba 2024 na uko Bunge la Kitaifa. Bado si sheria.",
     },
     pillars: ["tea"],
     photoId: "senate-bill",
-    sourceIds: ["parliament-tea-bill", "mzalendo-tea-bill"],
-    confirm: "total number of bills sponsored",
+    sourceIds: ["mzalendo-performance", "parliament-tea-bill"],
+    asOf: "2026-11-17",
   },
   {
     id: "growers",
@@ -77,59 +79,27 @@ export const stats: Stat[] = [
       sw: "Wakulima wadogo wa chai ambao Mswada wa Chai unawalenga",
     },
     note: {
-      en: "Growers supplying KTDA factories across tea-growing counties.",
-      sw: "Wakulima wanaosambaza viwanda vya KTDA katika kaunti zinazolima chai.",
+      en: "Basis: small-scale growers supplying 69 KTDA-managed factories, per Nation (2023). A national figure, not Bomet alone.",
+      sw: "Msingi: wakulima wadogo wanaosambaza viwanda 69 vinavyosimamiwa na KTDA, kwa mujibu wa Nation (2023). Ni idadi ya kitaifa, si ya Bomet pekee.",
     },
     pillars: ["tea"],
     photoId: "farmers-tea",
     sourceIds: ["nation-tea-bill", "parliament-tea-bill"],
-    confirm: "growers figure against article text",
   },
   {
-    id: "factories",
-    value: 69,
+    id: "votes-2022",
+    value: 237192,
     label: {
-      en: "KTDA factories whose growers the Bill covers",
-      sw: "Viwanda vya KTDA ambavyo wakulima wake wanalengwa na Mswada",
+      en: "Votes that elected him Senator for Bomet in 2022",
+      sw: "Kura zilizomchagua kuwa Seneta wa Bomet mwaka 2022",
     },
     note: {
-      en: "The Bill protects growers' proceeds and allows direct sales.",
-      sw: "Mswada unalinda mapato ya wakulima na kuruhusu mauzo ya moja kwa moja.",
+      en: "From a county register of 376,985 voters (IEBC, 2022).",
+      sw: "Kati ya wapiga kura 376,985 waliosajiliwa katika kaunti (IEBC, 2022).",
     },
-    pillars: ["tea"],
-    photoId: "farmers-pluckers",
-    sourceIds: ["nation-tea-bill"],
-    confirm: "factories figure against article text",
-  },
-  {
-    id: "inspection",
-    value: 1,
-    label: {
-      en: "Senate inspection of stalled Bomet projects, after his statement",
-      sw: "Ukaguzi wa Seneti wa miradi iliyokwama Bomet, baada ya taarifa yake",
-    },
-    note: {
-      en: "Senate Devolution Committee, November 2025.",
-      sw: "Kamati ya Ugatuzi ya Seneti, Novemba 2025.",
-    },
-    pillars: ["oversight", "devolution"],
-    photoId: "field-inspection",
-    sourceIds: ["peopledaily-stalled-projects", "standard-stalled-projects"],
-  },
-  {
-    id: "ecde-milk",
-    value: 5,
-    label: {
-      en: "Times milk reached ECDE learners, January to March 2025",
-      sw: "Mara maziwa yalipowafikia wanafunzi wa ECDE, Januari hadi Machi 2025",
-    },
-    note: {
-      en: "A figure he put before the Senate to push for the programme to deliver.",
-      sw: "Takwimu aliyoiwasilisha Senetini ili mpango huo utekelezwe ipasavyo.",
-    },
-    pillars: ["education"],
-    photoId: "field-school",
-    sourceIds: ["peopledaily-ecde-milk"],
+    pillars: ["devolution"],
+    photoId: "events-rally",
+    sourceIds: ["mzalendo-performance", "iebc-voters-2022"],
   },
   {
     id: "contributions",
@@ -145,7 +115,7 @@ export const stats: Stat[] = [
     pillars: ["oversight", "justice"],
     photoId: "senate-floor",
     sourceIds: ["mzalendo-performance"],
-    confirm: "count as of launch date",
+    asOf: "2026-11-17",
   },
   {
     id: "bar-years",
@@ -155,13 +125,12 @@ export const stats: Stat[] = [
       sw: "Miaka ya kutekeleza sheria kabla ya kuingia Senetini",
     },
     note: {
-      en: "Practising since 2009; now managing partner of SMS Advocates LLP. LLM, University of Nairobi.",
-      sw: "Anatekeleza sheria tangu 2009; sasa mshirika mkuu wa SMS Advocates LLP. Shahada ya LLM, Chuo Kikuu cha Nairobi.",
+      en: "Associate advocate from 2009; managing partner of SMS Advocates LLP since 2013. LLM, University of Nairobi (2012–2014).",
+      sw: "Wakili msaidizi tangu 2009; mshirika mkuu wa SMS Advocates LLP tangu 2013. LLM, Chuo Kikuu cha Nairobi (2012–2014).",
     },
     pillars: ["justice"],
-    photoId: "portrait-casual",
+    photoId: "kaplong-hills",
     sourceIds: ["parliament-profile"],
-    confirm: "start year of practice",
   },
   {
     id: "population",
@@ -177,6 +146,22 @@ export const stats: Stat[] = [
     pillars: ["devolution"],
     photoId: "community-elders",
     sourceIds: ["knbs-census-2019"],
+    context: true,
+  },
+  {
+    id: "registered-voters",
+    value: 376985,
+    label: {
+      en: "Registered voters in Bomet County (2022 register)",
+      sw: "Wapiga kura waliosajiliwa Kaunti ya Bomet (daftari la 2022)",
+    },
+    note: {
+      en: "Across five constituencies. The 2027 register will differ.",
+      sw: "Katika maeneo bunge matano. Daftari la 2027 litakuwa tofauti.",
+    },
+    pillars: ["devolution"],
+    photoId: "community-women",
+    sourceIds: ["iebc-voters-2022"],
     context: true,
   },
   {

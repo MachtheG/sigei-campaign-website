@@ -45,7 +45,9 @@ export function SourceBadge({
                     locale,
                     s.date.length === 4 ? "year" : s.date.length === 7 ? "month" : "day",
                   )
-                : t("toConfirmDate")}
+                : s.accessed
+                  ? t("accessed", { date: formatDate(s.accessed, locale) })
+                  : t("toConfirmDate")}
             </p>
             {s.url ? (
               <a

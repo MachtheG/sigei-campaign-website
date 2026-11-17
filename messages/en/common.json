@@ -61,7 +61,8 @@
     "toConfirmLink": "[[TO CONFIRM: link]]",
     "toConfirmDate": "[[TO CONFIRM: date]]",
     "notVerified": "Not yet verified",
-    "open": "Open source"
+    "open": "Open source",
+    "accessed": "page read {date}"
   },
   "share": {
     "share": "Share",

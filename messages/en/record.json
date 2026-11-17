@@ -28,7 +28,8 @@
     "context": "Context",
     "empty": "No sourced figure for this area yet.",
     "emptyPlaceholder": "[[TO CONFIRM: sourced statistic for this area]]",
-    "toConfirm": "[[TO CONFIRM: {what}]]"
+    "toConfirm": "[[TO CONFIRM: {what}]]",
+    "asOf": "As of {date}"
   },
   "timeline": {
     "title": "Timeline: 2022 to today",
@@ -47,7 +48,7 @@
   "oversight": {
     "title": "Oversight at work",
     "lead": "Documented actions per year, counted from the sourced timeline.",
-    "note": "[[TO CONFIRM: official counts of statements sought, inspections and committee sittings from Senate records]]",
+    "note": "Counts the documented actions on this page, by year. These are not official Senate totals; Mzalendo's live counts are linked under Sources.",
     "actions": "actions",
     "chartLabel": "Bar chart of documented actions per year by area"
   },

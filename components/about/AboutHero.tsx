@@ -11,7 +11,7 @@ export function AboutHero() {
           <p className="text-muted mt-4 max-w-[44ch] text-lg">{t("lead")}</p>
         </div>
         <SenatorImage
-          id="portrait-casual"
+          id="kaplong-hills"
           sizes="(min-width: 768px) 40vw, 100vw"
           priority
           className="rounded-3xl"

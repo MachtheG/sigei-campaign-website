@@ -6,7 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { stats } from "@/data/record/stats";
 import { Link } from "@/lib/i18n/navigation";
 
-const FEATURED = ["years-in-office", "chair-terms", "growers", "inspection", "ecde-milk"];
+const FEATURED = ["years-in-office", "chair-terms", "bills-sponsored", "growers", "votes-2022"];
 
 /** Bento grid: one big tile, four supporting. */
 export function ProofStats() {

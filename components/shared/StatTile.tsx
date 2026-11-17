@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { type Stat, SENATOR_SINCE } from "@/data/record/stats";
 import { pick } from "@/data/types";
-import { formatNumber, yearsSince } from "@/lib/format";
+import { formatDate, formatNumber, yearsSince } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { SenatorImage } from "./SenatorImage";
 import { ShareButton } from "./ShareButton";
@@ -55,6 +55,13 @@ export function StatTile({ stat, share, className, feature }: Props) {
           {label}
         </h3>
         <p className="text-muted mt-1.5 text-[0.95rem]">{pick(stat.note, locale)}</p>
+        {(stat.asOf || stat.computed) && (
+          <p className="text-muted mt-1 text-sm">
+            {t("asOf", {
+              date: formatDate(stat.asOf ?? new Date().toISOString().slice(0, 10), locale),
+            })}
+          </p>
+        )}
         {stat.confirm && (
           <p className="mt-1 text-sm font-semibold">{t("toConfirm", { what: stat.confirm })}</p>
         )}

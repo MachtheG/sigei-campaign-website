@@ -18,11 +18,11 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    alternates: alt(locale, "/second-term"),
+    alternates: alt(locale, "/kazi-iendelee"),
   };
 }
 
-export default async function SecondTermPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function KaziIendeleePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("secondTerm.cta");
@@ -38,7 +38,7 @@ export default async function SecondTermPage({ params }: { params: Promise<{ loc
         body={t("body")}
         cta={t("cta")}
         href="/get-involved"
-        photoId="events-launch"
+        photoId="rainbow-farmland"
       />
     </>
   );

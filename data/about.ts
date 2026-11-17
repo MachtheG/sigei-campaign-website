@@ -26,7 +26,7 @@ export const journey: Milestone[] = [
     year: "1999",
     title: { en: "Tenwek High School", sw: "Shule ya Upili ya Tenwek" },
     body: { en: "Completed KCSE in 1999.", sw: "Alihitimu KCSE mwaka 1999." },
-    photoId: "portrait-casual",
+    photoId: "kaplong-hills",
     sourceIds: ["parliament-profile"],
   },
   {
@@ -70,7 +70,7 @@ export const journey: Milestone[] = [
       en: "Master of Laws while practising.",
       sw: "Shahada ya Uzamili ya Sheria akiwa anatekeleza sheria.",
     },
-    photoId: "portrait-casual",
+    photoId: "kaplong-hills",
     sourceIds: ["parliament-profile"],
   },
   {

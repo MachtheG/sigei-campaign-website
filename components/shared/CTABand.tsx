@@ -7,7 +7,7 @@ type Props = {
   title: string;
   body?: string;
   cta: string;
-  href: "/get-involved" | "/second-term" | "/record" | "/elections" | "/contact";
+  href: "/get-involved" | "/kazi-iendelee" | "/record" | "/elections" | "/contact";
   photoId?: string;
 };
 

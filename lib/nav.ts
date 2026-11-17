@@ -1,7 +1,7 @@
 export const NAV = [
   { key: "home", href: "/" },
   { key: "record", href: "/record" },
-  { key: "secondTerm", href: "/second-term" },
+  { key: "secondTerm", href: "/kazi-iendelee" },
   { key: "gallery", href: "/gallery" },
   { key: "news", href: "/news" },
   { key: "about", href: "/about" },

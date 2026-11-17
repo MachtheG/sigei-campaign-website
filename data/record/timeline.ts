@@ -17,20 +17,20 @@ export type RecordEvent = {
 export const timeline: RecordEvent[] = [
   {
     slug: "elected-senator",
-    date: "2022-08-16",
+    date: "2022-09-08",
     datePrecision: "day",
     pillar: "devolution",
-    title: { en: "Becomes Senator for Bomet", sw: "Anakuwa Seneta wa Bomet" },
+    title: { en: "Sworn in as Senator for Bomet", sw: "Aapishwa kuwa Seneta wa Bomet" },
     summary: {
-      en: "Elected on the UDA ticket to represent Bomet County in the Senate.",
-      sw: "Alichaguliwa kupitia tiketi ya UDA kuwakilisha Kaunti ya Bomet Senetini.",
+      en: "Elected on the UDA ticket in August 2022; the 13th Parliament takes the oath from 8 September.",
+      sw: "Alichaguliwa kupitia tiketi ya UDA Agosti 2022; Bunge la 13 linaapishwa kuanzia 8 Septemba.",
     },
     detail: {
       en: "The Senate represents counties and protects devolution. From his first day, Sen. Sigei took the seat as a practising advocate, bringing a lawyer's habits of evidence and detail to the work of representing Bomet.",
       sw: "Seneti inawakilisha kaunti na kulinda ugatuzi. Tangu siku ya kwanza, Seneta Sigei alichukua kiti hicho akiwa wakili anayetekeleza sheria, akileta nidhamu ya ushahidi na umakini katika kuwakilisha Bomet.",
     },
     photoId: "portrait-formal",
-    sourceIds: ["parliament-profile", "mzalendo-profile"],
+    sourceIds: ["mzalendo-profile", "star-swearing-in-2022"],
   },
   {
     slug: "chair-justice-committee-2022",
@@ -91,23 +91,23 @@ export const timeline: RecordEvent[] = [
   },
   {
     slug: "courts-arson-statement",
-    date: "2025-08",
-    datePrecision: "month",
+    date: "2025-08-20",
+    datePrecision: "day",
     pillar: "justice",
     title: {
       en: "Speaks on the Bomet Law Courts arson attempt",
       sw: "Azungumzia jaribio la kuchoma Mahakama ya Bomet",
     },
     summary: {
-      en: "As a lawyer and committee chair, he defends the rule of law and court institutions.",
-      sw: "Kama wakili na mwenyekiti wa kamati, anatetea utawala wa sheria na taasisi za mahakama.",
+      en: "After a fire at Bomet Law Courts destroyed case files, he called it an assault on justice.",
+      sw: "Baada ya moto katika Mahakama ya Bomet kuharibu faili za kesi, aliuita shambulio dhidi ya haki.",
     },
     detail: {
-      en: "Attacks on courts are attacks on every citizen's access to justice. He spoke up for the institution.",
-      sw: "Mashambulizi dhidi ya mahakama ni mashambulizi dhidi ya haki ya kila mwananchi kupata haki. Alizungumza kutetea taasisi hiyo.",
+      en: "Attacks on courts are attacks on every citizen's access to justice. He urged security agencies to protect the courts, finance and procurement offices and land registries, where public records are kept.",
+      sw: "Mashambulizi dhidi ya mahakama ni mashambulizi dhidi ya haki ya kila mwananchi. Aliwataka maafisa wa usalama kulinda mahakama, ofisi za fedha na ununuzi, na masjala za ardhi, ambako kumbukumbu za umma huhifadhiwa.",
     },
     photoId: "senate-floor",
-    sourceIds: ["unverified-courts-arson"],
+    sourceIds: ["peopledaily-courts-arson"],
   },
   {
     slug: "ecde-milk-oversight",
@@ -131,8 +131,8 @@ export const timeline: RecordEvent[] = [
   },
   {
     slug: "chair-justice-committee-2025",
-    date: "2025-01-01",
-    datePrecision: "year",
+    date: "2025-02-25",
+    datePrecision: "day",
     pillar: "justice",
     title: {
       en: "Re-elected chair, Senate Justice Committee",
@@ -179,12 +179,12 @@ export const timeline: RecordEvent[] = [
       sw: "Seneti yakagua miradi iliyokwama Bomet",
     },
     summary: {
-      en: "After his statement, the Senate Devolution Committee toured incomplete county projects.",
-      sw: "Baada ya taarifa yake, Kamati ya Ugatuzi ya Seneti ilizuru miradi ya kaunti ambayo haijakamilika.",
+      en: "Following a statement he sought, the Senate Devolution Committee toured incomplete county projects.",
+      sw: "Kufuatia taarifa aliyoomba, Kamati ya Ugatuzi ya Seneti ilizuru miradi ya kaunti ambayo haijakamilika.",
     },
     detail: {
-      en: "Public money already spent on projects that stand unfinished helps no one. His statement in the Senate led to a committee visit to see the projects first-hand, including a water project started in 2010.",
-      sw: "Fedha za umma zilizotumika kwenye miradi isiyokamilika hazimsaidii yeyote. Taarifa yake Senetini ilisababisha ziara ya kamati kujionea miradi, ikiwemo mradi wa maji ulioanza 2010.",
+      en: "Public money already spent on projects that stand unfinished helps no one. People Daily reports that the committee's visit on 7 November 2025 followed a statement he sought in the Senate. The committee saw the projects first-hand, including a water project started in 2010, and The Standard reported its concerns on 11 November.",
+      sw: "Fedha za umma zilizotumika kwenye miradi isiyokamilika hazimsaidii yeyote. People Daily inaripoti kuwa ziara ya kamati tarehe 7 Novemba 2025 ilifuatia taarifa aliyoomba Senetini. Kamati ilijionea miradi, ukiwemo mradi wa maji ulioanza 2010, na The Standard iliripoti wasiwasi wake tarehe 11 Novemba.",
     },
     photoId: "field-inspection",
     sourceIds: ["peopledaily-stalled-projects", "standard-stalled-projects"],
@@ -211,20 +211,40 @@ export const timeline: RecordEvent[] = [
   },
   {
     slug: "political-violence-statement",
-    date: "2026-04",
-    datePrecision: "month",
+    date: "2026-04-09",
+    datePrecision: "day",
     pillar: "justice",
     title: { en: "Speaks against political violence", sw: "Apinga ghasia za kisiasa" },
     summary: {
-      en: "Calls for peaceful politics ahead of the 2027 campaign season.",
-      sw: "Anatoa wito wa siasa za amani kuelekea msimu wa kampeni wa 2027.",
+      en: "Called for arrests after a fellow senator was attacked, warning against political intolerance.",
+      sw: "Alitaka wahusika wakamatwe baada ya seneta mwenzake kushambuliwa, akionya dhidi ya kutovumiliana kisiasa.",
     },
     detail: {
-      en: "Free and fair elections need safe campaigns. He called for peace and for the law to be respected by everyone.",
-      sw: "Uchaguzi huru na wa haki unahitaji kampeni salama. Alitoa wito wa amani na sheria kuheshimiwa na kila mtu.",
+      en: "Free and fair elections need safe campaigns. He called the attack on a Senate colleague unacceptable in a democracy and urged security agencies to act decisively.",
+      sw: "Uchaguzi huru na wa haki unahitaji kampeni salama. Aliita shambulio dhidi ya seneta mwenzake lisilokubalika katika demokrasia na akawataka maafisa wa usalama kuchukua hatua thabiti.",
     },
     photoId: "events-rally",
-    sourceIds: ["unverified-political-violence"],
+    sourceIds: ["peopledaily-osotsi-attack"],
+  },
+  {
+    slug: "gbv-alarm-2026",
+    date: "2026-05-28",
+    datePrecision: "day",
+    pillar: "justice",
+    title: {
+      en: "Raises the alarm on gender-based violence",
+      sw: "Apiga kengele kuhusu ukatili wa kijinsia",
+    },
+    summary: {
+      en: "Warned of rising GBV cases in Bomet and urged residents to report them and support survivors.",
+      sw: "Alionya kuhusu ongezeko la visa vya GBV Bomet na akawahimiza wakazi kuviripoti na kuwasaidia waathiriwa.",
+    },
+    detail: {
+      en: "Violence at home stays hidden when families settle it privately. He asked for urgent action from government and for every case to be reported, so that offenders face the law.",
+      sw: "Ukatili nyumbani hubaki siri pale familia zinapoumaliza kwa siri. Aliomba hatua za haraka kutoka kwa serikali na kila kisa kiripotiwe, ili wahalifu wakabiliwe na sheria.",
+    },
+    photoId: "community-women",
+    sourceIds: ["standard-gbv-2026"],
   },
   {
     slug: "ecde-centres-expansion",

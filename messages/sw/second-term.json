@@ -24,13 +24,13 @@
     "sauti": {
       "title": "Sauti ya Bomet",
       "subtitle": "Anayesemea Bomet",
-      "body": "Maseneta wenzake walimchagua kuongoza Kamati ya Haki, Masuala ya Kisheria na Haki za Binadamu Oktoba 2022, na wakamchagua tena mwaka 2025.",
+      "body": "Maseneta wenzake walimchagua kuongoza Kamati ya Haki, Masuala ya Kisheria na Haki za Binadamu Oktoba 2022, na wakamchagua tena Februari 2025.",
       "stat": "mara alizochaguliwa mwenyekiti wa Kamati ya Haki ya Seneti"
     },
     "kazi": {
       "title": "Kazi",
       "subtitle": "Kazi iliyofanyika",
-      "body": "Mswada wa Marekebisho ya Chai kwa wakulima wadogo, ulioidhinishwa na Seneti. Usimamizi uliofanya matumizi ya kaunti ya Bomet kuchunguzwa. Maswali kuhusu maziwa ya ECDE, maji, ukatili wa kijinsia na malimbikizo ya wafanyakazi wa kaunti.",
+      "body": "Mswada wa Marekebisho ya Chai kwa wakulima wadogo, ulioidhinishwa na Seneti. Usimamizi ulioweka matumizi ya kaunti ya Bomet chini ya uchunguzi. Maswali kuhusu maziwa ya ECDE, maji na ukatili wa kijinsia.",
       "stat": "wakulima wadogo wa chai ambao Mswada wa Chai unawalenga"
     },
     "iendelee": {
@@ -73,8 +73,8 @@
         "body": "Alidhamini Mswada wa Marekebisho ya Chai na ukapita Senetini. Hatua inayofuata: Bunge la Kitaifa."
       },
       "oversight": {
-        "title": "Anawajibisha matumizi ya fedha",
-        "body": "Taarifa yake ilisababisha kamati ya Seneti kukagua miradi iliyokwama ya Bomet eneo la tukio."
+        "title": "Anasimamia matumizi ya fedha",
+        "body": "Taarifa, vikao vya ukaguzi na maswali kuhusu miradi iliyokwama ya Bomet, kampuni ya maji na maziwa ya ECDE, yote kwenye kumbukumbu za umma."
       }
     }
   },

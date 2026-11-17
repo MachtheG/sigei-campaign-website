@@ -11,7 +11,7 @@ export function StoryTeaser() {
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:py-24 lg:gap-16 lg:px-8">
         <Reveal>
           <SenatorImage
-            id="portrait-casual"
+            id="kaplong-hills"
             sizes="(min-width: 768px) 50vw, 100vw"
             className="rounded-3xl"
           />
@@ -23,7 +23,7 @@ export function StoryTeaser() {
           <p className="mt-5 text-lg">{t("p1")}</p>
           <p className="mt-4 text-lg">{t("p2")}</p>
           <Link
-            href="/second-term"
+            href="/kazi-iendelee"
             className={buttonVariants({ size: "lg", variant: "brand", className: "mt-8" })}
           >
             {t("cta")}

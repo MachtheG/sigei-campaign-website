@@ -35,7 +35,12 @@ export function Commitments() {
                 {t(`lever.${c.lever}`)}
               </span>
             </div>
-            <h3 className="mt-4 text-2xl leading-tight font-bold">{pick(c.title, locale)}</h3>
+            <h3 className="mt-4 text-2xl leading-tight font-bold">
+              <span className="text-brand mr-2 tabular-nums" aria-hidden>
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              {pick(c.title, locale)}
+            </h3>
             <dl className="mt-4 space-y-4">
               {(["what", "why", "how", "measure"] as const).map((k) => (
                 <div key={k}>

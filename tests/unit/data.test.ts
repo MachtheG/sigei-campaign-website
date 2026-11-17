@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { photos } from "@/data/photos";
+import { constituencies } from "@/data/record/constituencies";
 import { stats } from "@/data/record/stats";
 import { timeline } from "@/data/record/timeline";
 import { commitments } from "@/data/second-term/commitments";
@@ -33,5 +34,25 @@ describe("data integrity", () => {
   it("the Tea Bill is never described as law (it lacks assent)", () => {
     const text = JSON.stringify(timeline.filter((e) => e.slug.startsWith("tea")));
     expect(text).not.toMatch(/became law|was assented to|is now law/i);
+  });
+  it("constituency voter figures add up to the county register (IEBC 2022)", () => {
+    expect(constituencies).toHaveLength(5);
+    expect(constituencies.reduce((n, c) => n + c.voters2022, 0)).toBe(
+      stats.find((s) => s.id === "registered-voters")!.value,
+    );
+  });
+  it("no claim about his record rests only on unverified sources", () => {
+    // Context stats (county population, wards) are exempt; they say nothing about him.
+    for (const item of [...stats.filter((s) => !s.context), ...timeline]) {
+      const ids = item.sourceIds;
+      expect(
+        ids.some((id) => sources[id]?.verified),
+        ids.join(","),
+      ).toBe(true);
+    }
+  });
+  it("running counts carry an as-of date", () => {
+    for (const id of ["contributions", "bills-sponsored"])
+      expect(stats.find((s) => s.id === id)?.asOf, id).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });
 });

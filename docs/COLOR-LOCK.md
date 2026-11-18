@@ -52,3 +52,20 @@ Display **Bricolage Grotesque** (`--font-bricolage`), body **Inter** (`--font-in
 - **UDA yellow** stays a small accent only. The official hex is still to be supplied: `#f5b800` / `#ffc20e` are stand-ins.
 - Body text ≥ 4.5:1 and large text ≥ 3:1 on every ground (WCAG 2.2 AA), checked in both duotone inks.
 - Portraits of the senator stay full colour; only landscape and atmosphere images get the duotone.
+
+## 5. Phase 2 proposal (awaiting approval at Checkpoint 2)
+
+Canvas: https://claude.ai/artifact/RM3EFBbq36HyFsoT6FFP7t
+
+| Token      | Hex       | Role                                                                                              |
+| ---------- | --------- | ------------------------------------------------------------------------------------------------- |
+| ink        | `#0b1a14` | Deep green-black: dark grounds, body text on paper (the `#0a1511` family)                         |
+| ink-deep   | `#07110d` | Top strip, footer                                                                                 |
+| forest     | `#123d2c` | Promise band, primary buttons, figures                                                            |
+| paper      | `#f3efe6` | Page ground (warm off-white)                                                                      |
+| ember      | `#c47a3d` | Second duotone ink (tea-dusk amber); eyebrows on dark. Alternatives `#b5653a`, `#d29a52` (Tweaks) |
+| ember-text | `#8a4f22` | Ember for small text on paper (passes 4.5:1)                                                      |
+| UDA yellow | `#f5b800` | Donate and Draft badges only (official hex still to come)                                         |
+
+Duotone: grayscale image, multiplied over ember, then lightened with ink, so shadows go to ink and highlights to ember. The portrait stays full colour.
+Type: **Fraunces** (editorial display, split headlines) + **Public Sans** (body), both through `next/font`.

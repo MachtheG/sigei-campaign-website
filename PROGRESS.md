@@ -3,7 +3,7 @@
 ## Redesign (branch `redesign`): combining Reference A (dignity, story) and Reference B (proof, conversion)
 
 - [x] **Phase 1: audit & content fixes** (2026-11-17). See `docs/REDESIGN-AUDIT.md`. Waiting at **Checkpoint 1**.
-- [ ] Phase 2: design exploration (/design artboards) → Checkpoint 2
+- [x] **Phase 2: design exploration** (2026-11-18): 8 artboards at https://claude.ai/artifact/RM3EFBbq36HyFsoT6FFP7t. Waiting at **Checkpoint 2**.
 - [ ] Phase 3: design system
 - [ ] Phase 4: home page
 - [ ] Phase 5: inner pages + redirects

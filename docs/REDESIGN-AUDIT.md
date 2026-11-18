@@ -91,3 +91,10 @@ All three are original to this campaign. Swahili lines need native-speaker revie
 - The same image in several sections (portrait in hero + stat 1; field-school ×3; field-inspection ×2).
 - The slogan in the H1, the bio H2 and the closing line.
 - The coat of arms in the closing block and the footer.
+
+## Checkpoint 2 decisions (2026-11-18)
+
+- **Hero:** C + A. Kiswahili-first H1 ("Seneta Wakili Hillary Sigei." / "Mtoto wa Bomet, anaomba muhula wa pili.", with English support), three sourced proof figures along the bottom of the hero, and A's full-bleed dusk landscape in two inks behind it. The official portrait has no frame: an oval soft-edge mask (`mask-image: radial-gradient(...)`) blends it into the landscape, and it stays full colour. Artboard "Hero · APPROVED (C + A)".
+- **Palette and type:** approved as in `docs/COLOR-LOCK.md` §5 (Fraunces + Public Sans).
+- **Central promise:** option 3, **"Sauti ya Bomet. Kazi Iendelee."** / _Bomet's voice. The work continues._
+- Because the hero now carries 2×, 600,000+ and 237,192, the home page's "In numbers" row uses different figures (years in office, 220 contributions, 2 bills, 376,985 registered voters), so no figure repeats on the page.

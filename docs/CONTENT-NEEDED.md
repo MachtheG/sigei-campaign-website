@@ -4,8 +4,8 @@ Only items the campaign owns are listed here. Research items still open are in `
 
 ## Decisions (redesign)
 
-- **Central promise line:** choose one of the three options in `docs/REDESIGN-AUDIT.md`.
-- **Palette and type:** approve at Checkpoint 2 (`docs/COLOR-LOCK.md`).
+- ~~Central promise line~~: chosen 2026-11-18, option 3 "Sauti ya Bomet. Kazi Iendelee." (native Kiswahili review still needed).
+- ~~Palette and type~~: approved 2026-11-18.
 
 ## Photos (highest priority)
 

@@ -15,7 +15,9 @@
   - Share images: every page has its own 1200x630 card (`/api/og?page=`), stat cards restyled.
   - Images: Next 16 serves only listed qualities, so duotones were silently at q75; now q40 (grayscale) and Lite q50 work. `priority` replaced by fetchPriority/preload.
   - **Lighthouse mobile (lab, warm cache)**, perf/a11y/bp/seo: home 89/100/100/100 · sw 88/100/100/100 · record 88/96/100/100 · kazi 89/96/100/100 · bomet 91/100/100/100 · sotik 96/100/100/100 · story 94/100/100/100 · get-involved 90/100/100/100 · news 96/100/100/100. **Performance target 95 not met on 7 of 9 pages** (simulated LCP 2.6-3.5 s; real LCP ~0.2 s; cost is React/Next JS under 4x CPU throttling). Record/Kazi a11y 96 = contrast false positives inside `content-visibility:auto` sections.
-- [ ] Phase 7: ship (PR + preview)
+- [x] **Phase 7: ship** (2026-11-18). At the client's instruction the redesign was fast-forwarded and pushed straight to `main` (no PR, no preview branch). Performance accepted at 88-96 for now.
+  - **Still awaiting the campaign before launch** (full list in `docs/CONTENT-NEEDED.md`): "Authorised by" committee name; donation channels (counsel); office contacts and handles; privacy-notice details; party roles and programmes; constituency projects; the Senator's sign-off on the six Draft priorities and the letter; licensed Bomet photos and Parliament portrait permission; official UDA yellow; native Kiswahili review.
+  - **Still needing a person to verify**: KNBS census row (875,689); the People Daily stories read via search index; Nation article day; re-read Mzalendo counts before launch.
 
 ### Phase 1 checks
 

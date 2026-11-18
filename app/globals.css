@@ -203,10 +203,28 @@ p {
   mix-blend-mode: lighten;
   pointer-events: none;
 }
+/* Slow hero parallax: scroll-driven, no JS. Off for reduced motion and Lite. */
+@keyframes hero-drift {
+  from {
+    transform: scale(1.08) translateY(0);
+  }
+  to {
+    transform: scale(1.08) translateY(6%);
+  }
+}
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    html:not([data-lite="1"]) .hero-parallax .duotone-img {
+      animation: hero-drift linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 100vh;
+    }
+  }
+}
 /* Soft-edged portrait that blends into the landscape (approved hero). */
 .portrait-blend {
-  -webkit-mask-image: radial-gradient(ellipse 62% 78% at 52% 34%, #000 55%, transparent 100%);
-  mask-image: radial-gradient(ellipse 62% 78% at 52% 34%, #000 55%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 44% 44% at 50% 45%, #000 55%, transparent 100%);
+  mask-image: radial-gradient(ellipse 44% 44% at 50% 45%, #000 55%, transparent 100%);
 }
 
 /* ───────── Placeholder & imagery ───────── */

@@ -17,7 +17,7 @@ export function NavLinks({
   onNavigate?: () => void;
   large?: boolean;
 }) {
-  const t = useTranslations("common.nav");
+  const t = useTranslations("common.navNew");
   const pathname = usePathname();
   return (
     <ul className={className}>
@@ -30,15 +30,11 @@ export function NavLinks({
               onClick={onNavigate}
               aria-current={active ? "page" : undefined}
               className={cn(
-                "press inline-flex min-h-11 items-center rounded-full font-semibold whitespace-nowrap",
-                large ? "font-display w-full px-2 py-2 text-3xl" : "px-2 text-sm",
-                active
-                  ? large
-                    ? "text-accent"
-                    : "bg-brand text-on-brand"
-                  : large
-                    ? "text-on-brand"
-                    : "text-fg hover:bg-fg/5",
+                "press inline-flex min-h-11 items-center font-semibold whitespace-nowrap",
+                large
+                  ? "font-display border-paper/12 w-full border-b py-2 text-3xl font-normal"
+                  : "px-2 text-[0.9375rem] underline-offset-[6px] hover:underline",
+                active ? "text-uda" : "text-paper",
               )}
             >
               {t(key)}

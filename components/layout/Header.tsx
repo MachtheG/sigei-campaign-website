@@ -1,39 +1,47 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { buttonVariants } from "@/components/ui/button";
 import { Link } from "@/lib/i18n/navigation";
+import { cn } from "@/lib/utils";
 import { LanguageToggle } from "./LanguageToggle";
 import { MenuButton } from "./MenuButton";
 import { NavLinks } from "./NavLinks";
 
+/** Lean header: wordmark · six links · 10.08.2027 (.ics) · EN/SW · Donate · Menu. */
 export function Header() {
   const t = useTranslations("common");
   return (
-    <header className="border-line bg-bg sticky top-0 z-30 border-b">
-      <div className="scroll-progress bg-accent absolute inset-x-0 bottom-0 h-0.5" aria-hidden />
-      <div className="mx-auto flex max-w-[96rem] items-center gap-2 px-3 py-1.5 sm:gap-3 sm:px-6 lg:px-8">
+    <header className="bg-ink text-paper border-paper/12 sticky top-0 z-30 border-b">
+      <div className="scroll-progress bg-uda absolute inset-x-0 bottom-0 h-0.5" aria-hidden />
+      <div className="shell flex min-h-16 items-center gap-3 lg:min-h-20">
         <Link
           href="/"
-          className="press font-display text-brand mr-auto flex min-h-11 items-center gap-2 text-lg leading-none font-extrabold"
+          className="press mr-auto flex min-h-11 flex-col justify-center leading-tight"
         >
-          <Image
-            src="/images/bomet/coat-of-arms.png"
-            alt={t("site.coatOfArms")}
-            width={44}
-            height={44}
-            priority
-            className="size-10 shrink-0 object-contain"
-          />
-          <span className="hidden min-[400px]:block">
-            {t("site.short")}
-            <span className="text-muted block text-[0.62rem] font-medium tracking-wide whitespace-nowrap">
-              {t("site.role")}
-            </span>
+          <span className="font-display text-2xl">{t("site.short")}</span>
+          <span className="text-[0.6875rem] tracking-[0.12em] uppercase opacity-75">
+            {t("site.roleShort")}
           </span>
         </Link>
-        <nav aria-label={t("a11y.mainNav")} className="mx-2 hidden min-[1360px]:block">
-          <NavLinks className="flex items-center gap-0.5" />
+        <nav aria-label={t("a11y.mainNav")} className="hidden xl:block">
+          <NavLinks className="flex items-center gap-3" />
         </nav>
-        <LanguageToggle />
+        <a
+          href="/api/election.ics"
+          download
+          aria-label={t("navNew.calendar")}
+          className="hidden min-h-11 items-center px-1 text-sm font-semibold tabular-nums underline underline-offset-4 md:inline-flex"
+        >
+          10.08.2027
+        </a>
+        <span className="hidden sm:block">
+          <LanguageToggle tone="light" />
+        </span>
+        <Link
+          href="/get-involved#donate"
+          className={cn(buttonVariants({ size: "sm" }), "hidden sm:inline-flex")}
+        >
+          {t("footer.donate")}
+        </Link>
         <MenuButton />
       </div>
     </header>

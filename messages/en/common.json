@@ -9,7 +9,8 @@
     "short": "Sigei",
     "role": "Senator for Bomet County",
     "slogan": "Bomet's son. The work continues.",
-    "coatOfArms": "Coat of arms of Bomet County"
+    "coatOfArms": "Coat of arms of Bomet County",
+    "roleShort": "Senator for Bomet"
   },
   "nav": {
     "home": "Home",
@@ -161,6 +162,7 @@
     "party": "UDA & Party",
     "elections": "Elections",
     "contact": "Contact",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "calendar": "Add 10 August 2027 to your calendar"
   }
 }

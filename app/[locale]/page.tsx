@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import { alt } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { CountdownSection } from "@/components/home/CountdownSection";
-import { Hero } from "@/components/home/Hero";
-import { PhotoMarquee } from "@/components/home/PhotoMarquee";
-import { PledgeCTA } from "@/components/home/PledgeCTA";
-import { ProofStats } from "@/components/home/ProofStats";
-import { RecordPreview } from "@/components/home/RecordPreview";
-import { StoryTeaser } from "@/components/home/StoryTeaser";
+import { CareerTimeline } from "@/components/home/CareerTimeline";
+import { EntryCards } from "@/components/home/EntryCards";
+import { HomeBomet } from "@/components/home/HomeBomet";
+import { HomeClosing } from "@/components/home/HomeClosing";
+import { HomeHero } from "@/components/home/HomeHero";
+import { HomePriorities } from "@/components/home/HomePriorities";
+import { HomeStats } from "@/components/home/HomeStats";
+import { PromiseBanner } from "@/components/home/PromiseBanner";
+import { CountdownBand } from "@/components/shared/CountdownBand";
+import { CTABand } from "@/components/shared/CTABand";
 import { SOCIALS } from "@/lib/nav";
 import { SITE_URL } from "@/lib/utils";
 
@@ -32,6 +35,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "common.site" });
+  const j = await getTranslations({ locale, namespace: "home.join" });
   const ld = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -46,13 +50,26 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <Hero />
-      <CountdownSection />
-      <ProofStats />
-      <StoryTeaser />
-      <PhotoMarquee />
-      <RecordPreview />
-      <PledgeCTA />
+      {/* Order fixed by the brief (§3); top strip, header and footer come from the layout. */}
+      <HomeHero />
+      <PromiseBanner />
+      <EntryCards />
+      <HomeStats />
+      <CareerTimeline />
+      <HomePriorities />
+      <CountdownBand />
+      <HomeBomet />
+      <CTABand
+        title={[j("line1"), j("line2")]}
+        cta={j("cta")}
+        href="/get-involved#pledge"
+        ways={[
+          { title: j("volunteerTitle"), body: j("volunteerBody"), href: "/get-involved#volunteer" },
+          { title: j("hostTitle"), body: j("hostBody"), href: "/get-involved#host" },
+          { title: j("tellTitle"), body: j("tellBody"), href: "/get-involved#story" },
+        ]}
+      />
+      <HomeClosing />
     </>
   );
 }

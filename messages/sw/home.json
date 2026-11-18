@@ -1,42 +1,91 @@
 {
   "meta": {
     "title": "Nyumbani",
-    "description": "Seneta Wakili Hillary Sigei, Seneta wa Bomet: rekodi, hadithi na mpango wa muhula wa pili katika uchaguzi wa 10 Agosti 2027."
+    "description": "Seneta Wakili Hillary Sigei, Seneta wa Bomet: rekodi, hadithi na rasimu ya mpango wa muhula wa pili katika uchaguzi wa 10 Agosti 2027."
   },
   "hero": {
-    "name": "Seneta Wakili Hillary Sigei:",
-    "lead": "Seneta wa Bomet tangu 2022, na anaomba muhula wa pili tarehe 10 Agosti 2027.",
-    "ctaRecord": "Tazama rekodi yangu",
-    "ctaPledge": "Ahidi kuniunga mkono",
-    "title1": "Mtoto wa Bomet.",
-    "title2": "Kazi Iendelee.",
-    "badge": "Seneta Wakili Hillary Sigei"
+    "eyebrow": "Kaunti ya Bomet · 2022 · 2027",
+    "line1": "Seneta Wakili",
+    "line2": "Hillary Sigei.",
+    "taglineSw": "Mtoto wa Bomet, anaomba muhula wa pili.",
+    "tagline": "A son of Bomet, asking for a second term.",
+    "ctaRecord": "Tazama rekodi",
+    "ctaPledge": "Ahidi kuunga mkono",
+    "proofLabel": "Rekodi kwa ufupi"
   },
-  "countdown": {
-    "title": "Siku ya uchaguzi inakaribia",
-    "lead": "Vituo vya kupigia kura vitafunguliwa Jumanne 10 Agosti 2027 saa 12:00 asubuhi. Hakikisha umesajiliwa, na familia yako pia.",
-    "calendar": "Weka kwenye kalenda",
-    "details": "Orodha ya mpiga kura"
+  "proof": {
+    "chair": "Mwenyekiti, Kamati ya Haki ya Seneti",
+    "chairSource": "Okt 2022 · Feb 2025 · The Standard; Eastleigh Voice",
+    "growers": "Wakulima wadogo wa chai ambao Mswada wa Chai unawalenga",
+    "growersSource": "Idadi ya kitaifa · Nation, 2023",
+    "votes": "Kura zilizomchagua 2022",
+    "votesSource": "Mzalendo · kufikia 17 Nov 2026"
+  },
+  "entry": {
+    "label": "Anza hapa",
+    "whoTitle": "Yeye ni nani",
+    "whoBody": "Kutoka Shule ya Msingi ya Ndamichonik hadi Seneti: hadithi yake, katika kaunti yake.",
+    "whoCta": "Hadithi",
+    "recordTitle": "Rekodi",
+    "recordBody": "Mswada wa Chai, Kamati ya Haki, usimamizi wa matumizi ya kaunti. Kila jambo lina chanzo.",
+    "recordCta": "Rekodi",
+    "nextTitle": "Kinachofuata",
+    "nextBody": "Vipaumbele sita vya rasimu kwa muhula wa pili, kila kimoja na kipimo chake.",
+    "nextCta": "Kazi Iendelee"
   },
   "stats": {
-    "title": "Rekodi kwa namba",
-    "lead": "Kila takwimu ina chanzo. Gusa Chanzo kukifungua.",
+    "line1": "Rekodi",
+    "line2": "kwa namba.",
+    "lead": "Kila takwimu inataja chanzo chake na ilipohesabiwa.",
     "cta": "Fungua rekodi kamili"
   },
-  "story": {
-    "title": "Mtoto wa Bomet. Wakili. Seneta.",
-    "p1": "Kutoka Shule ya Msingi ya Ndamichonik hadi Tenwek High, kisha sheria Chuo Kikuu cha Nairobi, Hillary Sigei alijenga taaluma yake kama wakili kabla Bomet kumtuma Senetini mwaka 2022.",
-    "p2": "Huko anaongoza Kamati ya Haki, Masuala ya Kisheria na Haki za Binadamu, na amepeleka Mswada wa Marekebisho ya Chai kupitia Seneti kwa niaba ya wakulima wadogo.",
+  "career": {
+    "line1": "Mtoto wa Bomet.",
+    "line2": "Kutoka Ndamichonik",
+    "line3": "hadi Seneti.",
+    "s1": "Shule ya Msingi ya Ndamichonik",
+    "s1b": "KCPE.",
+    "s2": "Shule ya Upili ya Tenwek",
+    "s2b": "KCSE.",
+    "s3": "Chuo Kikuu cha Nairobi",
+    "s3b": "Shahada ya Sheria; Shule ya Sheria ya Kenya 2006; LLM 2012–2014.",
+    "s4": "Wakili",
+    "s4b": "Wakili msaidizi tangu 2009; mshirika mkuu, SMS Advocates LLP tangu 2013.",
+    "s5": "Seneta wa Bomet",
+    "s5b": "Alichaguliwa kupitia tiketi ya UDA; aliapishwa Septemba 2022.",
+    "s6": "Mwenyekiti, Kamati ya Haki",
+    "s6b": "Alichaguliwa na maseneta wenzake, kisha akachaguliwa tena.",
+    "s7": "Muhula wa pili?",
+    "s7b": "Kura yako inaamua.",
+    "credit": "Mandhari: vilima vya Kaplong, Kaunti ya Bomet (D60fd, CC BY-SA 4.0).",
     "cta": "Soma hadithi kamili"
   },
-  "marquee": {
-    "title": "Pamoja na Bomet, popote kazi ilipo",
-    "aria": "Picha za Bomet na maeneo ambayo kazi ya Seneta inagusa"
+  "priorities": {
+    "line1": "Kazi Iendelee:",
+    "line2": "muhula ujao.",
+    "lead": "Vipaumbele sita, kila kimoja na kipimo chake. Vyote ni rasimu hadi Seneta avithibitishe.",
+    "cta": "Tazama mpango kamili"
   },
-  "record": {
-    "title": "Kazi za hivi karibuni",
-    "lead": "Aliyoifanyia Bomet Senetini, pamoja na vyanzo.",
-    "cta": "Gundua Rekodi Yangu"
+  "bomet": {
+    "line1": "Maeneo bunge matano.",
+    "line2": "Kaunti moja."
+  },
+  "join": {
+    "line1": "Kampeni hii",
+    "line2": "ni ya Bomet.",
+    "volunteerTitle": "Jitolee katika eneo bunge lako",
+    "volunteerBody": "Tembelea nyumba, wasaidie majirani kujisajili, saidia siku ya kura.",
+    "hostTitle": "Andaa mazungumzo ya wadi",
+    "hostBody": "Waalike majirani; kampeni itakuja kusikiliza.",
+    "tellTitle": "Tuambie muhula wa 2 lazima ulete nini",
+    "tellBody": "Kipaumbele chako, kwa maneno yako, kitasomwa na timu.",
+    "cta": "Ahidi kuunga mkono"
+  },
+  "closing": {
+    "line1": "Mtoto wa Bomet.",
+    "line2": "Seneta wa Bomet.",
+    "who": "Seneta Wakili Hillary Kiprotich Sigei · UDA",
+    "alt": "Upinde wa mvua juu ya mashamba katika Kaunti ya Bomet"
   },
   "cta": {
     "title": "Jiunge na kazi ya Bomet",

@@ -30,7 +30,7 @@ const linkCls =
 export function Footer() {
   const t = useTranslations("common");
   return (
-    <footer className="bg-ink-deep text-paper pb-24 md:pb-0">
+    <footer className="bg-ink-deep text-paper">
       <div className="shell grid gap-10 py-14 md:grid-cols-[1.6fr_1fr_1fr]">
         <div>
           <p className="font-display text-3xl">{t("site.short")}</p>

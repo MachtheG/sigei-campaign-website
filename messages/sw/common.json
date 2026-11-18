@@ -9,7 +9,8 @@
     "short": "Sigei",
     "role": "Seneta wa Kaunti ya Bomet",
     "slogan": "Mtoto wa Bomet. Kazi Iendelee.",
-    "coatOfArms": "Nembo ya Kaunti ya Bomet"
+    "coatOfArms": "Nembo ya Kaunti ya Bomet",
+    "roleShort": "Seneta wa Bomet"
   },
   "nav": {
     "home": "Nyumbani",
@@ -161,6 +162,7 @@
     "party": "UDA na Chama",
     "elections": "Uchaguzi",
     "contact": "Wasiliana",
-    "privacy": "Faragha"
+    "privacy": "Faragha",
+    "calendar": "Weka 10 Agosti 2027 kwenye kalenda"
   }
 }

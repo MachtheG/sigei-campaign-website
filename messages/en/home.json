@@ -1,42 +1,91 @@
 {
   "meta": {
     "title": "Home",
-    "description": "Sen. Wakili Hillary Sigei, Senator for Bomet: the record, the story and the plan for a second term in the 10 August 2027 election."
+    "description": "Sen. Wakili Hillary Sigei, Senator for Bomet: the record, the story and the draft plan for a second term in the 10 August 2027 election."
   },
   "hero": {
-    "name": "Sen. Wakili Hillary Sigei:",
-    "lead": "Senator for Bomet since 2022, and seeking a second term on 10 August 2027.",
-    "ctaRecord": "See my record",
+    "eyebrow": "Bomet County · 2022 · 2027",
+    "line1": "Seneta Wakili",
+    "line2": "Hillary Sigei.",
+    "taglineSw": "Mtoto wa Bomet, anaomba muhula wa pili.",
+    "tagline": "A son of Bomet, asking for a second term.",
+    "ctaRecord": "See the record",
     "ctaPledge": "Pledge your support",
-    "title1": "Bomet's son.",
-    "title2": "The work continues.",
-    "badge": "Sen. Wakili Hillary Sigei"
+    "proofLabel": "The record at a glance"
   },
-  "countdown": {
-    "title": "Election day is coming",
-    "lead": "Polls open on Tuesday 10 August 2027 at 6:00 am. Be sure you are registered, and be sure your family is.",
-    "calendar": "Add to calendar",
-    "details": "Voter checklist"
+  "proof": {
+    "chair": "Chair, Senate Justice Committee",
+    "chairSource": "Oct 2022 · Feb 2025 · The Standard; Eastleigh Voice",
+    "growers": "Small-scale tea growers the Tea Bill is written for",
+    "growersSource": "National figure · Nation, 2023",
+    "votes": "Votes that elected him in 2022",
+    "votesSource": "Mzalendo · as of 17 Nov 2026"
+  },
+  "entry": {
+    "label": "Start here",
+    "whoTitle": "Who he is",
+    "whoBody": "From Ndamichonik Primary to the Senate: the story, in his own county.",
+    "whoCta": "The Story",
+    "recordTitle": "The record",
+    "recordBody": "The Tea Bill, the Justice Committee, oversight of county spending. Every item sourced.",
+    "recordCta": "The Record",
+    "nextTitle": "What's next",
+    "nextBody": "Six draft priorities for a second term, each with a way to measure it.",
+    "nextCta": "Kazi Iendelee"
   },
   "stats": {
-    "title": "The record in numbers",
-    "lead": "Every figure has a source. Tap Source to open it.",
+    "line1": "The record,",
+    "line2": "in numbers.",
+    "lead": "Each figure names its source and when it was counted.",
     "cta": "Open the full record"
   },
-  "story": {
-    "title": "A son of Bomet. A lawyer. A Senator.",
-    "p1": "From Ndamichonik Primary to Tenwek High, then law at the University of Nairobi, Hillary Sigei built his career as an advocate before Bomet sent him to the Senate in 2022.",
-    "p2": "There he chairs the Justice, Legal Affairs and Human Rights Committee, and has carried the Tea (Amendment) Bill through the Senate for small-scale growers.",
+  "career": {
+    "line1": "Mtoto wa Bomet.",
+    "line2": "From Ndamichonik",
+    "line3": "to the Senate.",
+    "s1": "Ndamichonik Primary School",
+    "s1b": "KCPE.",
+    "s2": "Tenwek High School",
+    "s2b": "KCSE.",
+    "s3": "University of Nairobi",
+    "s3b": "Bachelor of Laws; Kenya School of Law 2006; LLM 2012–2014.",
+    "s4": "Advocate",
+    "s4b": "Associate from 2009; managing partner, SMS Advocates LLP from 2013.",
+    "s5": "Senator for Bomet",
+    "s5b": "Elected on the UDA ticket; sworn in September 2022.",
+    "s6": "Justice Committee chair",
+    "s6b": "Elected by fellow senators, then re-elected.",
+    "s7": "A second term?",
+    "s7b": "Your vote decides.",
+    "credit": "Backdrop: Kaplong hills, Bomet County (D60fd, CC BY-SA 4.0).",
     "cta": "Read the full story"
   },
-  "marquee": {
-    "title": "With Bomet, wherever the work is",
-    "aria": "Photos of Bomet and the places the Senator's work touches"
+  "priorities": {
+    "line1": "Kazi Iendelee:",
+    "line2": "the next term.",
+    "lead": "Six priorities, each with a way to measure it. All are drafts until the Senator signs them off.",
+    "cta": "See the full plan"
   },
-  "record": {
-    "title": "Recent work",
-    "lead": "What he has done for Bomet in the Senate, with sources.",
-    "cta": "Explore My Record"
+  "bomet": {
+    "line1": "Five constituencies.",
+    "line2": "One county."
+  },
+  "join": {
+    "line1": "This campaign",
+    "line2": "belongs to Bomet.",
+    "volunteerTitle": "Volunteer in your constituency",
+    "volunteerBody": "Canvass, help neighbours register, help on polling day.",
+    "hostTitle": "Host a ward conversation",
+    "hostBody": "Invite your neighbours; the campaign comes to listen.",
+    "tellTitle": "Tell us what Term 2 must deliver",
+    "tellBody": "Your priority, in your words, read by the team.",
+    "cta": "Pledge your support"
+  },
+  "closing": {
+    "line1": "Mtoto wa Bomet.",
+    "line2": "Seneta wa Bomet.",
+    "who": "Sen. Wakili Hillary Kiprotich Sigei · UDA",
+    "alt": "A rainbow arching over farmland in Bomet County"
   },
   "cta": {
     "title": "Join the work for Bomet",

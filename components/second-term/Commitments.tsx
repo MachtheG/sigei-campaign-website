@@ -23,9 +23,10 @@ export function Commitments() {
         {commitments.map((c, i) => (
           <Reveal
             key={c.id}
+            id={c.id}
             delay={(i % 2) * 0.06}
             as="article"
-            className="bg-surface rounded-3xl p-6 sm:p-8"
+            className="bg-surface scroll-mt-32 rounded-md p-6 sm:p-8"
           >
             <div className="flex flex-wrap items-center gap-2">
               <span className="bg-accent text-on-accent rounded-full px-3 py-1 text-xs font-extrabold">

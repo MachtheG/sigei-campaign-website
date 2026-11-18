@@ -8,7 +8,7 @@ import { reasons } from "@/data/second-term/story";
 import { pick } from "@/data/types";
 
 export function WhyHim() {
-  const t = useTranslations("secondTerm.why");
+  const t = useTranslations("kazi.why");
   const locale = useLocale();
   return (
     <section aria-labelledby="st-why" className="bg-brand text-on-brand">
@@ -22,7 +22,7 @@ export function WhyHim() {
                 key={r.id}
                 delay={(i % 2) * 0.06}
                 as="article"
-                className="rounded-3xl bg-white/10 p-6 sm:p-8"
+                className="rounded-md bg-white/10 p-6 sm:p-8"
               >
                 <p className="font-display text-accent text-5xl leading-none font-extrabold">
                   <StatCounter value={s.value} suffix={s.suffix} />

@@ -13,7 +13,7 @@ export function PartyRole() {
       <SenatorImage
         id="events-rally"
         sizes="(min-width: 768px) 50vw, 100vw"
-        className="rounded-3xl"
+        className="rounded-md"
       />
       <div>
         <h2 id="pt-role" className="t-h2">

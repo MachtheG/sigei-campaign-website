@@ -50,5 +50,20 @@
     "rate": "Too many attempts. Please try again in a few minutes.",
     "server": "Something went wrong. Please try again."
   },
-  "sending": "Sending…"
+  "sending": "Sending…",
+  "host": {
+    "title": "Host a ward conversation",
+    "lead": "Invite neighbours to your home, church hall or market. Tell the campaign the ward and a date, and the team comes to listen.",
+    "cta": "Offer to host"
+  },
+  "tell": {
+    "title": "Tell us what Term 2 must deliver",
+    "lead": "One priority, in your words. The team reads every message.",
+    "cta": "Write to the campaign"
+  },
+  "donate": {
+    "title": "Help the campaign",
+    "lead": "Donation channels will be published here once campaign counsel has cleared them.",
+    "placeholder": "[[TO CONFIRM WITH CAMPAIGN COUNSEL: donation channels and the legal disclosure line]]"
+  }
 }

@@ -6,12 +6,14 @@ const PAGES = [
   "/kazi-iendelee",
   "/gallery",
   "/news",
-  "/about",
+  "/story",
   "/party",
   "/elections",
   "/get-involved",
   "/contact",
   "/privacy",
+  "/bomet",
+  "/bomet/sotik",
 ];
 
 for (const locale of ["en", "sw"]) {

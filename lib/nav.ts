@@ -1,6 +1,6 @@
 /** The six header items (redesign IA). Gallery, Party, Elections, Contact, Privacy live in the footer. */
 export const NAV = [
-  { key: "story", href: "/about" },
+  { key: "story", href: "/story" },
   { key: "record", href: "/record" },
   { key: "kazi", href: "/kazi-iendelee" },
   { key: "bomet", href: "/bomet" },

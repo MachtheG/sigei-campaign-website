@@ -50,5 +50,20 @@
     "rate": "Majaribio mengi mno. Tafadhali jaribu tena baada ya dakika chache.",
     "server": "Kuna hitilafu. Tafadhali jaribu tena."
   },
-  "sending": "Inatuma…"
+  "sending": "Inatuma…",
+  "host": {
+    "title": "Andaa mazungumzo ya wadi",
+    "lead": "Waalike majirani nyumbani kwako, ukumbi wa kanisa au sokoni. Iambie kampeni wadi na tarehe, na timu itakuja kusikiliza.",
+    "cta": "Jitolee kuandaa"
+  },
+  "tell": {
+    "title": "Tuambie muhula wa 2 lazima ulete nini",
+    "lead": "Kipaumbele kimoja, kwa maneno yako. Timu inasoma kila ujumbe.",
+    "cta": "Iandikie kampeni"
+  },
+  "donate": {
+    "title": "Saidia kampeni",
+    "lead": "Njia za kuchangia zitachapishwa hapa baada ya wakili wa kampeni kuziidhinisha.",
+    "placeholder": "[[TO CONFIRM WITH CAMPAIGN COUNSEL: njia za kuchangia na tamko la kisheria]]"
+  }
 }

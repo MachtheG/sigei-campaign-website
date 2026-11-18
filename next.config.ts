@@ -39,6 +39,8 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       { source: "/second-term", destination: "/en/kazi-iendelee", permanent: true },
+      { source: "/:locale(en|sw)/about", destination: "/:locale/story", permanent: true },
+      { source: "/about", destination: "/en/story", permanent: true },
     ];
   },
   // Tailwind v4 through Turbopack (as set up by create-next-app).

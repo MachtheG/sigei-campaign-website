@@ -12,7 +12,7 @@ export function RecordCard({ event }: { event: RecordEvent }) {
   const locale = useLocale();
   const t = useTranslations("record.cards");
   return (
-    <article className="bg-surface flex flex-col overflow-hidden rounded-3xl">
+    <article className="bg-surface flex flex-col overflow-hidden rounded-md">
       <SenatorImage
         id={event.photoId}
         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"

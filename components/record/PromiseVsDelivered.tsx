@@ -23,7 +23,7 @@ export function PromiseVsDelivered() {
               <article
                 key={slug}
                 data-pillars={e.pillar}
-                className="bg-line grid gap-px overflow-hidden rounded-3xl md:grid-cols-2"
+                className="bg-line grid gap-px overflow-hidden rounded-md md:grid-cols-2"
               >
                 <div className="bg-bg p-6">
                   <h3 className="text-muted font-sans text-sm font-bold tracking-normal">

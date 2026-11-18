@@ -7,15 +7,16 @@ export const NAMESPACES = {
   common: "common",
   home: "home",
   record: "record",
-  "second-term": "secondTerm",
+  "kazi-iendelee": "kazi",
   gallery: "gallery",
   news: "news",
-  about: "about",
+  story: "story",
   party: "party",
   elections: "elections",
   "get-involved": "getInvolved",
   contact: "contact",
   privacy: "privacy",
+  bomet: "bomet",
 } as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

@@ -1,13 +1,5 @@
-import { useTranslations } from "next-intl";
+import { PageHero } from "@/components/shared/PageHero";
 
 export function PartyHero() {
-  const t = useTranslations("party.hero");
-  return (
-    <section className="border-accent bg-bg text-fg border-b-[6px]">
-      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-24 lg:px-8">
-        <h1 className="t-h1 max-w-[16ch]">{t("title")}</h1>
-        <p className="text-muted mt-4 max-w-[52ch] text-lg">{t("lead")}</p>
-      </div>
-    </section>
-  );
+  return <PageHero ns="party" eyebrow="UDA" />;
 }

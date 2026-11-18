@@ -17,7 +17,7 @@ export function BillTracker() {
       <SectionHeading id="rec-bills" title={t("title")} lead={t("lead")} />
       <div className="mt-10 space-y-6">
         {bills.map((b) => (
-          <article key={b.id} data-pillars={b.pillar} className="bg-surface rounded-3xl p-6 sm:p-8">
+          <article key={b.id} data-pillars={b.pillar} className="bg-surface rounded-md p-6 sm:p-8">
             <h3 className="font-sans text-2xl font-bold tracking-normal">{pick(b.name, locale)}</h3>
             <p className="text-muted mt-1 text-sm font-semibold">{b.ref}</p>
             <p className="mt-3 max-w-[60ch]">{pick(b.summary, locale)}</p>
@@ -59,7 +59,7 @@ export function BillTracker() {
         ))}
         <p
           data-only-pillar="oversight"
-          className="border-line rounded-2xl border-2 border-dashed p-5 font-semibold"
+          className="border-line rounded-md border-2 border-dashed p-5 font-semibold"
         >
           {t("empty")}
         </p>
@@ -67,7 +67,7 @@ export function BillTracker() {
           <p
             key={p}
             data-only-pillar={p}
-            className="border-line rounded-2xl border-2 border-dashed p-5 font-semibold"
+            className="border-line rounded-md border-2 border-dashed p-5 font-semibold"
           >
             {t("empty")}
           </p>

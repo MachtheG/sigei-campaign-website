@@ -7,7 +7,7 @@ import { journey } from "@/data/about";
 import { pick } from "@/data/types";
 
 export function JourneyTimeline() {
-  const t = useTranslations("about.journey");
+  const t = useTranslations("story.journey");
   const locale = useLocale();
   return (
     <section aria-labelledby="ab-journey" className="bg-surface">
@@ -16,7 +16,7 @@ export function JourneyTimeline() {
         <ol className="mt-10 space-y-5">
           {journey.map((m) => (
             <li key={m.id}>
-              <Reveal className="bg-bg grid overflow-hidden rounded-3xl sm:grid-cols-[12rem_1fr]">
+              <Reveal className="bg-bg grid overflow-hidden rounded-md sm:grid-cols-[12rem_1fr]">
                 <SenatorImage
                   id={m.photoId}
                   sizes="(min-width: 640px) 192px, 100vw"

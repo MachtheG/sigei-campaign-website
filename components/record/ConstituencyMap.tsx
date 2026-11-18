@@ -32,7 +32,7 @@ export function ConstituencyMap() {
             viewBox="0 0 100 100"
             role="group"
             aria-label={t("title")}
-            className="bg-surface w-full rounded-3xl"
+            className="bg-surface w-full rounded-md"
           >
             {constituencies.map((c) => {
               const active = sel === c.id;
@@ -82,7 +82,7 @@ export function ConstituencyMap() {
           </p>
         </div>
 
-        <div aria-live="polite" className="bg-surface rounded-3xl p-6 sm:p-8">
+        <div aria-live="polite" className="bg-surface rounded-md p-6 sm:p-8">
           {current ? (
             <>
               <h3 className="font-sans text-2xl font-bold tracking-normal">

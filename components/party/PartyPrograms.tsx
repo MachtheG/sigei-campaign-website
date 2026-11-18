@@ -16,7 +16,7 @@ export function PartyPrograms() {
         <SectionHeading id="pt-programs" title={t("title")} lead={t("lead")} />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {partyPrograms.map((p, i) => (
-            <article key={p.id} className="bg-bg overflow-hidden rounded-3xl">
+            <article key={p.id} className="bg-bg overflow-hidden rounded-md">
               <SenatorImage
                 id={PHOTOS[i % PHOTOS.length]}
                 sizes="(min-width: 768px) 33vw, 100vw"

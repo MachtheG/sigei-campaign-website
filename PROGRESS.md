@@ -6,7 +6,7 @@
 - [x] **Phase 2: design exploration** (2026-11-18): 8 artboards at https://claude.ai/artifact/RM3EFBbq36HyFsoT6FFP7t. Checkpoint 2 passed 2026-11-18: hero C + A, palette approved, promise option 3.
 - [x] **Phase 3: design system** (2026-11-18): tokens, Fraunces + Public Sans, TopStrip, SplitHeadline, Duotone, EntryCard, StatCard, CountdownBand, Timeline, PriorityCard, ConstituencyList, CTABand, Footer; /styleguide rebuilt. All gates pass; no overflow at 375/768/1440.
 - [x] **Phase 4: home page** (2026-11-18): §3 order with the approved C + A hero (portrait faded into the landscape), promise line 3, lean 6-item header + full-screen menu (bottom bar removed), no repeated photo or figure on the page. Fixed: `Reveal` left content invisible for reduced-motion visitors (pre-existing). Constituency rows link to `/bomet/[id]` once Phase 5 adds those pages.
-- [ ] Phase 5: inner pages + redirects
+- [x] **Phase 5: inner pages + redirects** (2026-11-18): every inner page opens with the shared PageHero (duotone landscape or paper); `/about` → `/story` and `/second-term` → `/kazi-iendelee` (308, with or without locale; components and messages renamed with their tabs); new `/bomet` + 5 constituency pages (IEBC 2022 voters, share of county, Draft county-wide priorities, visible placeholder for local work); Get Involved gains #pledge #volunteer #host #story #share #donate; Record numbers use StatCard (old photo tiles removed, unverified sources flagged on the card). 70 pages build; no overflow at 375/768/1440 on any page.
 - [ ] Phase 6: polish → Checkpoint 3
 - [ ] Phase 7: ship (PR + preview)
 

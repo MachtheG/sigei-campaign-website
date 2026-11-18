@@ -4,7 +4,7 @@ import { SOCIALS } from "@/lib/nav";
 import { LiteToggle } from "./LiteToggle";
 
 const EXPLORE = [
-  ["story", "/about"],
+  ["story", "/story"],
   ["record", "/record"],
   ["kazi", "/kazi-iendelee"],
   ["bomet", "/bomet"],

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { alt } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { AboutHero } from "@/components/about/AboutHero";
-import { Credentials } from "@/components/about/Credentials";
-import { JourneyTimeline } from "@/components/about/JourneyTimeline";
+import { AboutHero } from "@/components/story/AboutHero";
+import { Credentials } from "@/components/story/Credentials";
+import { JourneyTimeline } from "@/components/story/JourneyTimeline";
 import { CTABand } from "@/components/shared/CTABand";
 
 export async function generateMetadata({
@@ -12,11 +12,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "about.meta" });
-  return { title: t("title"), description: t("description"), alternates: alt(locale, "/about") };
+  const t = await getTranslations({ locale, namespace: "story.meta" });
+  return { title: t("title"), description: t("description"), alternates: alt(locale, "/story") };
 }
 
-export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function StoryPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home.cta");

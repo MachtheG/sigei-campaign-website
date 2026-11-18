@@ -106,7 +106,7 @@ export default async function Styleguide({ params }: { params: Promise<{ locale:
               title="Who he is"
               body="From Ndamichonik Primary to the Senate."
               cta="The Story"
-              href="/about"
+              href="/story"
             />
             <EntryCard
               n="02"

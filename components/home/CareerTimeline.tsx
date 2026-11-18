@@ -33,7 +33,7 @@ export function CareerTimeline() {
         <Timeline steps={steps} className="mt-12" />
         <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <Link
-            href="/about"
+            href="/story"
             className="inline-flex min-h-11 items-center font-bold underline underline-offset-4"
           >
             {t("cta")} →

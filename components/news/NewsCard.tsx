@@ -11,7 +11,7 @@ export function NewsCard({ item }: { item: NewsItem }) {
   const s = sources[item.sourceId];
   const prec = s.date.length === 4 ? "year" : s.date.length === 7 ? "month" : "day";
   return (
-    <article className="bg-surface flex flex-col rounded-3xl p-6">
+    <article className="bg-surface flex flex-col rounded-md p-6">
       <div className="flex flex-wrap items-center gap-2 text-sm">
         <PillarChip pillar={item.pillar} />
         <span className="font-semibold">{s.outlet}</span>

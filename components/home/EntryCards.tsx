@@ -3,7 +3,7 @@ import { EntryCard } from "@/components/shared/EntryCard";
 import { Reveal } from "@/components/shared/Reveal";
 
 const CARDS = [
-  { key: "who", href: "/about" },
+  { key: "who", href: "/story" },
   { key: "record", href: "/record" },
   { key: "next", href: "/kazi-iendelee" },
 ] as const;

@@ -19,7 +19,7 @@ export function GalleryGrid({ photos, onOpen }: Props) {
             type="button"
             onClick={() => onOpen(i)}
             aria-label={`${t("open")}: ${pick(p.alt, locale)}`}
-            className="press group block w-full overflow-hidden rounded-2xl text-left"
+            className="press group block w-full overflow-hidden rounded-md text-left"
           >
             <SenatorImage
               id={p.id}

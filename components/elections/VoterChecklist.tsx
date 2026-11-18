@@ -33,7 +33,7 @@ export function VoterChecklist() {
             <li key={k}>
               <label
                 className={cn(
-                  "bg-bg flex min-h-14 cursor-pointer items-start gap-4 rounded-2xl p-4",
+                  "bg-bg flex min-h-14 cursor-pointer items-start gap-4 rounded-md p-4",
                   done[k] && "opacity-70",
                 )}
               >

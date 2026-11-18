@@ -1,13 +1,17 @@
 import { useLocale, useTranslations } from "next-intl";
-import { type Stat } from "@/data/record/stats";
+import { type Stat, SENATOR_SINCE } from "@/data/record/stats";
 import { sources } from "@/data/sources";
 import { pick } from "@/data/types";
-import { formatDate, formatNumber } from "@/lib/format";
+import { formatDate, formatNumber, yearsSince } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { ShareButton } from "./ShareButton";
 import { SourceBadge } from "./SourceBadge";
 import { StatCounter } from "./StatCounter";
-import { statValue } from "./StatTile";
+
+export function statValue(s: Stat): number {
+  if (s.computed === "yearsInOffice") return Math.floor(yearsSince(SENATOR_SINCE) * 10) / 10;
+  return s.value;
+}
 
 type Props = { stat: Stat; className?: string; tone?: "paper" | "white" };
 
@@ -27,8 +31,9 @@ export function StatCard({ stat, className, tone = "paper" }: Props) {
   const leadDate = lead?.date || lead?.accessed;
   return (
     <article
+      id={`stat-${stat.id}`}
       className={cn(
-        "border-forest flex flex-col gap-2.5 border-t-[3px] p-5 sm:p-6",
+        "border-forest flex scroll-mt-32 flex-col gap-2.5 border-t-[3px] p-5 sm:p-6",
         tone === "paper" ? "bg-paper" : "bg-surface",
         className,
       )}
@@ -63,6 +68,9 @@ export function StatCard({ stat, className, tone = "paper" }: Props) {
           className="-mr-3"
         />
       </div>
+      {stat.sourceIds.some((id) => !sources[id]?.verified) && (
+        <p className="text-sm font-semibold">⚠ {t("source.notVerified")}</p>
+      )}
       {stat.sourceIds.length > 1 && <SourceBadge ids={stat.sourceIds} className="-ml-3" />}
     </article>
   );

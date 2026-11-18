@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { SenatorImage } from "@/components/shared/SenatorImage";
 
 export function LetterFromSenator() {
-  const t = useTranslations("secondTerm.letter");
+  const t = useTranslations("kazi.letter");
   const d = useTranslations("common.draft");
   return (
     <section
@@ -31,7 +31,7 @@ export function LetterFromSenator() {
         <SenatorImage
           id="portrait-formal"
           sizes="(min-width: 768px) 256px, 60vw"
-          className="w-3/5 rounded-3xl md:w-full"
+          className="w-3/5 rounded-md md:w-full"
           compact
         />
       </div>

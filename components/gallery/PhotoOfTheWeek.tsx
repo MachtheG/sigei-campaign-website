@@ -14,7 +14,7 @@ export function PhotoOfTheWeek({ photo, onOpen }: { photo: Photo; onOpen: () => 
           type="button"
           onClick={onOpen}
           aria-label={t("week.open")}
-          className="press block overflow-hidden rounded-3xl text-left"
+          className="press block overflow-hidden rounded-md text-left"
         >
           <SenatorImage
             id={photo.id}

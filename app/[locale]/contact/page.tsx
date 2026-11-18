@@ -24,7 +24,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
       <ContactHero />
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-12 sm:px-6 md:grid-cols-2 md:py-20 lg:px-8">
         <OfficeDetails />
-        <section aria-labelledby="ct-form" className="bg-surface rounded-3xl p-6 sm:p-10">
+        <section aria-labelledby="ct-form" className="bg-surface rounded-md p-6 sm:p-10">
           <h2 id="ct-form" className="t-h2">
             {t("title")}
           </h2>

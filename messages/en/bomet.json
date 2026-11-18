@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "Bomet",
+    "description": "Bomet County's five constituencies, with their 2022 registered voters, and what the Senator's work means for each."
+  },
+  "hero": {
+    "title": "Bomet: five constituencies, one county",
+    "lead": "The Senate represents counties. Here is the county Sen. Sigei represents, constituency by constituency."
+  },
+  "stats": {
+    "line1": "The county",
+    "line2": "in numbers."
+  },
+  "list": {
+    "line1": "Five constituencies.",
+    "line2": "One county."
+  },
+  "place": {
+    "eyebrow": "Bomet County · Constituency {n} of 5",
+    "title": "{name}",
+    "lead": "{name} had {voters} registered voters in the 2022 General Election register: {share} of Bomet's {total}.",
+    "source": "IEBC, Registered voters per constituency for the 2022 General Election",
+    "countyTitle": "County-wide work that reaches {name}",
+    "countyLead": "A senator works for the whole county. These draft priorities would apply in {name} as everywhere in Bomet.",
+    "workTitle": "Local work in {name}",
+    "workPlaceholder": "[[TO CONFIRM: projects and visits in this constituency, with sources, supplied by the campaign]]",
+    "others": "The other constituencies",
+    "back": "All of Bomet",
+    "pledge": "Pledge your support in {name}"
+  },
+  "cta": {
+    "title": "Is your constituency counted?",
+    "body": "Pledge your support and tell the campaign where you vote.",
+    "cta": "Pledge your support"
+  }
+}

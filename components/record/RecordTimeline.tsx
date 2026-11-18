@@ -33,7 +33,7 @@ export function RecordTimeline() {
                 aria-hidden
                 className="border-surface bg-brand dark:bg-accent absolute top-3 -left-[2.1rem] size-4 rounded-full border-4 sm:-left-[2.7rem]"
               />
-              <Reveal className="bg-bg grid overflow-hidden rounded-3xl sm:grid-cols-[13rem_1fr]">
+              <Reveal className="bg-bg grid overflow-hidden rounded-md sm:grid-cols-[13rem_1fr]">
                 <SenatorImage
                   id={e.photoId}
                   sizes="(min-width: 640px) 208px, 100vw"
@@ -66,7 +66,7 @@ export function RecordTimeline() {
             <li
               key={p}
               data-only-pillar={p}
-              className="border-line rounded-2xl border-2 border-dashed p-5 font-semibold"
+              className="border-line rounded-md border-2 border-dashed p-5 font-semibold"
             >
               {t("timeline.empty")}
             </li>

@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "Bomet",
+    "description": "Maeneo bunge matano ya Kaunti ya Bomet, pamoja na wapiga kura waliosajiliwa 2022, na maana ya kazi ya Seneta kwa kila moja."
+  },
+  "hero": {
+    "title": "Bomet: maeneo bunge matano, kaunti moja",
+    "lead": "Seneti inawakilisha kaunti. Hii ndiyo kaunti anayoiwakilisha Seneta Sigei, eneo bunge kwa eneo bunge."
+  },
+  "stats": {
+    "line1": "Kaunti",
+    "line2": "kwa namba."
+  },
+  "list": {
+    "line1": "Maeneo bunge matano.",
+    "line2": "Kaunti moja."
+  },
+  "place": {
+    "eyebrow": "Kaunti ya Bomet · Eneo bunge {n} kati ya 5",
+    "title": "{name}",
+    "lead": "{name} ilikuwa na wapiga kura {voters} waliosajiliwa katika daftari la Uchaguzi Mkuu wa 2022: {share} ya jumla ya Bomet ya {total}.",
+    "source": "IEBC, Wapiga kura waliosajiliwa kwa kila eneo bunge, Uchaguzi Mkuu wa 2022",
+    "countyTitle": "Kazi ya kaunti nzima inayofika {name}",
+    "countyLead": "Seneta hufanya kazi kwa kaunti nzima. Vipaumbele hivi vya rasimu vingetumika {name} kama kila mahali Bomet.",
+    "workTitle": "Kazi ya ndani {name}",
+    "workPlaceholder": "[[TO CONFIRM: miradi na ziara katika eneo bunge hili, pamoja na vyanzo, kutoka kwa kampeni]]",
+    "others": "Maeneo bunge mengine",
+    "back": "Bomet yote",
+    "pledge": "Ahidi kuunga mkono {name}"
+  },
+  "cta": {
+    "title": "Je, eneo bunge lako limehesabiwa?",
+    "body": "Ahidi kuunga mkono na uiambie kampeni unapopiga kura.",
+    "cta": "Ahidi kuunga mkono"
+  }
+}

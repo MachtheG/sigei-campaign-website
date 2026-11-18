@@ -6,7 +6,7 @@ import { commitments } from "@/data/second-term/commitments";
 import { pick } from "@/data/types";
 
 export function Commitments() {
-  const t = useTranslations("secondTerm.commitments");
+  const t = useTranslations("kazi.commitments");
   const d = useTranslations("common.draft");
   const locale = useLocale();
   return (
@@ -16,7 +16,7 @@ export function Commitments() {
       className="mx-auto max-w-7xl scroll-mt-20 px-4 py-14 sm:px-6 md:py-24 lg:px-8"
     >
       <SectionHeading id="st-commitments" title={t("title")} lead={t("lead")} />
-      <p className="bg-accent text-on-accent mt-6 rounded-2xl px-5 py-4 font-bold">
+      <p className="bg-accent text-on-accent mt-6 rounded-md px-5 py-4 font-bold">
         {t("draftBanner")}
       </p>
       <div className="mt-10 grid gap-5 lg:grid-cols-2">

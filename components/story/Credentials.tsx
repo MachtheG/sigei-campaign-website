@@ -8,7 +8,7 @@ const GROUPS = [
 ] as const;
 
 export function Credentials() {
-  const t = useTranslations("about.credentials");
+  const t = useTranslations("story.credentials");
   return (
     <section
       aria-labelledby="ab-cred"
@@ -19,7 +19,7 @@ export function Credentials() {
       </h2>
       <div className="mt-8 grid gap-4 md:grid-cols-3">
         {GROUPS.map((g) => (
-          <article key={g.key} className="bg-surface rounded-3xl p-6">
+          <article key={g.key} className="bg-surface rounded-md p-6">
             <h3 className="text-xl font-bold">{t(g.key)}</h3>
             <ul className="mt-3 space-y-2">
               {g.items.map((i) => (

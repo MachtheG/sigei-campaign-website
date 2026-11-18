@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { alt } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CTABand } from "@/components/shared/CTABand";
-import { Commitments } from "@/components/second-term/Commitments";
-import { LetterFromSenator } from "@/components/second-term/LetterFromSenator";
-import { SecondTermHero } from "@/components/second-term/SecondTermHero";
-import { StoryScroller } from "@/components/second-term/StoryScroller";
-import { WhyHim } from "@/components/second-term/WhyHim";
+import { Commitments } from "@/components/kazi-iendelee/Commitments";
+import { LetterFromSenator } from "@/components/kazi-iendelee/LetterFromSenator";
+import { SecondTermHero } from "@/components/kazi-iendelee/SecondTermHero";
+import { StoryScroller } from "@/components/kazi-iendelee/StoryScroller";
+import { WhyHim } from "@/components/kazi-iendelee/WhyHim";
 
 export async function generateMetadata({
   params,
@@ -14,7 +14,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "secondTerm.meta" });
+  const t = await getTranslations({ locale, namespace: "kazi.meta" });
   return {
     title: t("title"),
     description: t("description"),
@@ -29,7 +29,7 @@ export default async function KaziIendeleePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("secondTerm.cta");
+  const t = await getTranslations("kazi.cta");
   return (
     <>
       <SecondTermHero />

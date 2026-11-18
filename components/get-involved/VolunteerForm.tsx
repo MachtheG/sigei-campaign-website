@@ -24,7 +24,7 @@ export function VolunteerForm() {
 
   if (state === "done")
     return (
-      <p role="status" className="bg-sky rounded-2xl p-6 text-lg font-semibold">
+      <p role="status" className="bg-sky rounded-md p-6 text-lg font-semibold">
         {t("volunteer.thanks")}
       </p>
     );

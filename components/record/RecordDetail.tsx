@@ -47,7 +47,7 @@ export function RecordDetail({ event }: { event: RecordEvent }) {
             id={event.photoId}
             sizes="(min-width: 768px) 50vw, 100vw"
             priority
-            className="rounded-3xl"
+            className="rounded-md"
           />
         </div>
       </header>
@@ -78,7 +78,7 @@ export function RecordDetail({ event }: { event: RecordEvent }) {
               key={id}
               id={id}
               sizes="(min-width: 640px) 33vw, 100vw"
-              className="rounded-3xl"
+              className="rounded-md"
               ratio="4 / 3"
               compact
             />

@@ -17,7 +17,7 @@ export function KeyDates() {
         {KEY_DATES.map((d) => (
           <li
             key={d.id}
-            className="bg-surface flex flex-col gap-1 rounded-3xl p-5 sm:flex-row sm:items-center sm:gap-6"
+            className="bg-surface flex flex-col gap-1 rounded-md p-5 sm:flex-row sm:items-center sm:gap-6"
           >
             <time
               dateTime={d.iso}

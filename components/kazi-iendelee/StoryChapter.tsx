@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 /** One full-height chapter: a big photo of the Senator, punchy copy, one hard number. */
 export function StoryChapter({ chapter, index }: { chapter: ChapterDef; index: number }) {
-  const t = useTranslations(`secondTerm.chapters.${chapter.id}`);
+  const t = useTranslations(`kazi.chapters.${chapter.id}`);
   const rs = useTranslations("record.stats");
   const flip = index % 2 === 1;
   const last = chapter.id === "iendelee";
@@ -31,7 +31,7 @@ export function StoryChapter({ chapter, index }: { chapter: ChapterDef; index: n
             sizes="(min-width: 768px) 50vw, 100vw"
             ratio="4 / 5"
             priority={index === 0}
-            className="max-h-[70dvh] w-full rounded-3xl md:max-h-[78dvh]"
+            className="max-h-[70dvh] w-full rounded-md md:max-h-[78dvh]"
           />
         </Reveal>
         <Reveal delay={0.1}>

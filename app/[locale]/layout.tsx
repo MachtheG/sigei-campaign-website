@@ -1,23 +1,25 @@
 import type { Metadata, Viewport } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { Bricolage_Grotesque, Inter } from "next/font/google";
+import { Fraunces, Public_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { LITE_INIT_SCRIPT, LiteProvider } from "@/components/shared/LiteProvider";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { TopStrip } from "@/components/shared/TopStrip";
 import { routing } from "@/lib/i18n/routing";
 import { SITE_URL } from "@/lib/utils";
 import "../globals.css";
 
-const display = Bricolage_Grotesque({
+const display = Fraunces({
   subsets: ["latin"],
-  variable: "--font-bricolage",
+  variable: "--font-fraunces",
+  axes: ["opsz"],
   display: "swap",
 });
-const body = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const body = Public_Sans({ subsets: ["latin"], variable: "--font-public-sans", display: "swap" });
 
 // Namespaces that client components read (keeps the payload small for mobile data).
 const CLIENT_NAMESPACES = [
@@ -30,10 +32,7 @@ const CLIENT_NAMESPACES = [
 ] as const;
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#faf7f0" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a1511" },
-  ],
+  themeColor: "#0b1a14",
   width: "device-width",
   initialScale: 1,
 };
@@ -93,6 +92,7 @@ export default async function LocaleLayout({
               <a href="#main" className="skip-link">
                 {t("skip")}
               </a>
+              <TopStrip />
               <Header />
               <main id="main" tabIndex={-1} className="min-h-[60dvh] outline-none">
                 {children}

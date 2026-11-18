@@ -22,7 +22,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function KaziIendeleePage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function KaziIendeleePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("secondTerm.cta");
@@ -33,13 +37,7 @@ export default async function KaziIendeleePage({ params }: { params: Promise<{ l
       <Commitments />
       <WhyHim />
       <LetterFromSenator />
-      <CTABand
-        title={t("title")}
-        body={t("body")}
-        cta={t("cta")}
-        href="/get-involved"
-        photoId="rainbow-farmland"
-      />
+      <CTABand title={t("title")} body={t("body")} cta={t("cta")} href="/get-involved" />
     </>
   );
 }

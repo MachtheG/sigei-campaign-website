@@ -1,84 +1,97 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
-import { NAV, SOCIALS } from "@/lib/nav";
+import { SOCIALS } from "@/lib/nav";
 import { LiteToggle } from "./LiteToggle";
 
+const EXPLORE = [
+  ["story", "/about"],
+  ["record", "/record"],
+  ["kazi", "/kazi-iendelee"],
+  ["bomet", "/bomet"],
+  ["news", "/news"],
+  ["gallery", "/gallery"],
+  ["party", "/party"],
+  ["elections", "/elections"],
+  ["contact", "/contact"],
+  ["privacy", "/privacy"],
+] as const;
+
+const TAKE_PART = [
+  ["pledge", "/get-involved#pledge"],
+  ["volunteer", "/get-involved#volunteer"],
+  ["host", "/get-involved#host"],
+  ["donate", "/get-involved#donate"],
+] as const;
+
+const linkCls =
+  "press inline-flex min-h-11 items-center opacity-85 hover:opacity-100 hover:text-uda";
+
+/** Explore + Take part columns, photo credits and the draft-content note (Reference A pattern). */
 export function Footer() {
   const t = useTranslations("common");
-  const quick = NAV.filter((n) => n.key !== "home");
   return (
-    <footer className="bg-brand text-on-brand pb-24 md:pb-0">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
+    <footer className="bg-ink-deep text-paper pb-24 md:pb-0">
+      <div className="shell grid gap-10 py-14 md:grid-cols-[1.6fr_1fr_1fr]">
         <div>
-          <p className="font-display text-accent text-4xl leading-none font-extrabold sm:text-5xl">
-            {t("footer.slogan")}
-          </p>
-          <Image
-            src="/images/bomet/coat-of-arms.png"
-            alt={t("site.coatOfArms")}
-            width={72}
-            height={72}
-            className="mt-6 size-16 rounded-full bg-white object-contain p-0.5"
-          />
-          <p className="text-on-brand/80 mt-4 max-w-[40ch]">
+          <p className="font-display text-3xl">{t("site.short")}</p>
+          <p className="mt-2 max-w-[42ch] opacity-80">
             {t("site.name")} · {t("site.role")}
           </p>
-          <div className="mt-6">
+          <p className="mt-4 max-w-[42ch] text-sm opacity-80">{t("footer.draftNote")}</p>
+          <div className="mt-5">
             <LiteToggle tone="light" />
           </div>
         </div>
-        <nav aria-label={t("footer.quickLinks")}>
-          <h2 className="text-base font-bold">{t("footer.quickLinks")}</h2>
+        <nav aria-label={t("footer.explore")}>
+          <h2 className="font-sans text-base font-bold tracking-normal">{t("footer.explore")}</h2>
           <ul className="mt-2 grid grid-cols-2 gap-x-4 md:grid-cols-1">
-            {quick.map(({ key, href }) => (
+            {EXPLORE.map(([key, href]) => (
               <li key={key}>
-                <Link
-                  href={href}
-                  className="press text-on-brand/85 hover:text-accent inline-flex min-h-11 items-center"
-                >
-                  {t(`nav.${key}`)}
+                <Link href={href} className={linkCls}>
+                  {t(`navNew.${key}`)}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
         <div>
-          <h2 className="text-base font-bold">{t("footer.followUs")}</h2>
+          <h2 className="font-sans text-base font-bold tracking-normal">{t("footer.takePart")}</h2>
           <ul className="mt-2">
+            {TAKE_PART.map(([key, href]) => (
+              <li key={key}>
+                <Link href={href} className={linkCls}>
+                  {t(`footer.${key}`)}
+                </Link>
+              </li>
+            ))}
             <li>
               <a
                 href={SOCIALS.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="press text-on-brand/85 hover:text-accent inline-flex min-h-11 items-center"
+                className={linkCls}
               >
                 {t("footer.facebook")} ↗
               </a>
             </li>
             <li>
-              <a
-                href={SOCIALS.x}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="press text-on-brand/85 hover:text-accent inline-flex min-h-11 items-center"
-              >
+              <a href={SOCIALS.x} target="_blank" rel="noopener noreferrer" className={linkCls}>
                 {t("footer.x")} ↗
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/15">
-        <div className="text-on-brand/90 mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 text-sm sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+      <div className="border-paper/15 border-t">
+        <div className="shell flex flex-col gap-2 py-6 text-sm opacity-90 md:flex-row md:flex-wrap md:items-center md:justify-between">
+          <p>
+            {t("footer.credits")}{" "}
+            <Link href="/gallery#credits" className="font-semibold underline underline-offset-4">
+              {t("footer.creditsLink")}
+            </Link>
+          </p>
           <p>{t("footer.authorised")}</p>
           <p>{t("footer.notOfficial")}</p>
-          <Link
-            href="/privacy"
-            className="press text-on-brand inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
-          >
-            {t("footer.privacy")}
-          </Link>
         </div>
       </div>
     </footer>

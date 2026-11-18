@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
-import { CountdownPill } from "./CountdownPill";
 import { LanguageToggle } from "./LanguageToggle";
 import { MenuButton } from "./MenuButton";
 import { NavLinks } from "./NavLinks";
@@ -34,7 +33,6 @@ export function Header() {
         <nav aria-label={t("a11y.mainNav")} className="mx-2 hidden min-[1360px]:block">
           <NavLinks className="flex items-center gap-0.5" />
         </nav>
-        <CountdownPill />
         <LanguageToggle />
         <MenuButton />
       </div>

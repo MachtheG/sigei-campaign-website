@@ -16,7 +16,7 @@ function Roll({ value }: { value: string }) {
   );
 }
 
-type Props = { variant: "pill" | "large"; className?: string };
+type Props = { variant: "pill" | "large" | "band"; className?: string };
 
 export function Countdown({ variant, className }: Props) {
   const t = useTranslations("common.countdown");
@@ -68,8 +68,21 @@ export function Countdown({ variant, className }: Props) {
       aria-label={`${days} ${t("days")}, ${hours} ${t("hours")}, ${minutes} ${t("minutes")} ${t("until")}`}
     >
       {cells.map((c) => (
-        <div key={c.l} className="rounded-2xl bg-white/60 px-1 py-4 text-center sm:py-8">
-          <div className="font-display text-[clamp(2rem,9vw,5.5rem)] leading-none font-extrabold">
+        <div
+          key={c.l}
+          className={cn(
+            "rounded-md px-1 text-center",
+            variant === "band" ? "bg-forest py-4" : "bg-white/60 py-4 sm:py-8",
+          )}
+        >
+          <div
+            className={cn(
+              "font-display leading-none",
+              variant === "band"
+                ? "text-[clamp(2rem,7vw,3.25rem)]"
+                : "text-[clamp(2rem,9vw,5.5rem)]",
+            )}
+          >
             <Roll value={c.v} />
           </div>
           <div className="mt-2 text-xs font-medium tracking-wide opacity-80 sm:text-sm">{c.l}</div>

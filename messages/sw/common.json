@@ -68,7 +68,8 @@
     "share": "Shiriki",
     "copied": "Kiungo kimenakiliwa",
     "whatsapp": "WhatsApp",
-    "x": "X"
+    "x": "X",
+    "statText": "{label}: {value}. Seneta Wakili Hillary Sigei, Bomet."
   },
   "photo": {
     "placeholder": "Picha inakuja hivi karibuni",
@@ -98,11 +99,68 @@
     "notOfficial": "Hii ni tovuti ya kampeni. Si tovuti rasmi ya Bunge la Kenya.",
     "privacy": "Taarifa ya faragha",
     "facebook": "Facebook",
-    "x": "X (Twitter)"
+    "x": "X (Twitter)",
+    "explore": "Gundua",
+    "takePart": "Shiriki",
+    "pledge": "Ahidi kuunga mkono",
+    "volunteer": "Jitolee",
+    "host": "Andaa mazungumzo ya wadi",
+    "donate": "Changia",
+    "credits": "Picha: wachangiaji wa Wikimedia Commons (CC BY / CC BY-SA) na Bunge la Kenya.",
+    "creditsLink": "Orodha kamili ya picha",
+    "draftNote": "Mipango iliyowekwa alama ya Rasimu inasubiri idhini ya Seneta."
   },
   "notFound": {
     "title": "Ukurasa haujapatikana",
     "body": "Ukurasa huo haupo. Tukurudishe njiani.",
     "cta": "Rudi nyumbani"
+  },
+  "promise": {
+    "sw": "Sauti ya Bomet. Kazi Iendelee.",
+    "en": "Bomet's voice. The work continues."
+  },
+  "topStrip": {
+    "label": "Siku zilizobaki hadi uchaguzi",
+    "date": "Jumanne, 10 Agosti 2027",
+    "daysLeft": "Siku {days}",
+    "donate": "Changia"
+  },
+  "countdownBand": {
+    "eyebrow": "Kituo kijacho: Muhula wa 2",
+    "date": "10.08.2027",
+    "when": "Jumanne · vituo vinafunguliwa saa 12 asubuhi",
+    "addToCalendar": "Weka kwenye kalenda",
+    "iebc": "Hakiki usajili wako IEBC"
+  },
+  "stat": {
+    "asOf": "Kufikia {date}",
+    "share": "Shiriki WhatsApp",
+    "sourceLabel": "Chanzo"
+  },
+  "priority": {
+    "readMore": "Soma zaidi",
+    "lever": {
+      "bill": "Mswada",
+      "oversight": "Usimamizi",
+      "revenue": "Mgao wa mapato ya kaunti"
+    }
+  },
+  "places": {
+    "voters": "Wapiga kura {count} waliosajiliwa",
+    "source": "Wapiga kura waliosajiliwa, daftari la Uchaguzi Mkuu wa 2022 · IEBC. Jumla ya kaunti {total}."
+  },
+  "trust": "Kila takwimu kwenye tovuti hii ina kiungo cha chanzo chake.",
+  "navNew": {
+    "story": "Hadithi",
+    "record": "Rekodi",
+    "kazi": "Kazi Iendelee",
+    "bomet": "Bomet",
+    "news": "Habari",
+    "getInvolved": "Jiunge",
+    "gallery": "Picha",
+    "party": "UDA na Chama",
+    "elections": "Uchaguzi",
+    "contact": "Wasiliana",
+    "privacy": "Faragha"
   }
 }

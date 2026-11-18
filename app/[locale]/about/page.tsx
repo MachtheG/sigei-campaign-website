@@ -25,13 +25,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <AboutHero />
       <JourneyTimeline />
       <Credentials />
-      <CTABand
-        title={t("title")}
-        body={t("body")}
-        cta={t("cta")}
-        href="/get-involved"
-        photoId="community-elders"
-      />
+      <CTABand title={t("title")} body={t("body")} cta={t("cta")} href="/get-involved" />
     </>
   );
 }

@@ -4,7 +4,7 @@
 
 - [x] **Phase 1: audit & content fixes** (2026-11-17). See `docs/REDESIGN-AUDIT.md`. Waiting at **Checkpoint 1**.
 - [x] **Phase 2: design exploration** (2026-11-18): 8 artboards at https://claude.ai/artifact/RM3EFBbq36HyFsoT6FFP7t. Checkpoint 2 passed 2026-11-18: hero C + A, palette approved, promise option 3.
-- [ ] Phase 3: design system
+- [x] **Phase 3: design system** (2026-11-18): tokens, Fraunces + Public Sans, TopStrip, SplitHeadline, Duotone, EntryCard, StatCard, CountdownBand, Timeline, PriorityCard, ConstituencyList, CTABand, Footer; /styleguide rebuilt. All gates pass; no overflow at 375/768/1440.
 - [ ] Phase 4: home page
 - [ ] Phase 5: inner pages + redirects
 - [ ] Phase 6: polish → Checkpoint 3

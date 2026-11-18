@@ -68,7 +68,8 @@
     "share": "Share",
     "copied": "Link copied",
     "whatsapp": "WhatsApp",
-    "x": "X"
+    "x": "X",
+    "statText": "{label}: {value}. Sen. Wakili Hillary Sigei, Bomet."
   },
   "photo": {
     "placeholder": "Photo coming soon",
@@ -98,11 +99,68 @@
     "notOfficial": "This is a campaign website. It is not an official website of the Parliament of Kenya.",
     "privacy": "Privacy notice",
     "facebook": "Facebook",
-    "x": "X (Twitter)"
+    "x": "X (Twitter)",
+    "explore": "Explore",
+    "takePart": "Take part",
+    "pledge": "Pledge your support",
+    "volunteer": "Volunteer",
+    "host": "Host a ward conversation",
+    "donate": "Donate",
+    "credits": "Photos: Wikimedia Commons contributors (CC BY / CC BY-SA) and the Parliament of Kenya.",
+    "creditsLink": "Full photo credits",
+    "draftNote": "Plan items marked Draft await the Senator's sign-off."
   },
   "notFound": {
     "title": "Page not found",
     "body": "That page does not exist. Let's get you back on track.",
     "cta": "Back to home"
+  },
+  "promise": {
+    "sw": "Sauti ya Bomet. Kazi Iendelee.",
+    "en": "Bomet's voice. The work continues."
+  },
+  "topStrip": {
+    "label": "Countdown to election day",
+    "date": "Tuesday, 10 August 2027",
+    "daysLeft": "D-{days}",
+    "donate": "Donate"
+  },
+  "countdownBand": {
+    "eyebrow": "Next stop: Term 2",
+    "date": "10.08.2027",
+    "when": "Tuesday · polls open 6 am",
+    "addToCalendar": "Add to calendar",
+    "iebc": "Check your registration at IEBC"
+  },
+  "stat": {
+    "asOf": "As of {date}",
+    "share": "Share on WhatsApp",
+    "sourceLabel": "Source"
+  },
+  "priority": {
+    "readMore": "Read more",
+    "lever": {
+      "bill": "A bill",
+      "oversight": "Oversight",
+      "revenue": "County revenue share"
+    }
+  },
+  "places": {
+    "voters": "{count} registered voters",
+    "source": "Registered voters, 2022 General Election register · IEBC. County total {total}."
+  },
+  "trust": "Every figure on this site links to its source.",
+  "navNew": {
+    "story": "The Story",
+    "record": "The Record",
+    "kazi": "Kazi Iendelee",
+    "bomet": "Bomet",
+    "news": "News",
+    "getInvolved": "Get Involved",
+    "gallery": "Gallery",
+    "party": "UDA & Party",
+    "elections": "Elections",
+    "contact": "Contact",
+    "privacy": "Privacy"
   }
 }

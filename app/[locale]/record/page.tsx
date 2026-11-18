@@ -49,13 +49,7 @@ export default async function RecordPage({ params }: { params: Promise<{ locale:
       <Suspense fallback={<div data-pillar="all">{body}</div>}>
         <PillarScope>{body}</PillarScope>
       </Suspense>
-      <CTABand
-        title={t("title")}
-        body={t("body")}
-        cta={t("cta")}
-        href="/get-involved"
-        photoId="farmers-meeting"
-      />
+      <CTABand title={t("title")} body={t("body")} cta={t("cta")} href="/get-involved" />
     </>
   );
 }

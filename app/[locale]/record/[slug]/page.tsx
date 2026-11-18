@@ -37,13 +37,7 @@ export default async function RecordItemPage({ params }: P) {
   return (
     <>
       <RecordDetail event={event} />
-      <CTABand
-        title={t("title")}
-        body={t("body")}
-        cta={t("cta")}
-        href="/get-involved"
-        photoId="community-youth"
-      />
+      <CTABand title={t("title")} body={t("body")} cta={t("cta")} href="/get-involved" />
     </>
   );
 }

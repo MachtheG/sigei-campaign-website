@@ -10,7 +10,7 @@ export function CountdownBand() {
     <section aria-labelledby="countdown-band" className="bg-ink text-paper">
       <div className="shell grid items-center gap-8 py-12 md:grid-cols-12 md:py-16">
         <div className="md:col-span-4">
-          <p className="t-eyebrow text-ember">{t("eyebrow")}</p>
+          <p className="t-eyebrow text-ember-bright">{t("eyebrow")}</p>
           <h2 id="countdown-band" className="t-figure mt-2 text-5xl sm:text-6xl">
             {t("date")}
           </h2>

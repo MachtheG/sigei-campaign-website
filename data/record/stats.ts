@@ -1,3 +1,4 @@
+import { yearsSince } from "../../lib/format";
 import type { L, PillarId } from "../types";
 
 export type Stat = {
@@ -181,3 +182,9 @@ export const stats: Stat[] = [
     context: true,
   },
 ];
+
+/** Display value: years in office is computed from the swearing-in date at render time. */
+export function statValue(s: Stat): number {
+  if (s.computed === "yearsInOffice") return Math.floor(yearsSince(SENATOR_SINCE) * 10) / 10;
+  return s.value;
+}

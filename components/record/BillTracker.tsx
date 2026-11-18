@@ -43,7 +43,11 @@ export function BillTracker() {
                       <p className="font-semibold">{pick(s.label, locale)}</p>
                       <p className="text-muted text-sm">
                         {s.date
-                          ? formatDate(s.date, locale, s.date.length === 7 ? "month" : "day")
+                          ? formatDate(
+                              s.date,
+                              locale,
+                              s.date.length === 4 ? "year" : s.date.length === 7 ? "month" : "day",
+                            )
                           : s.state === "current"
                             ? t("current")
                             : t("pending")}

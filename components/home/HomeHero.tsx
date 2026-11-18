@@ -45,7 +45,7 @@ export function HomeHero() {
               src={portrait.src}
               alt={pick(portrait.alt, locale)}
               fill
-              priority
+              loading="eager"
               sizes="(min-width: 1024px) 576px, 72vw"
               className="object-cover object-top"
             />
@@ -58,7 +58,7 @@ export function HomeHero() {
         )}
 
         <div className="relative flex flex-col gap-5 lg:col-span-7 lg:pb-44">
-          <p className="t-eyebrow text-ember">{t("hero.eyebrow")}</p>
+          <p className="t-eyebrow text-ember-bright">{t("hero.eyebrow")}</p>
           <h1 id="hero-title" lang="sw" className="t-display">
             <span className="block">{t("hero.line1")}</span>
             <span className="block">{t("hero.line2")}</span>

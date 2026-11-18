@@ -70,7 +70,7 @@
     "copied": "Kiungo kimenakiliwa",
     "whatsapp": "WhatsApp",
     "x": "X",
-    "statText": "{label}: {value}. Seneta Wakili Hillary Sigei, Bomet."
+    "statText": "{label}: {value} ({source}). Seneta Wakili Hillary Sigei, Bomet."
   },
   "photo": {
     "placeholder": "Picha inakuja hivi karibuni",

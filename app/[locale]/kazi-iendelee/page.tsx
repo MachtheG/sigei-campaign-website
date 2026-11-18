@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { alt } from "@/lib/seo";
+import { alt, og } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CTABand } from "@/components/shared/CTABand";
 import { Commitments } from "@/components/kazi-iendelee/Commitments";
@@ -19,6 +19,7 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     alternates: alt(locale, "/kazi-iendelee"),
+    ...og(locale, t("title")),
   };
 }
 

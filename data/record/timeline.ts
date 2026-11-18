@@ -54,8 +54,8 @@ export const timeline: RecordEvent[] = [
   },
   {
     slug: "tea-bill-published",
-    date: "2023-01",
-    datePrecision: "month",
+    date: "2023-01-01",
+    datePrecision: "year",
     pillar: "tea",
     title: {
       en: "Tea (Amendment) Bill published",
@@ -99,8 +99,8 @@ export const timeline: RecordEvent[] = [
       sw: "Azungumzia jaribio la kuchoma Mahakama ya Bomet",
     },
     summary: {
-      en: "After a fire at Bomet Law Courts destroyed case files, he called it an assault on justice.",
-      sw: "Baada ya moto katika Mahakama ya Bomet kuharibu faili za kesi, aliuita shambulio dhidi ya haki.",
+      en: "He called the attempted burning of Bomet Law Courts a direct assault on justice.",
+      sw: "Aliita jaribio la kuchoma Mahakama ya Bomet shambulio la moja kwa moja dhidi ya haki.",
     },
     detail: {
       en: "Attacks on courts are attacks on every citizen's access to justice. He urged security agencies to protect the courts, finance and procurement offices and land registries, where public records are kept.",
@@ -143,7 +143,7 @@ export const timeline: RecordEvent[] = [
       sw: "Maseneta walimrudisha kuongoza kamati kwa kipindi kingine.",
     },
     detail: {
-      en: "A second election as chair reflects the confidence of fellow senators in how he runs the committee.",
+      en: "Fellow senators elected him chair again for the committee's next term.",
       sw: "Kuchaguliwa mara ya pili kunaonyesha imani ya maseneta wenzake katika uongozi wake wa kamati.",
     },
     photoId: "senate-committee",
@@ -183,8 +183,8 @@ export const timeline: RecordEvent[] = [
       sw: "Kufuatia taarifa aliyoomba, Kamati ya Ugatuzi ya Seneti ilizuru miradi ya kaunti ambayo haijakamilika.",
     },
     detail: {
-      en: "Public money already spent on projects that stand unfinished helps no one. People Daily reports that the committee's visit on 7 November 2025 followed a statement he sought in the Senate. The committee saw the projects first-hand, including a water project started in 2010, and The Standard reported its concerns on 11 November.",
-      sw: "Fedha za umma zilizotumika kwenye miradi isiyokamilika hazimsaidii yeyote. People Daily inaripoti kuwa ziara ya kamati tarehe 7 Novemba 2025 ilifuatia taarifa aliyoomba Senetini. Kamati ilijionea miradi, ukiwemo mradi wa maji ulioanza 2010, na The Standard iliripoti wasiwasi wake tarehe 11 Novemba.",
+      en: "Public money already spent on projects that stand unfinished helps no one. People Daily reports that the committee's visit on 7 November 2025 followed a statement he sought in the Senate. The committee saw the projects first-hand, and The Standard reported its concerns on 11 November.",
+      sw: "Fedha za umma zilizotumika kwenye miradi isiyokamilika hazimsaidii yeyote. People Daily inaripoti kuwa ziara ya kamati tarehe 7 Novemba 2025 ilifuatia taarifa aliyoomba Senetini. Kamati ilijionea miradi, na The Standard iliripoti wasiwasi wake tarehe 11 Novemba.",
     },
     photoId: "field-inspection",
     sourceIds: ["peopledaily-stalled-projects", "standard-stalled-projects"],
@@ -199,8 +199,8 @@ export const timeline: RecordEvent[] = [
       sw: "Ukaguzi wa hesabu za Bomet, ikiwemo kampuni ya maji",
     },
     summary: {
-      en: "Senators examined Bomet's 2024/25 audit queries, including BOMWASCO.",
-      sw: "Maseneta walichunguza hoja za ukaguzi wa Bomet 2024/25, ikiwemo BOMWASCO.",
+      en: "Senators examined Bomet's audit queries, including BOMWASCO.",
+      sw: "Maseneta walichunguza hoja za ukaguzi wa Bomet, ikiwemo BOMWASCO.",
     },
     detail: {
       en: "Reliable water depends on a well-run water company. He said the Senate would keep monitoring corrective action, because accountability is not a one-day event.",

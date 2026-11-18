@@ -7,7 +7,10 @@
     "title": "From Ndamichonik to the Senate",
     "lead": "A Bomet child who became an advocate, then Senator for Bomet."
   },
-  "journey": { "title": "The journey", "lead": "School, law, practice, public service." },
+  "journey": {
+    "title": "The journey",
+    "lead": "School, law, practice, public service."
+  },
   "credentials": {
     "title": "Credentials",
     "education": "Education",
@@ -26,7 +29,7 @@
       "c": "Managing Partner, SMS Advocates LLP (2013 to present)"
     },
     "senateItems": {
-      "a": "Senator for Bomet County since August 2022, elected on the UDA ticket",
+      "a": "Senator for Bomet County: elected on the UDA ticket in August 2022, sworn in September 2022",
       "b": "Chair, Justice, Legal Affairs and Human Rights Committee: elected October 2022, re-elected 2025"
     }
   }

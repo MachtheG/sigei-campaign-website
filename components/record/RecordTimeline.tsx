@@ -51,7 +51,7 @@ export function RecordTimeline() {
                   <h3 className="mt-2 font-sans text-xl leading-tight font-bold tracking-normal">
                     <Link
                       href={`/record/${e.slug}`}
-                      className="hover:underline focus-visible:underline"
+                      className="inline-flex min-h-11 items-center hover:underline focus-visible:underline"
                     >
                       {pick(e.title, locale)}
                     </Link>

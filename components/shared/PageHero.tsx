@@ -34,7 +34,9 @@ export function PageHero({ ns, image, eyebrow, children }: Props) {
       )}
       <div className={cn("shell flex flex-col gap-4", dark ? "py-20 md:py-28" : "py-14 md:py-20")}>
         {eyebrow && (
-          <p className={cn("t-eyebrow", dark ? "text-ember" : "text-ember-text")}>{eyebrow}</p>
+          <p className={cn("t-eyebrow", dark ? "text-ember-bright" : "text-ember-text")}>
+            {eyebrow}
+          </p>
         )}
         <h1 id="page-title" className="t-h1 max-w-[18ch]">
           {t("hero.title")}

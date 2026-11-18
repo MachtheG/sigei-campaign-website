@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [360, 480, 640, 828, 1080, 1440, 1920, 2400],
+    // Next 16 only serves listed qualities: 40 for grayscale duotones, 50 for Lite mode.
+    qualities: [40, 50, 75],
   },
   poweredByHeader: false,
   // Root "/" → locale, done at the platform level so it works even if the proxy is skipped.

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { alt } from "@/lib/seo";
+import { alt, og } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { RecordDetail } from "@/components/record/RecordDetail";
@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
     title: pick(e.title, locale),
     description: pick(e.summary, locale),
     alternates: alt(locale, `/record/${slug}`),
+    ...og(locale, pick(e.title, locale)),
   };
 }
 

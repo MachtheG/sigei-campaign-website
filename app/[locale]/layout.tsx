@@ -16,7 +16,6 @@ import "../globals.css";
 const display = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
-  axes: ["opsz"],
   display: "swap",
 });
 const body = Public_Sans({ subsets: ["latin"], variable: "--font-public-sans", display: "swap" });
@@ -81,9 +80,6 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: LITE_INIT_SCRIPT }} />
-        <noscript>
-          <style>{`[style*="opacity: 0"]{opacity:1!important;transform:none!important}`}</style>
-        </noscript>
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>

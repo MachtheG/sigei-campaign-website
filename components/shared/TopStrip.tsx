@@ -13,18 +13,18 @@ export function TopStrip() {
   const days = state?.phase === "before" ? state.remaining.days : null;
   return (
     <div className="bg-ink-deep text-paper">
-      <div className="shell flex h-9 items-center justify-between gap-4 text-sm sm:justify-center sm:gap-6">
+      <div className="shell flex h-11 items-center justify-between gap-4 text-sm sm:justify-center sm:gap-6">
         <Link
           href="/elections"
-          aria-label={t("label")}
-          className="inline-flex min-h-9 items-center gap-3 font-bold tabular-nums"
+          className="inline-flex min-h-11 items-center gap-3 font-bold tabular-nums"
         >
+          <span className="sr-only">{t("label")}: </span>
           <span>{days !== null ? t("daysLeft", { days }) : "10.08.2027"}</span>
           <span className="hidden font-normal opacity-80 sm:inline">{t("date")}</span>
         </Link>
         <Link
           href="/get-involved#donate"
-          className="text-uda inline-flex min-h-9 items-center px-1 font-bold"
+          className="text-uda inline-flex min-h-11 items-center px-1 font-bold"
         >
           {t("donate")} →
         </Link>

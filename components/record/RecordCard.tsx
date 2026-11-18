@@ -27,7 +27,10 @@ export function RecordCard({ event }: { event: RecordEvent }) {
           </time>
         </div>
         <h3 className="mt-3 text-xl leading-tight font-bold">
-          <Link href={`/record/${event.slug}`} className="hover:underline focus-visible:underline">
+          <Link
+            href={`/record/${event.slug}`}
+            className="inline-flex min-h-11 items-center hover:underline focus-visible:underline"
+          >
             {pick(event.title, locale)}
           </Link>
         </h3>

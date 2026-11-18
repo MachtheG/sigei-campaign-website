@@ -70,7 +70,7 @@
     "copied": "Link copied",
     "whatsapp": "WhatsApp",
     "x": "X",
-    "statText": "{label}: {value}. Sen. Wakili Hillary Sigei, Bomet."
+    "statText": "{label}: {value} ({source}). Sen. Wakili Hillary Sigei, Bomet."
   },
   "photo": {
     "placeholder": "Photo coming soon",

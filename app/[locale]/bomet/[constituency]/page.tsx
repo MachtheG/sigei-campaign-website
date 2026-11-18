@@ -8,7 +8,7 @@ import { CTABand } from "@/components/shared/CTABand";
 import { constituencies } from "@/data/record/constituencies";
 import { pick } from "@/data/types";
 import { routing } from "@/lib/i18n/routing";
-import { alt } from "@/lib/seo";
+import { alt, og } from "@/lib/seo";
 
 type Params = Promise<{ locale: string; constituency: string }>;
 
@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title: `${pick(c.name, locale)} · ${t("title")}`,
     alternates: alt(locale, `/bomet/${c.id}`),
+    ...og(locale, pick(c.name, locale)),
   };
 }
 

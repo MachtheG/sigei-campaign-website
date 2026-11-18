@@ -43,7 +43,7 @@ export function Timeline({ steps, className, tone = "dark" }: Props) {
               s.future ? "bg-transparent" : "bg-ember",
             )}
           />
-          <span className="t-figure text-ember text-3xl lg:text-4xl" aria-hidden>
+          <span className="t-figure text-ember-bright text-3xl lg:text-4xl" aria-hidden>
             {String(i + 1).padStart(2, "0")}
           </span>
           <h3 className="font-display mt-2 text-xl leading-tight lg:text-2xl">{s.title}</h3>

@@ -97,9 +97,9 @@ export function ConstituencyMap() {
           ) : (
             <p className="font-semibold">{t("prompt")}</p>
           )}
-          <h4 className="text-muted mt-6 font-sans text-sm font-bold tracking-normal">
+          <h3 className="text-muted mt-6 font-sans text-sm font-bold tracking-normal">
             {t("countyWide")}
-          </h4>
+          </h3>
           {countyWide.length ? (
             <ul className="mt-2 space-y-2">
               {countyWide.slice(0, 5).map((e) => (

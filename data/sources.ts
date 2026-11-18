@@ -107,6 +107,7 @@ const list: Source[] = [
     date: "2025-11",
     url: "https://peopledaily.digital/news/senators-put-bomet-governor-on-the-spot-over-multi-million-stalled-projects",
     verified: true,
+    note: "Search index, 17 Nov 2026 (site returns 403 to our fetcher): the Senate Devolution Committee visited on Friday 7 Nov 2025, led by its vice-chair; the visit followed a statement sought by Sen. Sigei on stalled Bomet projects.",
   },
   {
     id: "standard-stalled-projects",
@@ -140,14 +141,16 @@ const list: Source[] = [
     date: "2025-04-08",
     url: "https://peopledaily.digital/news/senators-question-governor-barchoks-spending-priorities",
     verified: true,
+    note: "Read in Phase 0 research (Nov 2026): he told senators milk reached ECDE learners only five times between January and March 2025. peopledaily.digital now returns 403 to our fetcher; re-open by hand before launch.",
   },
   {
     id: "kna-ecde-2026",
     title: "Senator Sigei calls for expansion of ECDE centres in Bomet",
     outlet: "Kenya News Agency",
-    date: "2026-08-20",
+    date: "2026-05-20",
     url: "https://www.kenyanews.go.ke/senator-sigei-calls-for-expansion-of-ecde-centres-in-bomet/",
     verified: true,
+    note: "Re-read 18 Nov 2026 by the fact-checker: dated 20 May 2026 (the earlier 20 Aug 2026 was the site's page-header date).",
   },
   {
     id: "educationnews-ecde",
@@ -165,7 +168,7 @@ const list: Source[] = [
     date: "2025-08-20",
     url: "https://peopledaily.digital/news/senator-sigei-links-bomet-law-courts-arson-attempt-to-2017-graft-cover-up",
     verified: true,
-    note: "Located 17 Nov 2026. Fire at Bomet Law Courts on the night of 19 Aug 2025 (Kenyans.co.ke); his statement 20 Aug 2025. We use only his call to protect the courts and records offices.",
+    note: "Located 17 Nov 2026 (search index; peopledaily.digital returns 403 to our fetcher): he called the attempted burning of Bomet Law Courts a direct assault on justice and urged security agencies to secure the courts, finance and procurement offices and land registries. Statement 20 Aug 2025.",
   },
   {
     id: "peopledaily-osotsi-attack",

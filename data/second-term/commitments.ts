@@ -28,8 +28,8 @@ export const commitments: Commitment[] = [
       sw: "Kuhakikisha Mswada wa Marekebisho ya Chai unapita Bunge la Kitaifa na kuwa sheria.",
     },
     why: {
-      en: "Bomet's tea growers should keep more of the value they work for. The Bill already passed the Senate.",
-      sw: "Wakulima wa chai wa Bomet wanapaswa kubaki na thamani zaidi ya jasho lao. Mswada tayari umepita Senetini.",
+      en: "Bomet's tea growers should keep more of the value they work for. The Bill already passed the Senate; it is not yet law.",
+      sw: "Wakulima wa chai wa Bomet wanapaswa kubaki na thamani zaidi ya jasho lao. Mswada tayari umepita Senetini; bado si sheria.",
     },
     how: {
       en: "Sponsor's follow-through: engage the National Assembly and growers' groups until assent.",
@@ -162,8 +162,8 @@ export const commitments: Commitment[] = [
       sw: "Jukumu la Seneti katika fomula ya mgao wa mapato ya kaunti na usimamizi wa matumizi ya kaunti.",
     },
     measure: {
-      en: "Salary arrears cleared; share of the county budget going to youth programmes, per Controller of Budget.",
-      sw: "Malimbikizo ya mishahara kulipwa; sehemu ya bajeti ya kaunti kwa programu za vijana, kulingana na Mdhibiti wa Bajeti.",
+      en: "[[TO CONFIRM: source for the county salary-arrears issue]] Salary arrears cleared; share of the county budget going to youth programmes, per Controller of Budget.",
+      sw: "[[TO CONFIRM: chanzo cha suala la malimbikizo ya mishahara ya kaunti]] Malimbikizo ya mishahara kulipwa; sehemu ya bajeti ya kaunti kwa programu za vijana, kulingana na Mdhibiti wa Bajeti.",
     },
     sourceIds: ["bomet-county-about", "peopledaily-audit"],
   },

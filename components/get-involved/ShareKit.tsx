@@ -20,7 +20,7 @@ export function ShareKit() {
         href={`https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="press text-link hover:bg-fg/5 inline-flex min-h-11 items-center rounded-full px-4 font-semibold"
+        className="press text-paper hover:bg-paper/10 inline-flex min-h-11 items-center rounded-full px-4 font-semibold"
       >
         WhatsApp ↗
       </a>
@@ -28,7 +28,7 @@ export function ShareKit() {
         href={`https://x.com/intent/post?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="press text-link hover:bg-fg/5 inline-flex min-h-11 items-center rounded-full px-4 font-semibold"
+        className="press text-paper hover:bg-paper/10 inline-flex min-h-11 items-center rounded-full px-4 font-semibold"
       >
         X ↗
       </a>

@@ -1,9 +1,8 @@
-"use client";
-import { motion, useReducedMotion } from "motion/react";
-import { useLite } from "./LiteProvider";
+import { cn } from "@/lib/utils";
 
 type Props = {
   children: React.ReactNode;
+  /** Kept for call-site compatibility; scroll-driven reveals stagger by position instead. */
   delay?: number;
   y?: number;
   className?: string;
@@ -13,28 +12,16 @@ type Props = {
   id?: string;
 };
 
-/** Fade-and-rise once as it enters the viewport. Skipped for reduced motion / Lite mode. */
-export function Reveal({ children, delay = 0, y = 20, className, as = "div", pillars, id }: Props) {
-  const reduce = useReducedMotion();
-  const { lite } = useLite();
-  const Comp = motion[as];
-  // Always render the motion element so server and client markup match. With reduced
-  // motion or Lite mode it jumps straight to the visible state (no travel). Rendering a
-  // plain element instead left the server's `opacity:0` in place after hydration.
-  const skip = Boolean(reduce || lite);
-  const shown = { opacity: 1, transform: "translateY(0px)" };
+/**
+ * Fade-and-rise as the element enters the viewport, driven by CSS scroll timelines
+ * (no JavaScript). Content is always visible by default: browsers without scroll
+ * timelines, reduced motion and Lite mode simply show it.
+ */
+export function Reveal({ children, className, as = "div", pillars, id }: Props) {
+  const Tag = as;
   return (
-    <Comp
-      id={id}
-      className={className}
-      data-pillars={pillars}
-      initial={{ opacity: 0, transform: `translateY(${y}px)` }}
-      animate={skip ? shown : undefined}
-      whileInView={skip ? undefined : shown}
-      viewport={{ once: true, margin: "0px 0px -8% 0px" }}
-      transition={skip ? { duration: 0 } : { duration: 0.55, delay, ease: [0.23, 1, 0.32, 1] }}
-    >
+    <Tag id={id} className={cn("reveal", className)} data-pillars={pillars}>
       {children}
-    </Comp>
+    </Tag>
   );
 }

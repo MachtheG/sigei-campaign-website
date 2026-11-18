@@ -1,17 +1,12 @@
 import { useLocale, useTranslations } from "next-intl";
-import { type Stat, SENATOR_SINCE } from "@/data/record/stats";
+import { type Stat, statValue } from "@/data/record/stats";
 import { sources } from "@/data/sources";
 import { pick } from "@/data/types";
-import { formatDate, formatNumber, yearsSince } from "@/lib/format";
+import { formatDate, formatNumber } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import { ShareButton } from "./ShareButton";
 import { SourceBadge } from "./SourceBadge";
 import { StatCounter } from "./StatCounter";
-
-export function statValue(s: Stat): number {
-  if (s.computed === "yearsInOffice") return Math.floor(yearsSince(SENATOR_SINCE) * 10) / 10;
-  return s.value;
-}
 
 type Props = { stat: Stat; className?: string; tone?: "paper" | "white" };
 
@@ -42,7 +37,7 @@ export function StatCard({ stat, className, tone = "paper" }: Props) {
         <StatCounter value={value} decimals={stat.decimals} suffix={stat.suffix} />
       </p>
       <h3 className="font-sans text-base leading-snug font-semibold tracking-normal">{label}</h3>
-      <p className="text-muted text-[0.9375rem]">{pick(stat.note, locale)}</p>
+      <p className="text-muted">{pick(stat.note, locale)}</p>
       {asOf && (
         <p className="text-muted text-sm">{t("stat.asOf", { date: formatDate(asOf, locale) })}</p>
       )}
@@ -62,6 +57,9 @@ export function StatCard({ stat, className, tone = "paper" }: Props) {
           text={t("share.statText", {
             label,
             value: formatNumber(value, locale, stat.decimals ?? 0) + (stat.suffix ?? ""),
+            source: [lead?.outlet, asOf && t("stat.asOf", { date: formatDate(asOf, locale) })]
+              .filter(Boolean)
+              .join(", "),
           })}
           url={`/${locale}/record#stat-${stat.id}`}
           label={t("stat.share")}

@@ -5,7 +5,7 @@ import { BometStats } from "@/components/bomet/BometStats";
 import { ConstituencyList } from "@/components/shared/ConstituencyList";
 import { CTABand } from "@/components/shared/CTABand";
 import { SplitHeadline } from "@/components/shared/SplitHeadline";
-import { alt } from "@/lib/seo";
+import { alt, og } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -14,7 +14,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "bomet.meta" });
-  return { title: t("title"), description: t("description"), alternates: alt(locale, "/bomet") };
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: alt(locale, "/bomet"),
+    ...og(locale, t("title")),
+  };
 }
 
 export default async function BometPage({ params }: { params: Promise<{ locale: string }> }) {

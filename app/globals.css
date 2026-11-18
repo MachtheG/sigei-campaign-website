@@ -12,6 +12,8 @@
   --paper: #f3efe6;
   --ember: #c47a3d;
   --ember-text: #8a4f22;
+  /* Ember for text on dark or photo grounds (≥4.5:1 on ink, ≥3:1 through the scrims). */
+  --ember-bright: #e3a26a;
   --uda: #f5b800;
 
   /* Semantic roles (used across every page) */
@@ -64,6 +66,7 @@
   --color-paper: var(--paper);
   --color-ember: var(--ember);
   --color-ember-text: var(--ember-text);
+  --color-ember-bright: var(--ember-bright);
   --color-uda: var(--uda);
   --font-display: var(--font-fraunces), "Iowan Old Style", Georgia, serif;
   --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
@@ -202,6 +205,22 @@ p {
   background: var(--ink);
   mix-blend-mode: lighten;
   pointer-events: none;
+}
+/* Scroll-driven reveal (no JS). Visible by default everywhere else. */
+/* Rise only, no fade: text stays at full contrast at every moment of the animation. */
+@keyframes reveal-in {
+  from {
+    transform: translateY(24px);
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    html:not([data-lite="1"]) .reveal {
+      animation: reveal-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 70%;
+    }
+  }
 }
 /* Slow hero parallax: scroll-driven, no JS. Off for reduced motion and Lite. */
 @keyframes hero-drift {

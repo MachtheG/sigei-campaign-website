@@ -31,7 +31,7 @@ export const bills: Bill[] = [
       {
         id: "published",
         label: { en: "Published", sw: "Ulichapishwa" },
-        date: "2023-01",
+        date: "2023",
         state: "done",
       },
       {

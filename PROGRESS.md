@@ -7,7 +7,14 @@
 - [x] **Phase 3: design system** (2026-11-18): tokens, Fraunces + Public Sans, TopStrip, SplitHeadline, Duotone, EntryCard, StatCard, CountdownBand, Timeline, PriorityCard, ConstituencyList, CTABand, Footer; /styleguide rebuilt. All gates pass; no overflow at 375/768/1440.
 - [x] **Phase 4: home page** (2026-11-18): §3 order with the approved C + A hero (portrait faded into the landscape), promise line 3, lean 6-item header + full-screen menu (bottom bar removed), no repeated photo or figure on the page. Fixed: `Reveal` left content invisible for reduced-motion visitors (pre-existing). Constituency rows link to `/bomet/[id]` once Phase 5 adds those pages.
 - [x] **Phase 5: inner pages + redirects** (2026-11-18): every inner page opens with the shared PageHero (duotone landscape or paper); `/about` → `/story` and `/second-term` → `/kazi-iendelee` (308, with or without locale; components and messages renamed with their tabs); new `/bomet` + 5 constituency pages (IEBC 2022 voters, share of county, Draft county-wide priorities, visible placeholder for local work); Get Involved gains #pledge #volunteer #host #story #share #donate; Record numbers use StatCard (old photo tiles removed, unverified sources flagged on the card). 70 pages build; no overflow at 375/768/1440 on any page.
-- [ ] Phase 6: polish → Checkpoint 3
+- [x] **Phase 6: polish** (2026-11-18). Waiting at **Checkpoint 3**.
+  - Fact-checker: 1 blocker (KNA date was 20 Aug, really 20 May 2026) + 12 fixes, all applied (not-law qualifiers, "bills" not "laws", 2010 project and 2024/25 removed as unsupported, Tea Bill publication shown as year only, arrears marked TO CONFIRM, share text carries source + as-of). Notes listed under research items.
+  - Design-critic: 1 blocker (Share links invisible on green) + 5 fixes, all applied (brighter ember on dark grounds, 44px top strip and record/footer links, aria-haspopup on Menu, 16px stat notes). Not done: wrapping consent checkboxes in 44px rows (they pass WCAG 2.5.8 at 24px).
+  - Kiswahili: no untranslated strings (only deliberate bilingual lines); Bomet eyebrow made bilingual.
+  - Accessibility: Reveal and StatCounter rewritten without JS animation (content never hidden; rise-only so text keeps full contrast); orphan h4 fixed; Top strip link name fixed.
+  - Share images: every page has its own 1200x630 card (`/api/og?page=`), stat cards restyled.
+  - Images: Next 16 serves only listed qualities, so duotones were silently at q75; now q40 (grayscale) and Lite q50 work. `priority` replaced by fetchPriority/preload.
+  - **Lighthouse mobile (lab, warm cache)**, perf/a11y/bp/seo: home 89/100/100/100 · sw 88/100/100/100 · record 88/96/100/100 · kazi 89/96/100/100 · bomet 91/100/100/100 · sotik 96/100/100/100 · story 94/100/100/100 · get-involved 90/100/100/100 · news 96/100/100/100. **Performance target 95 not met on 7 of 9 pages** (simulated LCP 2.6-3.5 s; real LCP ~0.2 s; cost is React/Next JS under 4x CPU throttling). Record/Kazi a11y 96 = contrast false positives inside `content-visibility:auto` sections.
 - [ ] Phase 7: ship (PR + preview)
 
 ### Phase 1 checks
@@ -22,6 +29,9 @@ lint ✓ · typecheck ✓ · 16 unit tests ✓ · build ✓ · check:i18n ✓ (1
 - **Mzalendo counts** (2 bills, 220 contributions, 237,192 votes) read 17 Nov 2026: re-read and update `accessed`/`asOf` before launch. Mzalendo's ranking box (52 motions/questions/statements) and its tabs (45 statements, 9 motions, 1 question) do not reconcile, so none of these is used as a stat.
 - IEBC voter-verification deep link; gazetted polls-closing time; High Court (Malindi) ruling on the election year (IEBC says 10 Aug 2027 stands).
 - BOMWASCO figures differ between outlets, so none is used as a headline stat (unchanged).
+- `record.stats.emptyPlaceholder` ("sourced statistic for this area") renders only when a Record filter area has no stat; today every area has one.
+- People Daily stories (ECDE milk "5 times", stalled-projects visit on 7 Nov 2025 "following a statement he sought", Law Courts "assault on justice") were read via search index / Phase 0; peopledaily.digital returns 403 to our tools. Re-open by hand before launch.
+- Tea Bill publication shown by year (2023) only: the bill number fixes the year, but no source gives the month.
 
 ## Earlier build (v1, main branch)
 
@@ -46,8 +56,8 @@ Superseded on 2026-11-17: most items were resolved in redesign Phase 1. The open
 ## Kiswahili lines for native-speaker review
 
 - Slogan: "Mtoto wa Bomet. Kazi Iendelee." (also the English slogan: "Bomet's son. The work continues.", approve both)
-- Letter from the Senator: `messages/sw/second-term.json` → `letter.*` (draft)
-- Story chapters: `messages/sw/second-term.json` → `chapters.*` (subtitles, bodies, stat labels)
+- Letter from the Senator: `messages/sw/kazi-iendelee.json` → `letter.*` (draft)
+- Story chapters: `messages/sw/kazi-iendelee.json` → `chapters.*` (subtitles, bodies, stat labels)
 - Commitments (all six) in `data/second-term/commitments.ts` (`sw` fields)
 - Hero/countdown copy: `messages/sw/home.json`
 - Timeline summaries and details in `data/record/timeline.ts` (`sw` fields)

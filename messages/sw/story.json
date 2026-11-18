@@ -7,7 +7,10 @@
     "title": "Kutoka Ndamichonik hadi Seneti",
     "lead": "Mtoto wa Bomet aliyekuwa wakili, kisha Seneta wa Bomet."
   },
-  "journey": { "title": "Safari yake", "lead": "Shule, sheria, taaluma, utumishi wa umma." },
+  "journey": {
+    "title": "Safari yake",
+    "lead": "Shule, sheria, taaluma, utumishi wa umma."
+  },
   "credentials": {
     "title": "Sifa za kitaaluma",
     "education": "Elimu",
@@ -26,7 +29,7 @@
       "c": "Mshirika Mkuu, SMS Advocates LLP (2013 hadi sasa)"
     },
     "senateItems": {
-      "a": "Seneta wa Kaunti ya Bomet tangu Agosti 2022, alichaguliwa kupitia tiketi ya UDA",
+      "a": "Seneta wa Kaunti ya Bomet: alichaguliwa kupitia tiketi ya UDA Agosti 2022, akaapishwa Septemba 2022",
       "b": "Mwenyekiti, Kamati ya Haki, Masuala ya Kisheria na Haki za Binadamu: alichaguliwa Oktoba 2022, tena 2025"
     }
   }

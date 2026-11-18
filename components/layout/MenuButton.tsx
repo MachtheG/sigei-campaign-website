@@ -10,6 +10,7 @@ export function MenuButton() {
     <button
       type="button"
       onClick={openMenu}
+      aria-haspopup="dialog"
       className="press border-paper/40 text-paper inline-flex min-h-11 items-center gap-2 rounded border px-4 text-sm font-bold"
     >
       <Menu aria-hidden className="size-4" />

@@ -31,7 +31,7 @@ export function SourceBadge({
           className={cn("size-2 rounded-full", anyUnverified ? "bg-accent" : "bg-emerald-500")}
         />
         {t("label")}
-        <span className="text-xs opacity-70">({list.length})</span>
+        <span className="text-xs opacity-85">({list.length})</span>
       </summary>
       <ul className="border-line bg-bg text-fg mt-1 w-full space-y-3 rounded-xl border p-4 shadow-lg sm:absolute sm:z-20 sm:w-[22rem]">
         {list.map((s) => (

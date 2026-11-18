@@ -49,7 +49,7 @@ export function SenatorImage({ id, sizes, priority, className, ratio, position, 
           alt={alt}
           fill
           sizes={sizes}
-          priority={priority}
+          preload={priority}
           quality={lite ? 50 : 75}
           placeholder={photo.blurDataURL ? "blur" : "empty"}
           blurDataURL={photo.blurDataURL}

@@ -35,8 +35,9 @@ export function Duotone({ id, sizes, priority, className, scrim, position, child
           alt=""
           fill
           sizes={sizes}
-          priority={priority}
-          quality={60}
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : "auto"}
+          quality={40}
           className="duotone-img object-cover"
           style={{ objectPosition: position }}
         />

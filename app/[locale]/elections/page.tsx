@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { alt } from "@/lib/seo";
+import { alt, og } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ElectionCountdown } from "@/components/elections/ElectionCountdown";
 import { ElectionHero } from "@/components/elections/ElectionHero";
@@ -17,6 +17,7 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     alternates: alt(locale, "/elections"),
+    ...og(locale, t("title")),
   };
 }
 

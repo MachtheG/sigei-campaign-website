@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { alt } from "@/lib/seo";
+import { alt, og } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { NewsHero } from "@/components/news/NewsHero";
 import { NewsList } from "@/components/news/NewsList";
@@ -12,7 +12,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "news.meta" });
-  return { title: t("title"), description: t("description"), alternates: alt(locale, "/news") };
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: alt(locale, "/news"),
+    ...og(locale, t("title")),
+  };
 }
 
 export default async function NewsPage({ params }: { params: Promise<{ locale: string }> }) {

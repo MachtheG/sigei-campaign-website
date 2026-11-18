@@ -86,7 +86,10 @@ export function Footer() {
         <div className="shell flex flex-col gap-2 py-6 text-sm opacity-90 md:flex-row md:flex-wrap md:items-center md:justify-between">
           <p>
             {t("footer.credits")}{" "}
-            <Link href="/gallery#credits" className="font-semibold underline underline-offset-4">
+            <Link
+              href="/gallery#credits"
+              className="inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
+            >
               {t("footer.creditsLink")}
             </Link>
           </p>
